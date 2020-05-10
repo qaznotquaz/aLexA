@@ -1,0 +1,989 @@
+ACTOR_DEBUG | 2020-04-26 19:44:27 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Lexa] on port [4000]...
+DEBUG | 2020-04-26 19:44:27 | [main] logging.InternalLoggerFactory (InternalLoggerFactory.java:49) - Using Log4J2 as the default logging framework
+DEBUG | 2020-04-26 19:44:27 | [main] channel.MultithreadEventLoopGroup (MultithreadEventLoopGroup.java:44) - -Dio.netty.eventLoopThreads: 24
+DEBUG | 2020-04-26 19:44:28 | [main] internal.InternalThreadLocalMap (InternalThreadLocalMap.java:54) - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+DEBUG | 2020-04-26 19:44:28 | [main] internal.InternalThreadLocalMap (InternalThreadLocalMap.java:57) - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+DEBUG | 2020-04-26 19:44:28 | [main] nio.NioEventLoop (NioEventLoop.java:106) - -Dio.netty.noKeySetOptimization: false
+DEBUG | 2020-04-26 19:44:28 | [main] nio.NioEventLoop (NioEventLoop.java:107) - -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG | 2020-04-26 19:44:28 | [main] internal.PlatformDependent (PlatformDependent.java:987) - Platform: Windows
+DEBUG | 2020-04-26 19:44:28 | [main] internal.PlatformDependent0 (PlatformDependent0.java:396) - -Dio.netty.noUnsafe: false
+DEBUG | 2020-04-26 19:44:28 | [main] internal.PlatformDependent0 (PlatformDependent0.java:852) - Java version: 14
+DEBUG | 2020-04-26 19:44:28 | [main] internal.PlatformDependent0 (PlatformDependent0.java:121) - sun.misc.Unsafe.theUnsafe: available
+DEBUG | 2020-04-26 19:44:28 | [main] internal.PlatformDependent0 (PlatformDependent0.java:145) - sun.misc.Unsafe.copyMemory: available
+DEBUG | 2020-04-26 19:44:28 | [main] internal.PlatformDependent0 (PlatformDependent0.java:183) - java.nio.Buffer.address: available
+DEBUG | 2020-04-26 19:44:28 | [main] internal.PlatformDependent0 (PlatformDependent0.java:253) - direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:225) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.security.AccessController.doPrivileged(AccessController.java:312) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:219) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:273) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.newTaskQueue0(NioEventLoop.java:279) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.newTaskQueue(NioEventLoop.java:150) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:138) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:146) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:37) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:52) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:96) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:91) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:72) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:52) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:44) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at jason.playbill.actor.Actor.clientOpen(Actor.java:125) [alex/:?]
+	at jason.playbill.actor.Actor.<init>(Actor.java:93) [alex/:?]
+	at Lexa.main(Lexa.java:43) [Alexandra/:?]
+DEBUG | 2020-04-26 19:44:28 | [main] internal.PlatformDependent0 (PlatformDependent0.java:314) - java.nio.Bits.unaligned: available, true
+DEBUG | 2020-04-26 19:44:28 | [main] internal.PlatformDependent0 (PlatformDependent0.java:373) - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @76f4b65
+	at jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:376) ~[?:?]
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:647) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:556) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:335) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.security.AccessController.doPrivileged(AccessController.java:312) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:326) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:273) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.newTaskQueue0(NioEventLoop.java:279) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.newTaskQueue(NioEventLoop.java:150) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:138) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:146) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:37) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:52) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:96) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:91) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:72) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:52) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:44) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at jason.playbill.actor.Actor.clientOpen(Actor.java:125) [alex/:?]
+	at jason.playbill.actor.Actor.<init>(Actor.java:93) [alex/:?]
+	at Lexa.main(Lexa.java:43) [Alexandra/:?]
+DEBUG | 2020-04-26 19:44:28 | [main] internal.PlatformDependent0 (PlatformDependent0.java:386) - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+DEBUG | 2020-04-26 19:44:28 | [main] internal.PlatformDependent (PlatformDependent.java:1030) - sun.misc.Unsafe: available
+DEBUG | 2020-04-26 19:44:28 | [main] internal.PlatformDependent (PlatformDependent.java:1130) - maxDirectMemory: 4282384384 bytes (maybe)
+DEBUG | 2020-04-26 19:44:28 | [main] internal.PlatformDependent (PlatformDependent.java:1149) - -Dio.netty.tmpdir: C:\Users\JASONE~1\AppData\Local\Temp (java.io.tmpdir)
+DEBUG | 2020-04-26 19:44:28 | [main] internal.PlatformDependent (PlatformDependent.java:1228) - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG | 2020-04-26 19:44:28 | [main] internal.PlatformDependent (PlatformDependent.java:174) - -Dio.netty.maxDirectMemory: -1 bytes
+DEBUG | 2020-04-26 19:44:28 | [main] internal.PlatformDependent (PlatformDependent.java:181) - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+DEBUG | 2020-04-26 19:44:28 | [main] internal.CleanerJava9 (CleanerJava9.java:71) - java.nio.ByteBuffer.cleaner(): available
+DEBUG | 2020-04-26 19:44:28 | [main] internal.PlatformDependent (PlatformDependent.java:201) - -Dio.netty.noPreferDirect: false
+DEBUG | 2020-04-26 19:44:28 | [main] internal.PlatformDependent$Mpsc (PlatformDependent.java:891) - org.jctools-core.MpscChunkedArrayQueue: available
+TRACE | 2020-04-26 19:44:28 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4f25b795
+TRACE | 2020-04-26 19:44:28 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@525575
+TRACE | 2020-04-26 19:44:28 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@46dffdc3
+TRACE | 2020-04-26 19:44:28 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5a709816
+TRACE | 2020-04-26 19:44:28 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@78383390
+TRACE | 2020-04-26 19:44:28 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6ad3381f
+TRACE | 2020-04-26 19:44:28 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@53dbe163
+TRACE | 2020-04-26 19:44:28 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@db57326
+TRACE | 2020-04-26 19:44:28 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@34a875b3
+TRACE | 2020-04-26 19:44:28 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4748a0f9
+TRACE | 2020-04-26 19:44:28 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4b14918a
+TRACE | 2020-04-26 19:44:28 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6d1ef78d
+TRACE | 2020-04-26 19:44:28 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1a6c1270
+TRACE | 2020-04-26 19:44:28 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@18a136ac
+TRACE | 2020-04-26 19:44:28 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@77d67cf3
+TRACE | 2020-04-26 19:44:28 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6dee4f1b
+TRACE | 2020-04-26 19:44:28 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@176b3f44
+TRACE | 2020-04-26 19:44:28 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6ee6f53
+TRACE | 2020-04-26 19:44:28 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@421bba99
+TRACE | 2020-04-26 19:44:28 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5d12a356
+TRACE | 2020-04-26 19:44:28 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@134d26af
+TRACE | 2020-04-26 19:44:28 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@66ac5762
+TRACE | 2020-04-26 19:44:28 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@797cf65c
+TRACE | 2020-04-26 19:44:28 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@31bcf236
+ACTOR_DEBUG | 2020-04-26 19:44:28 | [Thread-2] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-04-26 19:44:28 | [Thread-1] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-04-26 19:44:28 | [Thread-3] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-04-26 19:44:28 | [Thread-1] actor.Actor (Actor.java:163) - Bootstrap 319759086 configured.
+ACTOR_DEBUG | 2020-04-26 19:44:28 | [Thread-3] actor.Actor (Actor.java:163) - Bootstrap 1778532311 configured.
+ACTOR_DEBUG | 2020-04-26 19:44:28 | [Thread-2] actor.Actor (Actor.java:163) - Bootstrap 357386392 configured.
+ACTOR_DEBUG | 2020-04-26 19:44:28 | [Thread-1] actor.Actor (Actor.java:165) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-04-26 19:44:28 | [Thread-2] actor.Actor (Actor.java:165) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-04-26 19:44:28 | [Thread-3] actor.Actor (Actor.java:165) - Roll-calling port 4003...
+DEBUG | 2020-04-26 19:44:28 | [Thread-3] channel.DefaultChannelId (DefaultChannelId.java:79) - -Dio.netty.processId: 2572 (auto-detected)
+DEBUG | 2020-04-26 19:44:28 | [Thread-3] util.NetUtil (NetUtil.java:139) - -Djava.net.preferIPv4Stack: false
+DEBUG | 2020-04-26 19:44:28 | [Thread-3] util.NetUtil (NetUtil.java:140) - -Djava.net.preferIPv6Addresses: false
+DEBUG | 2020-04-26 19:44:28 | [Thread-3] util.NetUtil (NetUtil.java:224) - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+DEBUG | 2020-04-26 19:44:28 | [Thread-3] util.NetUtil$1 (NetUtil.java:289) - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+DEBUG | 2020-04-26 19:44:28 | [Thread-3] channel.DefaultChannelId (DefaultChannelId.java:101) - -Dio.netty.machineId: 00:d8:61:ff:fe:ca:7b:c4 (auto-detected)
+DEBUG | 2020-04-26 19:44:28 | [Thread-3] util.ResourceLeakDetector (ResourceLeakDetector.java:130) - -Dio.netty.leakDetection.level: simple
+DEBUG | 2020-04-26 19:44:28 | [Thread-3] util.ResourceLeakDetector (ResourceLeakDetector.java:131) - -Dio.netty.leakDetection.targetRecords: 4
+DEBUG | 2020-04-26 19:44:28 | [Thread-2] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:142) - -Dio.netty.allocator.numHeapArenas: 24
+DEBUG | 2020-04-26 19:44:28 | [Thread-2] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:143) - -Dio.netty.allocator.numDirectArenas: 24
+DEBUG | 2020-04-26 19:44:28 | [Thread-2] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:145) - -Dio.netty.allocator.pageSize: 8192
+DEBUG | 2020-04-26 19:44:28 | [Thread-2] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:150) - -Dio.netty.allocator.maxOrder: 11
+DEBUG | 2020-04-26 19:44:28 | [Thread-2] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:154) - -Dio.netty.allocator.chunkSize: 16777216
+DEBUG | 2020-04-26 19:44:28 | [Thread-2] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:155) - -Dio.netty.allocator.tinyCacheSize: 512
+DEBUG | 2020-04-26 19:44:28 | [Thread-2] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:156) - -Dio.netty.allocator.smallCacheSize: 256
+DEBUG | 2020-04-26 19:44:28 | [Thread-2] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:157) - -Dio.netty.allocator.normalCacheSize: 64
+DEBUG | 2020-04-26 19:44:28 | [Thread-2] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:158) - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+DEBUG | 2020-04-26 19:44:28 | [Thread-2] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:159) - -Dio.netty.allocator.cacheTrimInterval: 8192
+DEBUG | 2020-04-26 19:44:28 | [Thread-2] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:160) - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+DEBUG | 2020-04-26 19:44:28 | [Thread-2] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:161) - -Dio.netty.allocator.useCacheForAllThreads: true
+DEBUG | 2020-04-26 19:44:28 | [Thread-2] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:162) - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+DEBUG | 2020-04-26 19:44:28 | [Thread-2] buffer.ByteBufUtil (ByteBufUtil.java:86) - -Dio.netty.allocator.type: pooled
+DEBUG | 2020-04-26 19:44:28 | [Thread-2] buffer.ByteBufUtil (ByteBufUtil.java:95) - -Dio.netty.threadLocalDirectBufferSize: 0
+DEBUG | 2020-04-26 19:44:28 | [Thread-2] buffer.ByteBufUtil (ByteBufUtil.java:98) - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+ACTOR_DEBUG | 2020-04-26 19:44:28 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:410) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:44:28 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:410) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:44:28 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:410) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:44:28 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-04-26 19:44:28 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-04-26 19:44:28 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-04-26 19:44:30 | [Thread-2] actor.Actor (Actor.java:168) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-04-26 19:44:30 | [Thread-1] actor.Actor (Actor.java:168) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-04-26 19:44:30 | [Thread-3] actor.Actor (Actor.java:168) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-04-26 19:44:30 | [Thread-5] actor.Actor (Actor.java:183) - Initializing server for [Lexa]...
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@54026aea
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5ac59e1a
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5efa019a
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1bf89421
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5ceae88e
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2a298847
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@24d1aa49
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7bd76b6e
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@70f25202
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@16ff97eb
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3fd5e49f
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7f997410
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1d994ba3
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@77b3d734
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@67d22441
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@53dfe55f
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@44c78d4
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6d2f051e
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1b29d4d6
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@37702ff1
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@509d7b13
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@458f83eb
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@10d560e8
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@266cdaa4
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@57cddfd8
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2eb62a81
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4b0e3369
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@45909d8e
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7c1ab9fb
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@636766db
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@594884a5
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@18f50eef
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3109b96b
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6900502f
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@74f09c06
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@44c27601
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@387c5d13
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5396f31b
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@23f645c3
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@74d34dc2
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2e9d128e
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4a77226d
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5b3eaebd
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@356d5545
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@73223804
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@b51847
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2ed005aa
+TRACE | 2020-04-26 19:44:30 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7148aa48
+ACTOR_DEBUG | 2020-04-26 19:45:22 | [main] actor.Actor (Actor.java:111) - Successfully instantiated [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:45:22 | [Thread-5] actor.Actor (Actor.java:204) - Server for [Lexa] bound to port 4000.
+ACTOR_ERROR | 2020-04-26 19:46:01 | [main] actor.Actor (Actor.java:217) - Worker group for [Lexa] failed to shut down.
+ACTOR_ERROR | 2020-04-26 19:46:01 | [main] actor.Actor (Actor.java:223) - Boss group for [Lexa] failed to shut down.
+ACTOR_ERROR | 2020-04-26 19:46:01 | [main] actor.Actor (Actor.java:236) - Client group for [Lexa] failed to shut down.
+ACTOR_DEBUG | 2020-04-26 19:46:01 | [main] actor.Actor (Actor.java:247) - Exit actor [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Lexa] on port [4000]...
+DEBUG | 2020-04-26 19:46:23 | [main] logging.InternalLoggerFactory (InternalLoggerFactory.java:49) - Using Log4J2 as the default logging framework
+DEBUG | 2020-04-26 19:46:23 | [main] channel.MultithreadEventLoopGroup (MultithreadEventLoopGroup.java:44) - -Dio.netty.eventLoopThreads: 24
+DEBUG | 2020-04-26 19:46:23 | [main] internal.InternalThreadLocalMap (InternalThreadLocalMap.java:54) - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+DEBUG | 2020-04-26 19:46:23 | [main] internal.InternalThreadLocalMap (InternalThreadLocalMap.java:57) - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+DEBUG | 2020-04-26 19:46:23 | [main] nio.NioEventLoop (NioEventLoop.java:106) - -Dio.netty.noKeySetOptimization: false
+DEBUG | 2020-04-26 19:46:23 | [main] nio.NioEventLoop (NioEventLoop.java:107) - -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG | 2020-04-26 19:46:23 | [main] internal.PlatformDependent (PlatformDependent.java:987) - Platform: Windows
+DEBUG | 2020-04-26 19:46:23 | [main] internal.PlatformDependent0 (PlatformDependent0.java:396) - -Dio.netty.noUnsafe: false
+DEBUG | 2020-04-26 19:46:23 | [main] internal.PlatformDependent0 (PlatformDependent0.java:852) - Java version: 14
+DEBUG | 2020-04-26 19:46:23 | [main] internal.PlatformDependent0 (PlatformDependent0.java:121) - sun.misc.Unsafe.theUnsafe: available
+DEBUG | 2020-04-26 19:46:23 | [main] internal.PlatformDependent0 (PlatformDependent0.java:145) - sun.misc.Unsafe.copyMemory: available
+DEBUG | 2020-04-26 19:46:23 | [main] internal.PlatformDependent0 (PlatformDependent0.java:183) - java.nio.Buffer.address: available
+DEBUG | 2020-04-26 19:46:23 | [main] internal.PlatformDependent0 (PlatformDependent0.java:253) - direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:225) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.security.AccessController.doPrivileged(AccessController.java:312) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:219) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:273) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.newTaskQueue0(NioEventLoop.java:279) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.newTaskQueue(NioEventLoop.java:150) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:138) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:146) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:37) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:52) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:96) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:91) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:72) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:52) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:44) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at jason.playbill.actor.Actor.clientOpen(Actor.java:125) [alex/:?]
+	at jason.playbill.actor.Actor.<init>(Actor.java:93) [alex/:?]
+	at Lexa.main(Lexa.java:43) [Alexandra/:?]
+DEBUG | 2020-04-26 19:46:23 | [main] internal.PlatformDependent0 (PlatformDependent0.java:314) - java.nio.Bits.unaligned: available, true
+DEBUG | 2020-04-26 19:46:23 | [main] internal.PlatformDependent0 (PlatformDependent0.java:373) - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @66982506
+	at jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:376) ~[?:?]
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:647) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:556) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:335) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.security.AccessController.doPrivileged(AccessController.java:312) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:326) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:273) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.newTaskQueue0(NioEventLoop.java:279) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.newTaskQueue(NioEventLoop.java:150) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:138) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:146) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:37) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:52) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:96) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:91) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:72) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:52) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:44) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at jason.playbill.actor.Actor.clientOpen(Actor.java:125) [alex/:?]
+	at jason.playbill.actor.Actor.<init>(Actor.java:93) [alex/:?]
+	at Lexa.main(Lexa.java:43) [Alexandra/:?]
+DEBUG | 2020-04-26 19:46:23 | [main] internal.PlatformDependent0 (PlatformDependent0.java:386) - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+DEBUG | 2020-04-26 19:46:23 | [main] internal.PlatformDependent (PlatformDependent.java:1030) - sun.misc.Unsafe: available
+DEBUG | 2020-04-26 19:46:23 | [main] internal.PlatformDependent (PlatformDependent.java:1130) - maxDirectMemory: 4282384384 bytes (maybe)
+DEBUG | 2020-04-26 19:46:23 | [main] internal.PlatformDependent (PlatformDependent.java:1149) - -Dio.netty.tmpdir: C:\Users\JASONE~1\AppData\Local\Temp (java.io.tmpdir)
+DEBUG | 2020-04-26 19:46:23 | [main] internal.PlatformDependent (PlatformDependent.java:1228) - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG | 2020-04-26 19:46:23 | [main] internal.PlatformDependent (PlatformDependent.java:174) - -Dio.netty.maxDirectMemory: -1 bytes
+DEBUG | 2020-04-26 19:46:23 | [main] internal.PlatformDependent (PlatformDependent.java:181) - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+DEBUG | 2020-04-26 19:46:23 | [main] internal.CleanerJava9 (CleanerJava9.java:71) - java.nio.ByteBuffer.cleaner(): available
+DEBUG | 2020-04-26 19:46:23 | [main] internal.PlatformDependent (PlatformDependent.java:201) - -Dio.netty.noPreferDirect: false
+DEBUG | 2020-04-26 19:46:23 | [main] internal.PlatformDependent$Mpsc (PlatformDependent.java:891) - org.jctools-core.MpscChunkedArrayQueue: available
+TRACE | 2020-04-26 19:46:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@465232e9
+TRACE | 2020-04-26 19:46:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@660acfb
+TRACE | 2020-04-26 19:46:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5d908d47
+TRACE | 2020-04-26 19:46:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5efa40fe
+TRACE | 2020-04-26 19:46:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1f9f6368
+TRACE | 2020-04-26 19:46:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1c9b0314
+TRACE | 2020-04-26 19:46:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@45385f75
+TRACE | 2020-04-26 19:46:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@49c90a9c
+TRACE | 2020-04-26 19:46:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2d29b4ee
+TRACE | 2020-04-26 19:46:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@69ee81fc
+TRACE | 2020-04-26 19:46:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6e2aa843
+TRACE | 2020-04-26 19:46:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6f36c2f0
+TRACE | 2020-04-26 19:46:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@f58853c
+TRACE | 2020-04-26 19:46:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1224144a
+TRACE | 2020-04-26 19:46:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@29f7cefd
+TRACE | 2020-04-26 19:46:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@700fb871
+TRACE | 2020-04-26 19:46:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3b35a229
+TRACE | 2020-04-26 19:46:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@9816741
+TRACE | 2020-04-26 19:46:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1e16c0aa
+TRACE | 2020-04-26 19:46:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@13d73f29
+TRACE | 2020-04-26 19:46:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@565f390
+TRACE | 2020-04-26 19:46:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7dc3712
+TRACE | 2020-04-26 19:46:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2f67a4d3
+TRACE | 2020-04-26 19:46:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5e3f861
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [Thread-1] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [Thread-3] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [Thread-2] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [Thread-2] actor.Actor (Actor.java:163) - Bootstrap 159514381 configured.
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [Thread-1] actor.Actor (Actor.java:163) - Bootstrap 2068276107 configured.
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [Thread-3] actor.Actor (Actor.java:163) - Bootstrap 468114241 configured.
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [Thread-2] actor.Actor (Actor.java:165) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [Thread-3] actor.Actor (Actor.java:165) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [Thread-1] actor.Actor (Actor.java:165) - Roll-calling port 4001...
+DEBUG | 2020-04-26 19:46:23 | [Thread-2] channel.DefaultChannelId (DefaultChannelId.java:79) - -Dio.netty.processId: 28380 (auto-detected)
+DEBUG | 2020-04-26 19:46:23 | [Thread-2] util.NetUtil (NetUtil.java:139) - -Djava.net.preferIPv4Stack: false
+DEBUG | 2020-04-26 19:46:23 | [Thread-2] util.NetUtil (NetUtil.java:140) - -Djava.net.preferIPv6Addresses: false
+DEBUG | 2020-04-26 19:46:23 | [Thread-2] util.NetUtil (NetUtil.java:224) - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+DEBUG | 2020-04-26 19:46:23 | [Thread-2] util.NetUtil$1 (NetUtil.java:289) - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+DEBUG | 2020-04-26 19:46:23 | [Thread-2] channel.DefaultChannelId (DefaultChannelId.java:101) - -Dio.netty.machineId: 00:d8:61:ff:fe:ca:7b:c4 (auto-detected)
+DEBUG | 2020-04-26 19:46:23 | [Thread-3] util.ResourceLeakDetector (ResourceLeakDetector.java:130) - -Dio.netty.leakDetection.level: simple
+DEBUG | 2020-04-26 19:46:23 | [Thread-3] util.ResourceLeakDetector (ResourceLeakDetector.java:131) - -Dio.netty.leakDetection.targetRecords: 4
+DEBUG | 2020-04-26 19:46:23 | [Thread-2] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:142) - -Dio.netty.allocator.numHeapArenas: 24
+DEBUG | 2020-04-26 19:46:23 | [Thread-2] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:143) - -Dio.netty.allocator.numDirectArenas: 24
+DEBUG | 2020-04-26 19:46:23 | [Thread-2] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:145) - -Dio.netty.allocator.pageSize: 8192
+DEBUG | 2020-04-26 19:46:23 | [Thread-2] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:150) - -Dio.netty.allocator.maxOrder: 11
+DEBUG | 2020-04-26 19:46:23 | [Thread-2] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:154) - -Dio.netty.allocator.chunkSize: 16777216
+DEBUG | 2020-04-26 19:46:23 | [Thread-2] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:155) - -Dio.netty.allocator.tinyCacheSize: 512
+DEBUG | 2020-04-26 19:46:23 | [Thread-2] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:156) - -Dio.netty.allocator.smallCacheSize: 256
+DEBUG | 2020-04-26 19:46:23 | [Thread-2] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:157) - -Dio.netty.allocator.normalCacheSize: 64
+DEBUG | 2020-04-26 19:46:23 | [Thread-2] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:158) - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+DEBUG | 2020-04-26 19:46:23 | [Thread-2] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:159) - -Dio.netty.allocator.cacheTrimInterval: 8192
+DEBUG | 2020-04-26 19:46:23 | [Thread-2] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:160) - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+DEBUG | 2020-04-26 19:46:23 | [Thread-2] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:161) - -Dio.netty.allocator.useCacheForAllThreads: true
+DEBUG | 2020-04-26 19:46:23 | [Thread-2] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:162) - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+DEBUG | 2020-04-26 19:46:23 | [Thread-2] buffer.ByteBufUtil (ByteBufUtil.java:86) - -Dio.netty.allocator.type: pooled
+DEBUG | 2020-04-26 19:46:23 | [Thread-2] buffer.ByteBufUtil (ByteBufUtil.java:95) - -Dio.netty.threadLocalDirectBufferSize: 0
+DEBUG | 2020-04-26 19:46:23 | [Thread-2] buffer.ByteBufUtil (ByteBufUtil.java:98) - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:410) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:410) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:410) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-04-26 19:46:25 | [Thread-1] actor.Actor (Actor.java:168) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-04-26 19:46:25 | [Thread-3] actor.Actor (Actor.java:168) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-04-26 19:46:25 | [Thread-2] actor.Actor (Actor.java:168) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-04-26 19:46:25 | [Thread-5] actor.Actor (Actor.java:183) - Initializing server for [Lexa]...
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@52033099
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5cc4c4a9
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@58fb5be9
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1df9ce92
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5635a24c
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2c2ed5af
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2e08e7d0
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7dd631dd
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@68adbe9
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5c53f53a
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@350caf07
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@799828a2
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@299df1eb
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6aa43bc7
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3a80d503
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@26537c9
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@44318cc7
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@f00fd85
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@331419ab
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@18e4bb7f
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@507b5b10
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@589f784f
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4bd5fbb6
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@76d78ef0
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1c85a02c
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3e0c028e
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7eefd341
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4f8f176d
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7e3a5a70
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@207c3f4b
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@208995de
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@178acadd
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3bcfeb86
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7a880dd3
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@16435039
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@575eac0e
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1389feb8
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@29d59f8f
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@251bc014
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7072665
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5ba76403
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5e0bb11f
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@25ebc1aa
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1be1ef7c
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7b86077f
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7806c259
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@31bba62
+TRACE | 2020-04-26 19:46:25 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@17153f72
+ACTOR_DEBUG | 2020-04-26 19:46:25 | [Thread-5] actor.Actor (Actor.java:204) - Server for [Lexa] bound to port 4000.
+ACTOR_DEBUG | 2020-04-26 19:46:25 | [main] actor.Actor (Actor.java:111) - Successfully instantiated [Lexa].
+ACTOR_ERROR | 2020-04-26 19:46:25 | [main] actor.Actor (Actor.java:217) - Worker group for [Lexa] failed to shut down.
+ACTOR_ERROR | 2020-04-26 19:46:25 | [main] actor.Actor (Actor.java:223) - Boss group for [Lexa] failed to shut down.
+ACTOR_ERROR | 2020-04-26 19:46:25 | [main] actor.Actor (Actor.java:236) - Client group for [Lexa] failed to shut down.
+ACTOR_DEBUG | 2020-04-26 19:46:25 | [main] actor.Actor (Actor.java:247) - Exit actor [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Lexa] on port [4000]...
+DEBUG | 2020-04-26 19:47:23 | [main] logging.InternalLoggerFactory (InternalLoggerFactory.java:49) - Using Log4J2 as the default logging framework
+DEBUG | 2020-04-26 19:47:23 | [main] channel.MultithreadEventLoopGroup (MultithreadEventLoopGroup.java:44) - -Dio.netty.eventLoopThreads: 24
+DEBUG | 2020-04-26 19:47:23 | [main] internal.InternalThreadLocalMap (InternalThreadLocalMap.java:54) - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+DEBUG | 2020-04-26 19:47:23 | [main] internal.InternalThreadLocalMap (InternalThreadLocalMap.java:57) - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+DEBUG | 2020-04-26 19:47:23 | [main] nio.NioEventLoop (NioEventLoop.java:106) - -Dio.netty.noKeySetOptimization: false
+DEBUG | 2020-04-26 19:47:23 | [main] nio.NioEventLoop (NioEventLoop.java:107) - -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG | 2020-04-26 19:47:23 | [main] internal.PlatformDependent (PlatformDependent.java:987) - Platform: Windows
+DEBUG | 2020-04-26 19:47:23 | [main] internal.PlatformDependent0 (PlatformDependent0.java:396) - -Dio.netty.noUnsafe: false
+DEBUG | 2020-04-26 19:47:23 | [main] internal.PlatformDependent0 (PlatformDependent0.java:852) - Java version: 14
+DEBUG | 2020-04-26 19:47:23 | [main] internal.PlatformDependent0 (PlatformDependent0.java:121) - sun.misc.Unsafe.theUnsafe: available
+DEBUG | 2020-04-26 19:47:23 | [main] internal.PlatformDependent0 (PlatformDependent0.java:145) - sun.misc.Unsafe.copyMemory: available
+DEBUG | 2020-04-26 19:47:23 | [main] internal.PlatformDependent0 (PlatformDependent0.java:183) - java.nio.Buffer.address: available
+DEBUG | 2020-04-26 19:47:23 | [main] internal.PlatformDependent0 (PlatformDependent0.java:253) - direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:225) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.security.AccessController.doPrivileged(AccessController.java:312) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:219) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:273) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.newTaskQueue0(NioEventLoop.java:279) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.newTaskQueue(NioEventLoop.java:150) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:138) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:146) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:37) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:52) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:96) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:91) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:72) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:52) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:44) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at jason.playbill.actor.Actor.clientOpen(Actor.java:125) [alex/:?]
+	at jason.playbill.actor.Actor.<init>(Actor.java:93) [alex/:?]
+	at Lexa.main(Lexa.java:43) [Alexandra/:?]
+DEBUG | 2020-04-26 19:47:23 | [main] internal.PlatformDependent0 (PlatformDependent0.java:314) - java.nio.Bits.unaligned: available, true
+DEBUG | 2020-04-26 19:47:23 | [main] internal.PlatformDependent0 (PlatformDependent0.java:373) - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @76f4b65
+	at jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:376) ~[?:?]
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:647) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:556) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:335) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.security.AccessController.doPrivileged(AccessController.java:312) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:326) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:273) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.newTaskQueue0(NioEventLoop.java:279) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.newTaskQueue(NioEventLoop.java:150) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:138) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:146) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:37) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:52) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:96) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:91) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:72) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:52) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:44) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at jason.playbill.actor.Actor.clientOpen(Actor.java:125) [alex/:?]
+	at jason.playbill.actor.Actor.<init>(Actor.java:93) [alex/:?]
+	at Lexa.main(Lexa.java:43) [Alexandra/:?]
+DEBUG | 2020-04-26 19:47:23 | [main] internal.PlatformDependent0 (PlatformDependent0.java:386) - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+DEBUG | 2020-04-26 19:47:23 | [main] internal.PlatformDependent (PlatformDependent.java:1030) - sun.misc.Unsafe: available
+DEBUG | 2020-04-26 19:47:23 | [main] internal.PlatformDependent (PlatformDependent.java:1130) - maxDirectMemory: 4282384384 bytes (maybe)
+DEBUG | 2020-04-26 19:47:23 | [main] internal.PlatformDependent (PlatformDependent.java:1149) - -Dio.netty.tmpdir: C:\Users\JASONE~1\AppData\Local\Temp (java.io.tmpdir)
+DEBUG | 2020-04-26 19:47:23 | [main] internal.PlatformDependent (PlatformDependent.java:1228) - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG | 2020-04-26 19:47:23 | [main] internal.PlatformDependent (PlatformDependent.java:174) - -Dio.netty.maxDirectMemory: -1 bytes
+DEBUG | 2020-04-26 19:47:23 | [main] internal.PlatformDependent (PlatformDependent.java:181) - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+DEBUG | 2020-04-26 19:47:23 | [main] internal.CleanerJava9 (CleanerJava9.java:71) - java.nio.ByteBuffer.cleaner(): available
+DEBUG | 2020-04-26 19:47:23 | [main] internal.PlatformDependent (PlatformDependent.java:201) - -Dio.netty.noPreferDirect: false
+DEBUG | 2020-04-26 19:47:23 | [main] internal.PlatformDependent$Mpsc (PlatformDependent.java:891) - org.jctools-core.MpscChunkedArrayQueue: available
+TRACE | 2020-04-26 19:47:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4f25b795
+TRACE | 2020-04-26 19:47:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@525575
+TRACE | 2020-04-26 19:47:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@46dffdc3
+TRACE | 2020-04-26 19:47:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5a709816
+TRACE | 2020-04-26 19:47:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@78383390
+TRACE | 2020-04-26 19:47:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6ad3381f
+TRACE | 2020-04-26 19:47:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@53dbe163
+TRACE | 2020-04-26 19:47:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@db57326
+TRACE | 2020-04-26 19:47:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@34a875b3
+TRACE | 2020-04-26 19:47:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4748a0f9
+TRACE | 2020-04-26 19:47:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4b14918a
+TRACE | 2020-04-26 19:47:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6d1ef78d
+TRACE | 2020-04-26 19:47:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1a6c1270
+TRACE | 2020-04-26 19:47:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@18a136ac
+TRACE | 2020-04-26 19:47:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@77d67cf3
+TRACE | 2020-04-26 19:47:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6dee4f1b
+TRACE | 2020-04-26 19:47:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@176b3f44
+TRACE | 2020-04-26 19:47:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6ee6f53
+TRACE | 2020-04-26 19:47:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@421bba99
+TRACE | 2020-04-26 19:47:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5d12a356
+TRACE | 2020-04-26 19:47:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@134d26af
+TRACE | 2020-04-26 19:47:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@66ac5762
+TRACE | 2020-04-26 19:47:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@797cf65c
+TRACE | 2020-04-26 19:47:23 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@31bcf236
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [Thread-1] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [Thread-2] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [Thread-3] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [Thread-1] actor.Actor (Actor.java:163) - Bootstrap 215787396 configured.
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [Thread-2] actor.Actor (Actor.java:163) - Bootstrap 759328748 configured.
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [Thread-3] actor.Actor (Actor.java:163) - Bootstrap 1159274935 configured.
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [Thread-1] actor.Actor (Actor.java:165) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [Thread-2] actor.Actor (Actor.java:165) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [Thread-3] actor.Actor (Actor.java:165) - Roll-calling port 4003...
+DEBUG | 2020-04-26 19:47:23 | [Thread-3] channel.DefaultChannelId (DefaultChannelId.java:79) - -Dio.netty.processId: 24736 (auto-detected)
+DEBUG | 2020-04-26 19:47:23 | [Thread-3] util.NetUtil (NetUtil.java:139) - -Djava.net.preferIPv4Stack: false
+DEBUG | 2020-04-26 19:47:23 | [Thread-3] util.NetUtil (NetUtil.java:140) - -Djava.net.preferIPv6Addresses: false
+DEBUG | 2020-04-26 19:47:23 | [Thread-3] util.NetUtil (NetUtil.java:224) - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+DEBUG | 2020-04-26 19:47:23 | [Thread-3] util.NetUtil$1 (NetUtil.java:289) - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+DEBUG | 2020-04-26 19:47:23 | [Thread-3] channel.DefaultChannelId (DefaultChannelId.java:101) - -Dio.netty.machineId: 00:d8:61:ff:fe:ca:7b:c4 (auto-detected)
+DEBUG | 2020-04-26 19:47:23 | [Thread-2] util.ResourceLeakDetector (ResourceLeakDetector.java:130) - -Dio.netty.leakDetection.level: simple
+DEBUG | 2020-04-26 19:47:23 | [Thread-2] util.ResourceLeakDetector (ResourceLeakDetector.java:131) - -Dio.netty.leakDetection.targetRecords: 4
+DEBUG | 2020-04-26 19:47:23 | [Thread-1] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:142) - -Dio.netty.allocator.numHeapArenas: 24
+DEBUG | 2020-04-26 19:47:23 | [Thread-1] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:143) - -Dio.netty.allocator.numDirectArenas: 24
+DEBUG | 2020-04-26 19:47:23 | [Thread-1] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:145) - -Dio.netty.allocator.pageSize: 8192
+DEBUG | 2020-04-26 19:47:23 | [Thread-1] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:150) - -Dio.netty.allocator.maxOrder: 11
+DEBUG | 2020-04-26 19:47:23 | [Thread-1] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:154) - -Dio.netty.allocator.chunkSize: 16777216
+DEBUG | 2020-04-26 19:47:23 | [Thread-1] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:155) - -Dio.netty.allocator.tinyCacheSize: 512
+DEBUG | 2020-04-26 19:47:23 | [Thread-1] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:156) - -Dio.netty.allocator.smallCacheSize: 256
+DEBUG | 2020-04-26 19:47:23 | [Thread-1] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:157) - -Dio.netty.allocator.normalCacheSize: 64
+DEBUG | 2020-04-26 19:47:23 | [Thread-1] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:158) - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+DEBUG | 2020-04-26 19:47:23 | [Thread-1] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:159) - -Dio.netty.allocator.cacheTrimInterval: 8192
+DEBUG | 2020-04-26 19:47:23 | [Thread-1] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:160) - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+DEBUG | 2020-04-26 19:47:23 | [Thread-1] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:161) - -Dio.netty.allocator.useCacheForAllThreads: true
+DEBUG | 2020-04-26 19:47:23 | [Thread-1] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:162) - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+DEBUG | 2020-04-26 19:47:23 | [Thread-1] buffer.ByteBufUtil (ByteBufUtil.java:86) - -Dio.netty.allocator.type: pooled
+DEBUG | 2020-04-26 19:47:23 | [Thread-1] buffer.ByteBufUtil (ByteBufUtil.java:95) - -Dio.netty.threadLocalDirectBufferSize: 0
+DEBUG | 2020-04-26 19:47:23 | [Thread-1] buffer.ByteBufUtil (ByteBufUtil.java:98) - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:410) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:410) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:410) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-04-26 19:47:25 | [Thread-2] actor.Actor (Actor.java:168) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-04-26 19:47:25 | [Thread-1] actor.Actor (Actor.java:168) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-04-26 19:47:25 | [Thread-3] actor.Actor (Actor.java:168) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-04-26 19:47:26 | [Thread-5] actor.Actor (Actor.java:183) - Initializing server for [Lexa]...
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@54026aea
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5ac59e1a
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5efa019a
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1bf89421
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5ceae88e
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2a298847
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@24d1aa49
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7bd76b6e
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@70f25202
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@16ff97eb
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3fd5e49f
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7f997410
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1d994ba3
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@77b3d734
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@67d22441
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@53dfe55f
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@44c78d4
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6d2f051e
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1b29d4d6
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@37702ff1
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@509d7b13
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@458f83eb
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@10d560e8
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@266cdaa4
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@57cddfd8
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2eb62a81
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4b0e3369
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@45909d8e
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7c1ab9fb
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@636766db
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@594884a5
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@18f50eef
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3109b96b
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6900502f
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@74f09c06
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@44c27601
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@387c5d13
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5396f31b
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@23f645c3
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@74d34dc2
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2e9d128e
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4a77226d
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5b3eaebd
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@356d5545
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@73223804
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@b51847
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2ed005aa
+TRACE | 2020-04-26 19:47:26 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7148aa48
+ACTOR_DEBUG | 2020-04-26 19:47:28 | [Thread-5] actor.Actor (Actor.java:204) - Server for [Lexa] bound to port 4000.
+ACTOR_DEBUG | 2020-04-26 19:47:28 | [main] actor.Actor (Actor.java:111) - Successfully instantiated [Lexa].
+ACTOR_ERROR | 2020-04-26 19:47:28 | [main] actor.Actor (Actor.java:217) - Worker group for [Lexa] failed to shut down.
+ACTOR_ERROR | 2020-04-26 19:47:28 | [main] actor.Actor (Actor.java:223) - Boss group for [Lexa] failed to shut down.
+ACTOR_ERROR | 2020-04-26 19:47:28 | [main] actor.Actor (Actor.java:236) - Client group for [Lexa] failed to shut down.
+ACTOR_DEBUG | 2020-04-26 19:47:28 | [main] actor.Actor (Actor.java:247) - Exit actor [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Lexa] on port [4000]...
+DEBUG | 2020-04-26 19:47:41 | [main] logging.InternalLoggerFactory (InternalLoggerFactory.java:49) - Using Log4J2 as the default logging framework
+DEBUG | 2020-04-26 19:47:41 | [main] channel.MultithreadEventLoopGroup (MultithreadEventLoopGroup.java:44) - -Dio.netty.eventLoopThreads: 24
+DEBUG | 2020-04-26 19:47:41 | [main] internal.InternalThreadLocalMap (InternalThreadLocalMap.java:54) - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+DEBUG | 2020-04-26 19:47:41 | [main] internal.InternalThreadLocalMap (InternalThreadLocalMap.java:57) - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+DEBUG | 2020-04-26 19:47:41 | [main] nio.NioEventLoop (NioEventLoop.java:106) - -Dio.netty.noKeySetOptimization: false
+DEBUG | 2020-04-26 19:47:41 | [main] nio.NioEventLoop (NioEventLoop.java:107) - -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG | 2020-04-26 19:47:41 | [main] internal.PlatformDependent (PlatformDependent.java:987) - Platform: Windows
+DEBUG | 2020-04-26 19:47:41 | [main] internal.PlatformDependent0 (PlatformDependent0.java:396) - -Dio.netty.noUnsafe: false
+DEBUG | 2020-04-26 19:47:41 | [main] internal.PlatformDependent0 (PlatformDependent0.java:852) - Java version: 14
+DEBUG | 2020-04-26 19:47:41 | [main] internal.PlatformDependent0 (PlatformDependent0.java:121) - sun.misc.Unsafe.theUnsafe: available
+DEBUG | 2020-04-26 19:47:41 | [main] internal.PlatformDependent0 (PlatformDependent0.java:145) - sun.misc.Unsafe.copyMemory: available
+DEBUG | 2020-04-26 19:47:41 | [main] internal.PlatformDependent0 (PlatformDependent0.java:183) - java.nio.Buffer.address: available
+DEBUG | 2020-04-26 19:47:41 | [main] internal.PlatformDependent0 (PlatformDependent0.java:253) - direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:225) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.security.AccessController.doPrivileged(AccessController.java:312) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:219) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:273) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.newTaskQueue0(NioEventLoop.java:279) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.newTaskQueue(NioEventLoop.java:150) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:138) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:146) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:37) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:52) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:96) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:91) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:72) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:52) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:44) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at jason.playbill.actor.Actor.clientOpen(Actor.java:125) [alex/:?]
+	at jason.playbill.actor.Actor.<init>(Actor.java:93) [alex/:?]
+	at Lexa.main(Lexa.java:43) [Alexandra/:?]
+DEBUG | 2020-04-26 19:47:41 | [main] internal.PlatformDependent0 (PlatformDependent0.java:314) - java.nio.Bits.unaligned: available, true
+DEBUG | 2020-04-26 19:47:41 | [main] internal.PlatformDependent0 (PlatformDependent0.java:373) - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @66982506
+	at jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:376) ~[?:?]
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:647) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:556) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:335) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.security.AccessController.doPrivileged(AccessController.java:312) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:326) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:273) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.newTaskQueue0(NioEventLoop.java:279) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.newTaskQueue(NioEventLoop.java:150) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:138) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:146) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:37) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:52) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:96) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:91) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:72) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:52) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:44) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at jason.playbill.actor.Actor.clientOpen(Actor.java:125) [alex/:?]
+	at jason.playbill.actor.Actor.<init>(Actor.java:93) [alex/:?]
+	at Lexa.main(Lexa.java:43) [Alexandra/:?]
+DEBUG | 2020-04-26 19:47:41 | [main] internal.PlatformDependent0 (PlatformDependent0.java:386) - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+DEBUG | 2020-04-26 19:47:41 | [main] internal.PlatformDependent (PlatformDependent.java:1030) - sun.misc.Unsafe: available
+DEBUG | 2020-04-26 19:47:41 | [main] internal.PlatformDependent (PlatformDependent.java:1130) - maxDirectMemory: 4282384384 bytes (maybe)
+DEBUG | 2020-04-26 19:47:41 | [main] internal.PlatformDependent (PlatformDependent.java:1149) - -Dio.netty.tmpdir: C:\Users\JASONE~1\AppData\Local\Temp (java.io.tmpdir)
+DEBUG | 2020-04-26 19:47:41 | [main] internal.PlatformDependent (PlatformDependent.java:1228) - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG | 2020-04-26 19:47:41 | [main] internal.PlatformDependent (PlatformDependent.java:174) - -Dio.netty.maxDirectMemory: -1 bytes
+DEBUG | 2020-04-26 19:47:41 | [main] internal.PlatformDependent (PlatformDependent.java:181) - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+DEBUG | 2020-04-26 19:47:41 | [main] internal.CleanerJava9 (CleanerJava9.java:71) - java.nio.ByteBuffer.cleaner(): available
+DEBUG | 2020-04-26 19:47:41 | [main] internal.PlatformDependent (PlatformDependent.java:201) - -Dio.netty.noPreferDirect: false
+DEBUG | 2020-04-26 19:47:41 | [main] internal.PlatformDependent$Mpsc (PlatformDependent.java:891) - org.jctools-core.MpscChunkedArrayQueue: available
+TRACE | 2020-04-26 19:47:41 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@465232e9
+TRACE | 2020-04-26 19:47:41 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@660acfb
+TRACE | 2020-04-26 19:47:41 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5d908d47
+TRACE | 2020-04-26 19:47:41 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5efa40fe
+TRACE | 2020-04-26 19:47:41 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1f9f6368
+TRACE | 2020-04-26 19:47:41 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1c9b0314
+TRACE | 2020-04-26 19:47:41 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@45385f75
+TRACE | 2020-04-26 19:47:41 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@49c90a9c
+TRACE | 2020-04-26 19:47:41 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2d29b4ee
+TRACE | 2020-04-26 19:47:41 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@69ee81fc
+TRACE | 2020-04-26 19:47:41 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6e2aa843
+TRACE | 2020-04-26 19:47:41 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6f36c2f0
+TRACE | 2020-04-26 19:47:41 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@f58853c
+TRACE | 2020-04-26 19:47:41 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1224144a
+TRACE | 2020-04-26 19:47:41 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@29f7cefd
+TRACE | 2020-04-26 19:47:41 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@700fb871
+TRACE | 2020-04-26 19:47:41 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3b35a229
+TRACE | 2020-04-26 19:47:41 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@9816741
+TRACE | 2020-04-26 19:47:41 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1e16c0aa
+TRACE | 2020-04-26 19:47:41 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@13d73f29
+TRACE | 2020-04-26 19:47:41 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@565f390
+TRACE | 2020-04-26 19:47:41 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7dc3712
+TRACE | 2020-04-26 19:47:41 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2f67a4d3
+TRACE | 2020-04-26 19:47:41 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5e3f861
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [Thread-3] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [Thread-2] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [Thread-1] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [Thread-3] actor.Actor (Actor.java:163) - Bootstrap 2075154184 configured.
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [Thread-1] actor.Actor (Actor.java:163) - Bootstrap 1762572031 configured.
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [Thread-2] actor.Actor (Actor.java:163) - Bootstrap 109834373 configured.
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [Thread-3] actor.Actor (Actor.java:165) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [Thread-1] actor.Actor (Actor.java:165) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [Thread-2] actor.Actor (Actor.java:165) - Roll-calling port 4002...
+DEBUG | 2020-04-26 19:47:41 | [Thread-1] channel.DefaultChannelId (DefaultChannelId.java:79) - -Dio.netty.processId: 10680 (auto-detected)
+DEBUG | 2020-04-26 19:47:41 | [Thread-1] util.NetUtil (NetUtil.java:139) - -Djava.net.preferIPv4Stack: false
+DEBUG | 2020-04-26 19:47:41 | [Thread-1] util.NetUtil (NetUtil.java:140) - -Djava.net.preferIPv6Addresses: false
+DEBUG | 2020-04-26 19:47:41 | [Thread-1] util.NetUtil (NetUtil.java:224) - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+DEBUG | 2020-04-26 19:47:41 | [Thread-1] util.NetUtil$1 (NetUtil.java:289) - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+DEBUG | 2020-04-26 19:47:41 | [Thread-1] channel.DefaultChannelId (DefaultChannelId.java:101) - -Dio.netty.machineId: 00:d8:61:ff:fe:ca:7b:c4 (auto-detected)
+DEBUG | 2020-04-26 19:47:41 | [Thread-2] util.ResourceLeakDetector (ResourceLeakDetector.java:130) - -Dio.netty.leakDetection.level: simple
+DEBUG | 2020-04-26 19:47:41 | [Thread-2] util.ResourceLeakDetector (ResourceLeakDetector.java:131) - -Dio.netty.leakDetection.targetRecords: 4
+DEBUG | 2020-04-26 19:47:41 | [Thread-3] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:142) - -Dio.netty.allocator.numHeapArenas: 24
+DEBUG | 2020-04-26 19:47:41 | [Thread-3] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:143) - -Dio.netty.allocator.numDirectArenas: 24
+DEBUG | 2020-04-26 19:47:41 | [Thread-3] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:145) - -Dio.netty.allocator.pageSize: 8192
+DEBUG | 2020-04-26 19:47:41 | [Thread-3] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:150) - -Dio.netty.allocator.maxOrder: 11
+DEBUG | 2020-04-26 19:47:41 | [Thread-3] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:154) - -Dio.netty.allocator.chunkSize: 16777216
+DEBUG | 2020-04-26 19:47:41 | [Thread-3] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:155) - -Dio.netty.allocator.tinyCacheSize: 512
+DEBUG | 2020-04-26 19:47:41 | [Thread-3] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:156) - -Dio.netty.allocator.smallCacheSize: 256
+DEBUG | 2020-04-26 19:47:41 | [Thread-3] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:157) - -Dio.netty.allocator.normalCacheSize: 64
+DEBUG | 2020-04-26 19:47:41 | [Thread-3] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:158) - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+DEBUG | 2020-04-26 19:47:41 | [Thread-3] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:159) - -Dio.netty.allocator.cacheTrimInterval: 8192
+DEBUG | 2020-04-26 19:47:41 | [Thread-3] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:160) - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+DEBUG | 2020-04-26 19:47:41 | [Thread-3] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:161) - -Dio.netty.allocator.useCacheForAllThreads: true
+DEBUG | 2020-04-26 19:47:41 | [Thread-3] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:162) - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+DEBUG | 2020-04-26 19:47:41 | [Thread-3] buffer.ByteBufUtil (ByteBufUtil.java:86) - -Dio.netty.allocator.type: pooled
+DEBUG | 2020-04-26 19:47:41 | [Thread-3] buffer.ByteBufUtil (ByteBufUtil.java:95) - -Dio.netty.threadLocalDirectBufferSize: 0
+DEBUG | 2020-04-26 19:47:41 | [Thread-3] buffer.ByteBufUtil (ByteBufUtil.java:98) - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:410) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:410) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:410) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-04-26 19:47:43 | [Thread-3] actor.Actor (Actor.java:168) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-04-26 19:47:43 | [Thread-2] actor.Actor (Actor.java:168) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-04-26 19:47:43 | [Thread-1] actor.Actor (Actor.java:168) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-04-26 19:47:43 | [Thread-5] actor.Actor (Actor.java:183) - Initializing server for [Lexa]...
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6a893e10
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@644edd31
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@60715560
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2573d70a
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6a9140a
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@141cf6bb
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7e2c6b0d
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@455c2845
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@b9b7da0
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7841fb46
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@65288340
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@411291a0
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@11b4925f
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6658d0e4
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@474b7dec
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@12016b34
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@27122541
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7ed0eb7
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1bd5b7bb
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@294373e
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@341a3200
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5bed1a82
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6db3162b
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4ebdf164
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2ba7bdb8
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4b51ecf6
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6a680cd4
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@28b14015
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3e6d72c6
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7a9f0fa1
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@50bba28a
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@72a8f160
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@278656b1
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@25e6b7e7
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@28c4fe23
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1d5229aa
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@874d76f
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@18bd1009
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1787c0db
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1b94a4f8
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3575c74a
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@45b8a4b5
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6c1025c1
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@521defdf
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@49c93d41
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4954b5c1
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2407bf07
+TRACE | 2020-04-26 19:47:43 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@19d9df4f
+ACTOR_DEBUG | 2020-04-26 19:47:43 | [main] actor.Actor (Actor.java:111) - Successfully instantiated [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:47:43 | [Thread-5] actor.Actor (Actor.java:204) - Server for [Lexa] bound to port 4000.
+ACTOR_INFO | 2020-04-26 19:47:43 | [Thread-4] actor.Actor (Actor.java:257) - [Lexa] spoke "Where's my brother?" to the user.
+ACTOR_INFO | 2020-04-26 19:47:43 | [Thread-4] actor.Actor (Actor.java:257) - [Lexa] spoke "Foo" to the user.
+ACTOR_INFO | 2020-04-26 19:47:43 | [Thread-4] actor.Actor (Actor.java:257) - [Lexa] spoke "Bar" to the user.
+ACTOR_INFO | 2020-04-26 19:47:43 | [Thread-4] actor.Actor (Actor.java:257) - [Lexa] spoke "how interesting" to the user.
+ACTOR_INFO | 2020-04-26 19:47:43 | [Thread-4] actor.Actor (Actor.java:257) - [Lexa] spoke "wild" to the user.
+ACTOR_INFO | 2020-04-26 19:47:43 | [Thread-4] actor.Actor (Actor.java:257) - [Lexa] spoke "how wild" to the user.
+ACTOR_INFO | 2020-04-26 19:47:43 | [Thread-4] actor.Actor (Actor.java:257) - [Lexa] spoke "i guess" to the user.
+ACTOR_ERROR | 2020-04-26 19:47:43 | [main] actor.Actor (Actor.java:217) - Worker group for [Lexa] failed to shut down.
+ACTOR_ERROR | 2020-04-26 19:47:43 | [main] actor.Actor (Actor.java:223) - Boss group for [Lexa] failed to shut down.
+ACTOR_ERROR | 2020-04-26 19:47:43 | [main] actor.Actor (Actor.java:236) - Client group for [Lexa] failed to shut down.
+ACTOR_DEBUG | 2020-04-26 19:47:43 | [main] actor.Actor (Actor.java:247) - Exit actor [Lexa].
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Lexa] on port [4000]...
+DEBUG | 2020-04-26 20:12:25 | [main] logging.InternalLoggerFactory (InternalLoggerFactory.java:49) - Using Log4J2 as the default logging framework
+DEBUG | 2020-04-26 20:12:25 | [main] channel.MultithreadEventLoopGroup (MultithreadEventLoopGroup.java:44) - -Dio.netty.eventLoopThreads: 24
+DEBUG | 2020-04-26 20:12:25 | [main] internal.InternalThreadLocalMap (InternalThreadLocalMap.java:54) - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+DEBUG | 2020-04-26 20:12:25 | [main] internal.InternalThreadLocalMap (InternalThreadLocalMap.java:57) - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+DEBUG | 2020-04-26 20:12:25 | [main] nio.NioEventLoop (NioEventLoop.java:106) - -Dio.netty.noKeySetOptimization: false
+DEBUG | 2020-04-26 20:12:25 | [main] nio.NioEventLoop (NioEventLoop.java:107) - -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG | 2020-04-26 20:12:25 | [main] internal.PlatformDependent (PlatformDependent.java:987) - Platform: Windows
+DEBUG | 2020-04-26 20:12:25 | [main] internal.PlatformDependent0 (PlatformDependent0.java:396) - -Dio.netty.noUnsafe: false
+DEBUG | 2020-04-26 20:12:25 | [main] internal.PlatformDependent0 (PlatformDependent0.java:852) - Java version: 14
+DEBUG | 2020-04-26 20:12:25 | [main] internal.PlatformDependent0 (PlatformDependent0.java:121) - sun.misc.Unsafe.theUnsafe: available
+DEBUG | 2020-04-26 20:12:25 | [main] internal.PlatformDependent0 (PlatformDependent0.java:145) - sun.misc.Unsafe.copyMemory: available
+DEBUG | 2020-04-26 20:12:25 | [main] internal.PlatformDependent0 (PlatformDependent0.java:183) - java.nio.Buffer.address: available
+DEBUG | 2020-04-26 20:12:25 | [main] internal.PlatformDependent0 (PlatformDependent0.java:253) - direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:225) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.security.AccessController.doPrivileged(AccessController.java:312) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:219) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:273) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.newTaskQueue0(NioEventLoop.java:279) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.newTaskQueue(NioEventLoop.java:150) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:138) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:146) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:37) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:52) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:96) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:91) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:72) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:52) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:44) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at jason.playbill.actor.Actor.clientOpen(Actor.java:125) [alex/:?]
+	at jason.playbill.actor.Actor.<init>(Actor.java:93) [alex/:?]
+	at Lexa.main(Lexa.java:43) [Alexandra/:?]
+DEBUG | 2020-04-26 20:12:25 | [main] internal.PlatformDependent0 (PlatformDependent0.java:314) - java.nio.Bits.unaligned: available, true
+DEBUG | 2020-04-26 20:12:25 | [main] internal.PlatformDependent0 (PlatformDependent0.java:373) - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @66982506
+	at jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:376) ~[?:?]
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:647) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:556) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:335) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.security.AccessController.doPrivileged(AccessController.java:312) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:326) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:273) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.newTaskQueue0(NioEventLoop.java:279) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.newTaskQueue(NioEventLoop.java:150) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:138) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:146) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:37) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:52) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:96) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:91) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:72) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:52) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:44) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at jason.playbill.actor.Actor.clientOpen(Actor.java:125) [alex/:?]
+	at jason.playbill.actor.Actor.<init>(Actor.java:93) [alex/:?]
+	at Lexa.main(Lexa.java:43) [Alexandra/:?]
+DEBUG | 2020-04-26 20:12:25 | [main] internal.PlatformDependent0 (PlatformDependent0.java:386) - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+DEBUG | 2020-04-26 20:12:25 | [main] internal.PlatformDependent (PlatformDependent.java:1030) - sun.misc.Unsafe: available
+DEBUG | 2020-04-26 20:12:25 | [main] internal.PlatformDependent (PlatformDependent.java:1130) - maxDirectMemory: 4282384384 bytes (maybe)
+DEBUG | 2020-04-26 20:12:25 | [main] internal.PlatformDependent (PlatformDependent.java:1149) - -Dio.netty.tmpdir: C:\Users\JASONE~1\AppData\Local\Temp (java.io.tmpdir)
+DEBUG | 2020-04-26 20:12:25 | [main] internal.PlatformDependent (PlatformDependent.java:1228) - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG | 2020-04-26 20:12:25 | [main] internal.PlatformDependent (PlatformDependent.java:174) - -Dio.netty.maxDirectMemory: -1 bytes
+DEBUG | 2020-04-26 20:12:25 | [main] internal.PlatformDependent (PlatformDependent.java:181) - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+DEBUG | 2020-04-26 20:12:25 | [main] internal.CleanerJava9 (CleanerJava9.java:71) - java.nio.ByteBuffer.cleaner(): available
+DEBUG | 2020-04-26 20:12:25 | [main] internal.PlatformDependent (PlatformDependent.java:201) - -Dio.netty.noPreferDirect: false
+DEBUG | 2020-04-26 20:12:25 | [main] internal.PlatformDependent$Mpsc (PlatformDependent.java:891) - org.jctools-core.MpscChunkedArrayQueue: available
+TRACE | 2020-04-26 20:12:25 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@465232e9
+TRACE | 2020-04-26 20:12:25 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@660acfb
+TRACE | 2020-04-26 20:12:25 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5d908d47
+TRACE | 2020-04-26 20:12:25 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5efa40fe
+TRACE | 2020-04-26 20:12:25 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1f9f6368
+TRACE | 2020-04-26 20:12:25 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1c9b0314
+TRACE | 2020-04-26 20:12:25 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@45385f75
+TRACE | 2020-04-26 20:12:25 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@49c90a9c
+TRACE | 2020-04-26 20:12:25 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2d29b4ee
+TRACE | 2020-04-26 20:12:25 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@69ee81fc
+TRACE | 2020-04-26 20:12:25 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6e2aa843
+TRACE | 2020-04-26 20:12:25 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6f36c2f0
+TRACE | 2020-04-26 20:12:25 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@f58853c
+TRACE | 2020-04-26 20:12:25 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1224144a
+TRACE | 2020-04-26 20:12:25 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@29f7cefd
+TRACE | 2020-04-26 20:12:25 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@700fb871
+TRACE | 2020-04-26 20:12:25 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3b35a229
+TRACE | 2020-04-26 20:12:25 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@9816741
+TRACE | 2020-04-26 20:12:25 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1e16c0aa
+TRACE | 2020-04-26 20:12:25 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@13d73f29
+TRACE | 2020-04-26 20:12:25 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@565f390
+TRACE | 2020-04-26 20:12:25 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7dc3712
+TRACE | 2020-04-26 20:12:25 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2f67a4d3
+TRACE | 2020-04-26 20:12:25 | [main] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5e3f861
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [Thread-1] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [Thread-2] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [Thread-3] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [Thread-2] actor.Actor (Actor.java:163) - Bootstrap 159514381 configured.
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [Thread-3] actor.Actor (Actor.java:163) - Bootstrap 468114241 configured.
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [Thread-1] actor.Actor (Actor.java:163) - Bootstrap 2068276107 configured.
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [Thread-2] actor.Actor (Actor.java:165) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [Thread-3] actor.Actor (Actor.java:165) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [Thread-1] actor.Actor (Actor.java:165) - Roll-calling port 4001...
+DEBUG | 2020-04-26 20:12:25 | [Thread-2] channel.DefaultChannelId (DefaultChannelId.java:79) - -Dio.netty.processId: 3852 (auto-detected)
+DEBUG | 2020-04-26 20:12:25 | [Thread-2] util.NetUtil (NetUtil.java:139) - -Djava.net.preferIPv4Stack: false
+DEBUG | 2020-04-26 20:12:25 | [Thread-2] util.NetUtil (NetUtil.java:140) - -Djava.net.preferIPv6Addresses: false
+DEBUG | 2020-04-26 20:12:25 | [Thread-2] util.NetUtil (NetUtil.java:224) - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+DEBUG | 2020-04-26 20:12:25 | [Thread-2] util.NetUtil$1 (NetUtil.java:289) - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+DEBUG | 2020-04-26 20:12:25 | [Thread-2] channel.DefaultChannelId (DefaultChannelId.java:101) - -Dio.netty.machineId: 00:d8:61:ff:fe:ca:7b:c4 (auto-detected)
+DEBUG | 2020-04-26 20:12:25 | [Thread-2] util.ResourceLeakDetector (ResourceLeakDetector.java:130) - -Dio.netty.leakDetection.level: simple
+DEBUG | 2020-04-26 20:12:25 | [Thread-2] util.ResourceLeakDetector (ResourceLeakDetector.java:131) - -Dio.netty.leakDetection.targetRecords: 4
+DEBUG | 2020-04-26 20:12:25 | [Thread-1] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:142) - -Dio.netty.allocator.numHeapArenas: 24
+DEBUG | 2020-04-26 20:12:25 | [Thread-1] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:143) - -Dio.netty.allocator.numDirectArenas: 24
+DEBUG | 2020-04-26 20:12:25 | [Thread-1] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:145) - -Dio.netty.allocator.pageSize: 8192
+DEBUG | 2020-04-26 20:12:25 | [Thread-1] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:150) - -Dio.netty.allocator.maxOrder: 11
+DEBUG | 2020-04-26 20:12:25 | [Thread-1] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:154) - -Dio.netty.allocator.chunkSize: 16777216
+DEBUG | 2020-04-26 20:12:25 | [Thread-1] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:155) - -Dio.netty.allocator.tinyCacheSize: 512
+DEBUG | 2020-04-26 20:12:25 | [Thread-1] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:156) - -Dio.netty.allocator.smallCacheSize: 256
+DEBUG | 2020-04-26 20:12:25 | [Thread-1] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:157) - -Dio.netty.allocator.normalCacheSize: 64
+DEBUG | 2020-04-26 20:12:25 | [Thread-1] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:158) - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+DEBUG | 2020-04-26 20:12:25 | [Thread-1] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:159) - -Dio.netty.allocator.cacheTrimInterval: 8192
+DEBUG | 2020-04-26 20:12:25 | [Thread-1] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:160) - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+DEBUG | 2020-04-26 20:12:25 | [Thread-1] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:161) - -Dio.netty.allocator.useCacheForAllThreads: true
+DEBUG | 2020-04-26 20:12:25 | [Thread-1] buffer.PooledByteBufAllocator (PooledByteBufAllocator.java:162) - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+DEBUG | 2020-04-26 20:12:25 | [Thread-1] buffer.ByteBufUtil (ByteBufUtil.java:86) - -Dio.netty.allocator.type: pooled
+DEBUG | 2020-04-26 20:12:25 | [Thread-1] buffer.ByteBufUtil (ByteBufUtil.java:95) - -Dio.netty.threadLocalDirectBufferSize: 0
+DEBUG | 2020-04-26 20:12:25 | [Thread-1] buffer.ByteBufUtil (ByteBufUtil.java:98) - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:423) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:423) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:423) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-04-26 20:12:27 | [Thread-1] actor.Actor (Actor.java:168) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-04-26 20:12:27 | [Thread-2] actor.Actor (Actor.java:168) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-04-26 20:12:27 | [Thread-3] actor.Actor (Actor.java:168) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-04-26 20:12:27 | [Thread-5] actor.Actor (Actor.java:183) - Initializing server for [Lexa]...
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@54b43456
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5a73d0b0
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5e4c5f26
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1b4eda8b
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6e2d4b30
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2a1fe015
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@16962f1f
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7b6125c4
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7f118553
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2a5bcdec
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@d92e16f
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7f2fba1c
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@c6793b7
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@78270b7a
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@62a40488
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6059ad9a
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5093700d
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@10afddbe
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@526d1b67
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7ff559cd
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@342d4d26
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5a012430
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@608dba34
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@35e3bcd9
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@d687a77
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@e31bd21
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@29447d5a
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@35468941
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7bb3e65c
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@786894be
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@72cc8844
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@73411bdd
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@17a492ef
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2bd539c1
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3dcd0a57
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@462961c0
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7529b000
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@77309455
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@22fab756
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2fd0f5a8
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1741e9e2
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@64204563
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@13971eb6
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3b42d4d9
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@235434aa
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@45b976fe
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6e70b251
+TRACE | 2020-04-26 20:12:27 | [Thread-5] nio.NioEventLoop (NioEventLoop.java:260) - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4339575a
+ACTOR_DEBUG | 2020-04-26 20:12:27 | [Thread-5] actor.Actor (Actor.java:204) - Server for [Lexa] bound to port 4000.
+ACTOR_DEBUG | 2020-04-26 20:12:27 | [main] actor.Actor (Actor.java:111) - Successfully instantiated [Lexa].
+ACTOR_INFO | 2020-04-26 20:12:27 | [Thread-4] actor.Actor (Actor.java:257) - [Lexa] spoke "Where's my brother?" to the user.
+ACTOR_INFO | 2020-04-26 20:12:28 | [Thread-4] actor.Actor (Actor.java:257) - [Lexa] spoke "Foo" to the user.
+ACTOR_INFO | 2020-04-26 20:12:29 | [Thread-4] actor.Actor (Actor.java:257) - [Lexa] spoke "Bar" to the user.
+ACTOR_INFO | 2020-04-26 20:12:30 | [Thread-4] actor.Actor (Actor.java:257) - [Lexa] spoke "how interesting" to the user.
+ACTOR_INFO | 2020-04-26 20:12:30 | [Thread-4] actor.Actor (Actor.java:257) - [Lexa] spoke "wild" to the user.
+ACTOR_INFO | 2020-04-26 20:12:31 | [Thread-4] actor.Actor (Actor.java:257) - [Lexa] spoke "how wild" to the user.
+ACTOR_INFO | 2020-04-26 20:12:32 | [Thread-4] actor.Actor (Actor.java:257) - [Lexa] spoke "i guess" to the user.
+ACTOR_ERROR | 2020-04-26 20:12:37 | [main] actor.Actor (Actor.java:217) - Worker group for [Lexa] failed to shut down.
+ACTOR_ERROR | 2020-04-26 20:12:37 | [main] actor.Actor (Actor.java:223) - Boss group for [Lexa] failed to shut down.
+ACTOR_ERROR | 2020-04-26 20:12:37 | [main] actor.Actor (Actor.java:236) - Client group for [Lexa] failed to shut down.
+ACTOR_DEBUG | 2020-04-26 20:12:37 | [main] actor.Actor (Actor.java:247) - Exit actor [Lexa].

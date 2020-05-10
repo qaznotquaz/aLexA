@@ -1,0 +1,144 @@
+ACTOR_DEBUG | 2020-04-26 19:44:27 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Lexa] on port [4000]...
+ACTOR_DEBUG | 2020-04-26 19:44:28 | [Thread-2] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-04-26 19:44:28 | [Thread-3] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-04-26 19:44:28 | [Thread-1] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-04-26 19:44:28 | [Thread-1] actor.Actor (Actor.java:163) - Bootstrap 319759086 configured.
+ACTOR_DEBUG | 2020-04-26 19:44:28 | [Thread-2] actor.Actor (Actor.java:163) - Bootstrap 357386392 configured.
+ACTOR_DEBUG | 2020-04-26 19:44:28 | [Thread-3] actor.Actor (Actor.java:163) - Bootstrap 1778532311 configured.
+ACTOR_DEBUG | 2020-04-26 19:44:28 | [Thread-1] actor.Actor (Actor.java:165) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-04-26 19:44:28 | [Thread-2] actor.Actor (Actor.java:165) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-04-26 19:44:28 | [Thread-3] actor.Actor (Actor.java:165) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-04-26 19:44:28 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:410) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:44:28 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:410) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:44:28 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:410) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:44:28 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-04-26 19:44:28 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-04-26 19:44:28 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-04-26 19:44:30 | [Thread-2] actor.Actor (Actor.java:168) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-04-26 19:44:30 | [Thread-1] actor.Actor (Actor.java:168) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-04-26 19:44:30 | [Thread-3] actor.Actor (Actor.java:168) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-04-26 19:44:30 | [Thread-5] actor.Actor (Actor.java:183) - Initializing server for [Lexa]...
+ACTOR_DEBUG | 2020-04-26 19:45:22 | [Thread-5] actor.Actor (Actor.java:204) - Server for [Lexa] bound to port 4000.
+ACTOR_DEBUG | 2020-04-26 19:45:22 | [main] actor.Actor (Actor.java:111) - Successfully instantiated [Lexa].
+ACTOR_ERROR | 2020-04-26 19:46:01 | [main] actor.Actor (Actor.java:217) - Worker group for [Lexa] failed to shut down.
+ACTOR_ERROR | 2020-04-26 19:46:01 | [main] actor.Actor (Actor.java:223) - Boss group for [Lexa] failed to shut down.
+ACTOR_ERROR | 2020-04-26 19:46:01 | [main] actor.Actor (Actor.java:236) - Client group for [Lexa] failed to shut down.
+ACTOR_DEBUG | 2020-04-26 19:46:01 | [main] actor.Actor (Actor.java:247) - Exit actor [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Lexa] on port [4000]...
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [Thread-1] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [Thread-3] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [Thread-2] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [Thread-2] actor.Actor (Actor.java:163) - Bootstrap 159514381 configured.
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [Thread-3] actor.Actor (Actor.java:163) - Bootstrap 468114241 configured.
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [Thread-1] actor.Actor (Actor.java:163) - Bootstrap 2068276107 configured.
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [Thread-2] actor.Actor (Actor.java:165) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [Thread-3] actor.Actor (Actor.java:165) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [Thread-1] actor.Actor (Actor.java:165) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:410) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:410) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:410) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-04-26 19:46:23 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-04-26 19:46:25 | [Thread-1] actor.Actor (Actor.java:168) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-04-26 19:46:25 | [Thread-3] actor.Actor (Actor.java:168) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-04-26 19:46:25 | [Thread-2] actor.Actor (Actor.java:168) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-04-26 19:46:25 | [Thread-5] actor.Actor (Actor.java:183) - Initializing server for [Lexa]...
+ACTOR_DEBUG | 2020-04-26 19:46:25 | [Thread-5] actor.Actor (Actor.java:204) - Server for [Lexa] bound to port 4000.
+ACTOR_DEBUG | 2020-04-26 19:46:25 | [main] actor.Actor (Actor.java:111) - Successfully instantiated [Lexa].
+ACTOR_ERROR | 2020-04-26 19:46:25 | [main] actor.Actor (Actor.java:217) - Worker group for [Lexa] failed to shut down.
+ACTOR_ERROR | 2020-04-26 19:46:25 | [main] actor.Actor (Actor.java:223) - Boss group for [Lexa] failed to shut down.
+ACTOR_ERROR | 2020-04-26 19:46:25 | [main] actor.Actor (Actor.java:236) - Client group for [Lexa] failed to shut down.
+ACTOR_DEBUG | 2020-04-26 19:46:25 | [main] actor.Actor (Actor.java:247) - Exit actor [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Lexa] on port [4000]...
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [Thread-3] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [Thread-1] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [Thread-2] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [Thread-1] actor.Actor (Actor.java:163) - Bootstrap 215787396 configured.
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [Thread-2] actor.Actor (Actor.java:163) - Bootstrap 759328748 configured.
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [Thread-3] actor.Actor (Actor.java:163) - Bootstrap 1159274935 configured.
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [Thread-1] actor.Actor (Actor.java:165) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [Thread-2] actor.Actor (Actor.java:165) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [Thread-3] actor.Actor (Actor.java:165) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:410) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:410) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:410) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-04-26 19:47:23 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-04-26 19:47:25 | [Thread-2] actor.Actor (Actor.java:168) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-04-26 19:47:25 | [Thread-1] actor.Actor (Actor.java:168) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-04-26 19:47:25 | [Thread-3] actor.Actor (Actor.java:168) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-04-26 19:47:26 | [Thread-5] actor.Actor (Actor.java:183) - Initializing server for [Lexa]...
+ACTOR_DEBUG | 2020-04-26 19:47:28 | [Thread-5] actor.Actor (Actor.java:204) - Server for [Lexa] bound to port 4000.
+ACTOR_DEBUG | 2020-04-26 19:47:28 | [main] actor.Actor (Actor.java:111) - Successfully instantiated [Lexa].
+ACTOR_ERROR | 2020-04-26 19:47:28 | [main] actor.Actor (Actor.java:217) - Worker group for [Lexa] failed to shut down.
+ACTOR_ERROR | 2020-04-26 19:47:28 | [main] actor.Actor (Actor.java:223) - Boss group for [Lexa] failed to shut down.
+ACTOR_ERROR | 2020-04-26 19:47:28 | [main] actor.Actor (Actor.java:236) - Client group for [Lexa] failed to shut down.
+ACTOR_DEBUG | 2020-04-26 19:47:28 | [main] actor.Actor (Actor.java:247) - Exit actor [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Lexa] on port [4000]...
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [Thread-2] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [Thread-3] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [Thread-1] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [Thread-3] actor.Actor (Actor.java:163) - Bootstrap 2075154184 configured.
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [Thread-1] actor.Actor (Actor.java:163) - Bootstrap 1762572031 configured.
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [Thread-2] actor.Actor (Actor.java:163) - Bootstrap 109834373 configured.
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [Thread-3] actor.Actor (Actor.java:165) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [Thread-1] actor.Actor (Actor.java:165) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [Thread-2] actor.Actor (Actor.java:165) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:410) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:410) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:410) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-04-26 19:47:41 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-04-26 19:47:43 | [Thread-3] actor.Actor (Actor.java:168) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-04-26 19:47:43 | [Thread-2] actor.Actor (Actor.java:168) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-04-26 19:47:43 | [Thread-1] actor.Actor (Actor.java:168) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-04-26 19:47:43 | [Thread-5] actor.Actor (Actor.java:183) - Initializing server for [Lexa]...
+ACTOR_DEBUG | 2020-04-26 19:47:43 | [main] actor.Actor (Actor.java:111) - Successfully instantiated [Lexa].
+ACTOR_DEBUG | 2020-04-26 19:47:43 | [Thread-5] actor.Actor (Actor.java:204) - Server for [Lexa] bound to port 4000.
+ACTOR_INFO | 2020-04-26 19:47:43 | [Thread-4] actor.Actor (Actor.java:257) - [Lexa] spoke "Where's my brother?" to the user.
+ACTOR_INFO | 2020-04-26 19:47:43 | [Thread-4] actor.Actor (Actor.java:257) - [Lexa] spoke "Foo" to the user.
+ACTOR_INFO | 2020-04-26 19:47:43 | [Thread-4] actor.Actor (Actor.java:257) - [Lexa] spoke "Bar" to the user.
+ACTOR_INFO | 2020-04-26 19:47:43 | [Thread-4] actor.Actor (Actor.java:257) - [Lexa] spoke "how interesting" to the user.
+ACTOR_INFO | 2020-04-26 19:47:43 | [Thread-4] actor.Actor (Actor.java:257) - [Lexa] spoke "wild" to the user.
+ACTOR_INFO | 2020-04-26 19:47:43 | [Thread-4] actor.Actor (Actor.java:257) - [Lexa] spoke "how wild" to the user.
+ACTOR_INFO | 2020-04-26 19:47:43 | [Thread-4] actor.Actor (Actor.java:257) - [Lexa] spoke "i guess" to the user.
+ACTOR_ERROR | 2020-04-26 19:47:43 | [main] actor.Actor (Actor.java:217) - Worker group for [Lexa] failed to shut down.
+ACTOR_ERROR | 2020-04-26 19:47:43 | [main] actor.Actor (Actor.java:223) - Boss group for [Lexa] failed to shut down.
+ACTOR_ERROR | 2020-04-26 19:47:43 | [main] actor.Actor (Actor.java:236) - Client group for [Lexa] failed to shut down.
+ACTOR_DEBUG | 2020-04-26 19:47:43 | [main] actor.Actor (Actor.java:247) - Exit actor [Lexa].
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Lexa] on port [4000]...
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [Thread-2] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [Thread-1] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [Thread-3] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [Thread-2] actor.Actor (Actor.java:163) - Bootstrap 159514381 configured.
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [Thread-3] actor.Actor (Actor.java:163) - Bootstrap 468114241 configured.
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [Thread-1] actor.Actor (Actor.java:163) - Bootstrap 2068276107 configured.
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [Thread-2] actor.Actor (Actor.java:165) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [Thread-3] actor.Actor (Actor.java:165) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [Thread-1] actor.Actor (Actor.java:165) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:423) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:423) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:423) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-04-26 20:12:25 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-04-26 20:12:27 | [Thread-1] actor.Actor (Actor.java:168) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-04-26 20:12:27 | [Thread-2] actor.Actor (Actor.java:168) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-04-26 20:12:27 | [Thread-3] actor.Actor (Actor.java:168) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-04-26 20:12:27 | [Thread-5] actor.Actor (Actor.java:183) - Initializing server for [Lexa]...
+ACTOR_DEBUG | 2020-04-26 20:12:27 | [main] actor.Actor (Actor.java:111) - Successfully instantiated [Lexa].
+ACTOR_DEBUG | 2020-04-26 20:12:27 | [Thread-5] actor.Actor (Actor.java:204) - Server for [Lexa] bound to port 4000.
+ACTOR_INFO | 2020-04-26 20:12:27 | [Thread-4] actor.Actor (Actor.java:257) - [Lexa] spoke "Where's my brother?" to the user.
+ACTOR_INFO | 2020-04-26 20:12:28 | [Thread-4] actor.Actor (Actor.java:257) - [Lexa] spoke "Foo" to the user.
+ACTOR_INFO | 2020-04-26 20:12:29 | [Thread-4] actor.Actor (Actor.java:257) - [Lexa] spoke "Bar" to the user.
+ACTOR_INFO | 2020-04-26 20:12:30 | [Thread-4] actor.Actor (Actor.java:257) - [Lexa] spoke "how interesting" to the user.
+ACTOR_INFO | 2020-04-26 20:12:30 | [Thread-4] actor.Actor (Actor.java:257) - [Lexa] spoke "wild" to the user.
+ACTOR_INFO | 2020-04-26 20:12:31 | [Thread-4] actor.Actor (Actor.java:257) - [Lexa] spoke "how wild" to the user.
+ACTOR_INFO | 2020-04-26 20:12:32 | [Thread-4] actor.Actor (Actor.java:257) - [Lexa] spoke "i guess" to the user.
+ACTOR_ERROR | 2020-04-26 20:12:37 | [main] actor.Actor (Actor.java:217) - Worker group for [Lexa] failed to shut down.
+ACTOR_ERROR | 2020-04-26 20:12:37 | [main] actor.Actor (Actor.java:223) - Boss group for [Lexa] failed to shut down.
+ACTOR_ERROR | 2020-04-26 20:12:37 | [main] actor.Actor (Actor.java:236) - Client group for [Lexa] failed to shut down.
+ACTOR_DEBUG | 2020-04-26 20:12:37 | [main] actor.Actor (Actor.java:247) - Exit actor [Lexa].

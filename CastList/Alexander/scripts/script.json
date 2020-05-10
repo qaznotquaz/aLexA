@@ -1,0 +1,24 @@
+{
+  "preface": {
+    "enter": {
+      "type": "dialogue",
+      "withwhom": "Lexa",
+      "leading": "them",
+      "text": "alexander\ni guess",
+      "timing": "1500\n2000",
+      "cueOut": "endScene"
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,94 @@
+{
+  "header": {
+    "episode": 0,
+    "act": 0,
+    "initial": {
+      "scene": "scene1",
+      "cue": "cue1"
+    }
+  },
+
+  "scene1": {
+    "cue1": {
+      "type": "monologue",
+      "actors": {
+        "Lexa": 2,
+        "Xander": 1,
+        "Fate": 0,
+        "CallMeKey": 0
+      },
+      "cuesTo": "cue2",
+      "text": {
+        "1": {
+          "delay": 1000,
+          "text": "My name is Alexandra Syaani Laskea."
+        },
+        "2": {
+          "delay": 1000,
+          "text": "You killed my father."
+        },
+        "3": {
+          "delay": 1000,
+          "text": "Prepare to die."
+        }
+      }
+    },
+    "cue2": {
+      "type": "conversation",
+      "actors": {
+        "Lexa": 2,
+        "Xander": 2,
+        "Fate": 0,
+        "CallMeKey": 0
+      },
+      "cuesTo": "cue3",
+      "text": {
+        "1": {
+          "delay": 1000,
+          "from": "Xander",
+          "text": "dude, lex."
+        },
+        "2": {
+          "delay": 500,
+          "from": "Xander",
+          "text": "have you no chill?"
+        },
+        "3": {
+          "delay": 1000,
+          "from": "Lexa",
+          "text": "What? It's a good movie!"
+        },
+        "4": {
+          "delay": 1000,
+          "from": "Xander",
+          "text": "what?"
+        },
+        "5": {
+          "delay": 1500,
+          "from": "Lexa",
+          "text": "Wait, you haven't-"
+        },
+        "6": {
+          "delay": 200,
+          "from": "Lexa",
+          "text": "..."
+        },
+        "7": {
+          "delay": 2300,
+          "from": "Lexa",
+          "text": "You haven't seen the Princess Bride?"
+        }
+      }
+    },
+    "cue3": {
+      "type": "exit",
+      "actors": {
+        "Lexa": 1,
+        "Xander": 1,
+        "Fate": 0,
+        "CallMeKey": 0
+      },
+      "cuesTo": "curtain"
+    }
+  }
+}
