@@ -3,8 +3,22 @@
     "episode": 0,
     "act": 0,
     "initial": {
-      "scene": "scene1",
-      "cue": "cue1"
+      "Lexa": {
+        "scene": "scene1",
+        "cue": "cue1"
+      },
+      "Xander": {
+        "scene": "idle",
+        "cue": "xanderIdle"
+      },
+      "Fate": {
+        "scene": "absent",
+        "cue": "fateAbsent"
+      },
+      "CallMeKey": {
+        "scene": "absent",
+        "cue": "keyAbsent"
+      }
     }
   },
 
@@ -89,6 +103,51 @@
         "CallMeKey": 0
       },
       "cuesTo": "curtain"
+    }
+  },
+
+  "idle": {
+    "xanderIdle": {
+      "type": "idle",
+      "actors": {
+        "Lexa": 0,
+        "Xander": 2,
+        "Fate": 0,
+        "CallMeKey": 0
+      },
+      "cuesTo": "inapplicable",
+      "text": {
+        "1": "Alexander is currently idle."
+        }
+      }
+    },
+
+  "absent": {
+    "fateAbsent": {
+      "type": "absent",
+      "actors": {
+        "Lexa": 0,
+        "Xander": 0,
+        "Fate": 2,
+        "CallMeKey": 0
+      },
+      "cuesTo": "inapplicable",
+      "text": {
+        "1": "..."
+      }
+    },
+    "keyAbsent": {
+      "type": "absent",
+      "actors": {
+        "Lexa": 0,
+        "Xander": 0,
+        "Fate": 0,
+        "CallMeKey": 2
+      },
+      "cuesTo": "inapplicable",
+      "text": {
+        "1": "..?"
+      }
     }
   }
 }

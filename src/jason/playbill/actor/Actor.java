@@ -28,6 +28,8 @@ import org.json.JSONObject;
 
 import static jason.playbill.ConsoleColors.ANSI_RESET;
 
+//todo: figure out what all you need to do
+
 /**
  * The Actor class, which is the base class for each process that is to represent a character.
  */
@@ -381,6 +383,13 @@ public class Actor {
         }
 
         public String goToCue(JSONObject scene, String cueName) throws InterruptedException {
+            /* todo: I should be able to revamp this quite a bit.
+             * Essentially, the idea would be that each actor has a copy of the script (already implemented) and acts
+             * solely based on cues from other actors and themselves. When started, and actor will check the current
+             * episode and current act, and will then check the 'initial' field in the relevant script's header. This
+             * field will send each actor to the correct starting cue - whether they should begin speaking, sit idle,
+             * excuse themselves, etc.
+             */
             JSONObject shot = scene.getJSONObject(cueName);
 
             Object type   = shot.get("type");
