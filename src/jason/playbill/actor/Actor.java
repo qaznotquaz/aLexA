@@ -11,19 +11,23 @@ import io.netty.handler.codec.serialization.ClassResolvers;
 import io.netty.handler.codec.serialization.ObjectDecoder;
 import io.netty.handler.codec.serialization.ObjectEncoder;
 
+import java.awt.geom.Area;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.concurrent.CountDownLatch;
-import java.util.stream.Stream;
 
 import io.netty.util.concurrent.Future;
 import jason.playbill.actor.logger.ActorLogger;
 import jason.playbill.playscript.Playscript;
+import org.jetbrains.annotations.NotNull;
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import static jason.playbill.ConsoleColors.ANSI_RESET;
@@ -39,6 +43,7 @@ public class Actor {
      * The group of ports that <u>all</u> actors will use and check for other actors.
      */
     final public int[] ports = {4000, 4001, 4002, 4003};
+    final public String[] names = {"Lexa", "Xander", "Fate", "CallMeKey"};
     /**
      * A latch to keep the program from progressing too far before finishing connecting to other actors.
      */
@@ -81,6 +86,7 @@ public class Actor {
      * @param port  the port on which to open the actor's server.
      */
     public Actor(String name, String color, int port) {
+        logger.actorDebug("");
         logger.actorDebug("Instantiating actor [{}] on port [{}]...", name, port);
 
         try {
@@ -99,14 +105,12 @@ public class Actor {
                 throw new EnsembleCollisionException("There's already an actor on the port " + port);
             }
 
-            Thread scriptReader = new Thread(new ScriptReader(this, "scripts/script.json"));
-            scriptReader.start();
-
+            Thread scriptReader = new Thread(new ScriptReader(this, 0, 0));
             Thread server = new Thread(new Server(this));
             server.start();
-
             servStart.await();
             logger.actorDebug("Successfully instantiated [{}].", name);
+            scriptReader.start();
         } catch (Exception e) {
             logger.actorError(e);
             logger.trace(e);
@@ -273,6 +277,24 @@ public class Actor {
         }
     }
 
+    public void monologue(@NotNull JSONObject text) throws InterruptedException {
+        int lineNum = 1;
+        JSONObject line = text.getJSONObject(String.valueOf(lineNum));
+        boolean speaking = true;
+
+        while (speaking){
+            this.speaks((line).getString("text"));
+            Thread.sleep((line).getInt("delay"));
+
+            lineNum++;
+            try {
+                line = text.getJSONObject(String.valueOf(lineNum));
+            } catch (JSONException e){
+                speaking = false;
+            }
+        }
+    }
+
     /**
      * Gets an actor's name.
      *
@@ -328,106 +350,100 @@ public class Actor {
     }
 
     class ScriptReader implements Runnable {
-        Actor owner;
-        JSONObject script;
+        Playscript script;
+        int currentEp;
+        int currentAct;
+        JSONObject initial;
 
-        ScriptReader(Actor owner, String scriptTarget) {
+        Actor owner;
+
+        ScriptReader(Actor owner, int ep, int act) throws IOException {
+            currentEp = ep;
+            currentAct = act;
+            script = new Playscript(currentEp, currentAct);
             this.owner = owner;
 
-            StringBuilder contentBuilder = new StringBuilder();
-
-            try (Stream<String> stream = Files.lines(Paths.get(scriptTarget), StandardCharsets.UTF_8))
-            {
-                stream.forEach(s -> contentBuilder.append(s).append("\n"));
-            }
-            catch (IOException e)
-            {
-                e.printStackTrace();
-            }
-
-            this.script = new JSONObject(contentBuilder.toString());
+            initial = script.getInitialCue();
         }
 
         @Override
         public void run() {
-            reciting = new CountDownLatch(1);
-            JSONObject scene = goToScene("preface");
-
             try {
-                servStart.await();
+                goToCue(initial.getString("scene"), initial.getString("cue"));
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-
-            String nextCue = null;
-            try {
-                nextCue = goToCue(scene, "enter");
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-
-            while(true){
-                assert nextCue != null;
-                if (nextCue.equals("endScene")) break;
-                try {
-                    nextCue = goToCue(scene, nextCue);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-            reciting.countDown();
         }
 
-        public JSONObject goToScene(String sceneName){
-            return script.getJSONObject(sceneName);
-        }
+        //todo: remove this suppression when you're done filling out switch statements
+        @SuppressWarnings("DuplicateBranchesInSwitch")
+        public void goToCue(String sceneName, String cueName) throws InterruptedException {
+            logger.actorInfo("[{}] going to cue {}/{}.", owner.getName(), sceneName, cueName);
 
-        public String goToCue(JSONObject scene, String cueName) throws InterruptedException {
-            /* todo: I should be able to revamp this quite a bit.
-             * Essentially, the idea would be that each actor has a copy of the script (already implemented) and acts
-             * solely based on cues from other actors and themselves. When started, and actor will check the current
-             * episode and current act, and will then check the 'initial' field in the relevant script's header. This
-             * field will send each actor to the correct starting cue - whether they should begin speaking, sit idle,
-             * excuse themselves, etc.
-             */
-            JSONObject shot = scene.getJSONObject(cueName);
+            JSONObject cue = script.getDirection(sceneName, cueName);
 
-            Object type   = shot.get("type");
-            Object cueOut = shot.get("cueOut");
+            JSONObject presencesJson = cue.getJSONObject("actors");
+            Playscript.Presence tempPre;
+            Playscript.Presence myPresence = null;
+            ArrayList<Playscript.Presence> otherPresences = new ArrayList<>();
 
-            if (type.toString().equals("monologue")){
-                String[] text = shot.get("text").toString().split("\n");
-                String[] timing = shot.get("timing").toString().split("\n");
-                if(text.length != timing.length){
-                    throw new IllegalArgumentException("Script error: fields are mismatched in scene " + scene + ", shot " + shot);
+            for(String name:names){
+                tempPre = presencesJson.getEnum(Playscript.Presence.class, name);
+                if(name.equals(owner.getName())){
+                    myPresence = tempPre;
                 } else {
-                    for (int i = 0; i < text.length; i++) {
-                        owner.speaks(text[i]);
-                        Thread.sleep(Long.parseLong(timing[i]));
-                    }
-                }
-            } else if (type.toString().equals("dialogue")){
-                String[] text = shot.get("text").toString().split("\n");
-                String[] timing = shot.get("timing").toString().split("\n");
-                if(text.length != timing.length){
-                    throw new IllegalArgumentException("Script error: fields are mismatched in scene " + scene + ", shot " + shot);
-                } else {
-                    for (int i = 0; i < text.length; i++) {
-                        String withwhom = shot.get("withwhom").toString();
-                        String leading = shot.get("leading").toString();
-                        if(leading.equals("me")) {
-                            messageWaiting = new CountDownLatch(1);
-                            owner.dm(text[i], withwhom);
-                            Thread.sleep(Long.parseLong(timing[i]));
-                            messageWaiting.await();
-                        } else if (leading.equals("them")){
-                            //todo: this is a mess
-                        }
-                    }
+                    otherPresences.add(tempPre);
                 }
             }
 
-            return cueOut.toString();
+            Playscript.DirectionType type = cue.getEnum(Playscript.DirectionType.class, "type");
+
+            switch (Objects.requireNonNull(myPresence)) {
+                case offstage -> {
+                    owner.exit();
+                }
+                case idle -> {
+                    return;
+                }
+                case leading -> {
+                    //todo: presence case
+                }
+                case responding -> {
+                    //todo: presence case
+                }
+                case listening -> {
+                    //todo: presence case
+                }
+            }
+
+            switch (type) {
+                case monologue:
+                    owner.monologue(cue.getJSONObject("text"));
+                    JSONObject cuesTo = cue.getJSONObject("cuesTo");
+                    goToCue(cuesTo.getString("scene"), cuesTo.getString("cue"));
+                    break;
+                case conversation:
+                    //todo dialogue direction
+                    break;
+                case enter:
+                    //todo enter direction
+                    break;
+                case exit:
+                    //todo exit direction
+                    break;
+                case readReg:
+                    //todo readreg direction
+                    break;
+                case writeReg:
+                    //todo writereg direction
+                    break;
+                case readFile:
+                    //todo readfile direction
+                    break;
+                case writeFile:
+                    //todo writefile direction
+                    break;
+            }
         }
     }
 

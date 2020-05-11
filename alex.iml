@@ -10,5 +10,14 @@
     <orderEntry type="library" name="io.netty:netty-all:4.1.45.Final" level="project" />
     <orderEntry type="library" name="org.apache.logging.log4j:log4j-core:2.13.0" level="project" />
     <orderEntry type="library" name="json-JAVA" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/annotations/19.0.0/annotations-19.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

@@ -3,22 +3,8 @@
     "episode": 0,
     "act": 0,
     "initial": {
-      "Lexa": {
-        "scene": "scene1",
-        "cue": "cue1"
-      },
-      "Xander": {
-        "scene": "idle",
-        "cue": "xanderIdle"
-      },
-      "Fate": {
-        "scene": "absent",
-        "cue": "fateAbsent"
-      },
-      "CallMeKey": {
-        "scene": "absent",
-        "cue": "keyAbsent"
-      }
+      "scene": "scene1",
+      "cue": "cue1"
     }
   },
 
@@ -26,12 +12,11 @@
     "cue1": {
       "type": "monologue",
       "actors": {
-        "Lexa": 2,
-        "Xander": 1,
-        "Fate": 0,
-        "CallMeKey": 0
+        "Lexa": "leading",
+        "Xander": "idle",
+        "Fate": "offstage",
+        "CallMeKey": "idle"
       },
-      "cuesTo": "cue2",
       "text": {
         "1": {
           "delay": 1000,
@@ -45,17 +30,24 @@
           "delay": 1000,
           "text": "Prepare to die."
         }
+      },
+      "cuesTo": {
+        "scene": "scene1",
+        "cue": "cue2"
       }
     },
     "cue2": {
       "type": "conversation",
       "actors": {
-        "Lexa": 2,
-        "Xander": 2,
-        "Fate": 0,
-        "CallMeKey": 0
+        "Lexa": "responding",
+        "Xander": "leading",
+        "Fate": "offstage",
+        "CallMeKey": "listening"
       },
-      "cuesTo": "cue3",
+      "cuesTo": {
+        "scene": "scene1",
+        "cue": "cue3"
+      },
       "text": {
         "1": {
           "delay": 1000,
@@ -97,56 +89,14 @@
     "cue3": {
       "type": "exit",
       "actors": {
-        "Lexa": 1,
-        "Xander": 1,
-        "Fate": 0,
-        "CallMeKey": 0
+        "Lexa": "offstage",
+        "Xander": "offstage",
+        "Fate": "offstage",
+        "CallMeKey": "offstage"
       },
-      "cuesTo": "curtain"
-    }
-  },
-
-  "idle": {
-    "xanderIdle": {
-      "type": "idle",
-      "actors": {
-        "Lexa": 0,
-        "Xander": 2,
-        "Fate": 0,
-        "CallMeKey": 0
-      },
-      "cuesTo": "inapplicable",
-      "text": {
-        "1": "Alexander is currently idle."
-        }
-      }
-    },
-
-  "absent": {
-    "fateAbsent": {
-      "type": "absent",
-      "actors": {
-        "Lexa": 0,
-        "Xander": 0,
-        "Fate": 2,
-        "CallMeKey": 0
-      },
-      "cuesTo": "inapplicable",
-      "text": {
-        "1": "..."
-      }
-    },
-    "keyAbsent": {
-      "type": "absent",
-      "actors": {
-        "Lexa": 0,
-        "Xander": 0,
-        "Fate": 0,
-        "CallMeKey": 2
-      },
-      "cuesTo": "inapplicable",
-      "text": {
-        "1": "..?"
+      "cuesTo": {
+        "scene": "curtain",
+        "cue": "curtain"
       }
     }
   }
