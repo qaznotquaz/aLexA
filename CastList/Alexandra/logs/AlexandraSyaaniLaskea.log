@@ -1475,3 +1475,725 @@ java.net.SocketException: Connection reset
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
 	at java.lang.Thread.run(Thread.java:832) [?:?]
 ACTOR_DEBUG | 2020-05-13 02:10:31 | [Thread-1] actor.Actor (Actor.java:166) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-13 14:08:54 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 14:08:54 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Lexa] on port [4000]...
+ACTOR_DEBUG | 2020-05-13 14:08:54 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 14:08:54 | [Thread-2] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-13 14:08:54 | [Thread-1] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 14:08:54 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 1137752983 configured.
+ACTOR_DEBUG | 2020-05-13 14:08:54 | [Thread-1] actor.Actor (Actor.java:161) - Bootstrap 1696238817 configured.
+ACTOR_DEBUG | 2020-05-13 14:08:54 | [Thread-2] actor.Actor (Actor.java:161) - Bootstrap 1569134731 configured.
+ACTOR_DEBUG | 2020-05-13 14:08:54 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 14:08:54 | [Thread-1] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 14:08:54 | [Thread-2] actor.Actor (Actor.java:163) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-13 14:08:54 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:08:54 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:08:54 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:08:54 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 14:08:54 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-13 14:08:54 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 14:08:54 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 476413474 has connected to its target.
+ACTOR_INFO | 2020-05-13 14:08:54 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-13 14:08:54 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:590) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-13 14:08:56 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 14:08:56 | [Thread-2] actor.Actor (Actor.java:166) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-05-13 14:08:56 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [Lexa]...
+ACTOR_DEBUG | 2020-05-13 14:08:56 | [main] actor.Actor (Actor.java:108) - Successfully instantiated [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:08:56 | [Thread-5] actor.Actor (Actor.java:202) - Server for [Lexa] bound to port 4000.
+ACTOR_INFO | 2020-05-13 14:08:56 | [Thread-4] actor.Actor$ScriptReader (Actor.java:377) - [Lexa] going to cue scene1/cue1.
+ACTOR_INFO | 2020-05-13 14:08:57 | [Thread-4] actor.Actor (Actor.java:259) - [Lexa] spoke "My name is Alexandra Syaani Laskea." to the user.
+ACTOR_INFO | 2020-05-13 14:08:58 | [Thread-4] actor.Actor (Actor.java:259) - [Lexa] spoke "You killed my father." to the user.
+ACTOR_INFO | 2020-05-13 14:08:59 | [Thread-4] actor.Actor (Actor.java:259) - [Lexa] spoke "Prepare to die." to the user.
+ACTOR_INFO | 2020-05-13 14:08:59 | [Thread-4] actor.Actor (Actor.java:287) - [Lexa] sent [Xander] to the next cue.
+ACTOR_INFO | 2020-05-13 14:08:59 | [Thread-4] actor.Actor$ScriptReader (Actor.java:377) - [Lexa] going to cue scene1/cue2.
+ACTOR_INFO | 2020-05-13 14:08:59 | [Thread-4] actor.Actor$ScriptReader (Actor.java:509) - [Lexa] entering conversation.
+ACTOR_INFO | 2020-05-13 14:08:59 | [Thread-4] actor.Actor$ScriptReader (Actor.java:517) - [Lexa] will be conversing with [Xander].
+WARN  | 2020-05-13 14:08:59 | [nioEventLoopGroup-2-1] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.NullPointerException: null
+	at jason.playbill.actor.Actor$ClientHandler.channelRead(Actor.java:586) ~[alex/:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:377) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:355) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:321) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:295) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:377) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:355) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:377) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+ACTOR_INFO | 2020-05-13 14:09:00 | [Thread-4] actor.Actor (Actor.java:275) - [Lexa] direct-messaged "dude, lex." to [Xander].
+ACTOR_INFO | 2020-05-13 14:09:00 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:596) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-13 14:09:01 | [Thread-4] actor.Actor (Actor.java:275) - [Lexa] direct-messaged "have you no chill?" to [Xander].
+ACTOR_INFO | 2020-05-13 14:09:01 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:596) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-13 14:09:02 | [Thread-4] actor.Actor (Actor.java:275) - [Lexa] direct-messaged "What? It's a good movie!" to [Xander].
+ACTOR_INFO | 2020-05-13 14:09:02 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:596) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Lexa] on port [4000]...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [Thread-1] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [Thread-2] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [Thread-1] actor.Actor (Actor.java:161) - Bootstrap 1284788491 configured.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 1596284443 configured.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [Thread-2] actor.Actor (Actor.java:161) - Bootstrap 968711943 configured.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [Thread-1] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [Thread-2] actor.Actor (Actor.java:163) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 505585286 has connected to its target.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:590) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-1] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-1] actor.Actor (Actor.java:161) - Bootstrap 1911384195 configured.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-1] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-4] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 1056964322 has connected to its target.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:590) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-4] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-4] actor.Actor (Actor.java:161) - Bootstrap 1254919877 configured.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-4] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-5] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 1169284862 has connected to its target.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:590) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-5] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-5] actor.Actor (Actor.java:161) - Bootstrap 830016726 configured.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-5] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-6] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-6] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-6] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 1258637713 has connected to its target.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-6] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-6] actor.Actor$ClientHandler (Actor.java:590) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-6] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-6] actor.Actor (Actor.java:161) - Bootstrap 1061396572 configured.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-6] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-7] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-7] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-7] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 297610727 has connected to its target.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-7] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-7] actor.Actor$ClientHandler (Actor.java:590) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-7] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-7] actor.Actor (Actor.java:161) - Bootstrap 1696703929 configured.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-7] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-8] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-8] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-8] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 1185120820 has connected to its target.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-8] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-8] actor.Actor$ClientHandler (Actor.java:590) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-8] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-8] actor.Actor (Actor.java:161) - Bootstrap 854114592 configured.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-8] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-9] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-9] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-9] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 312682629 has connected to its target.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-9] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-9] actor.Actor$ClientHandler (Actor.java:590) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-9] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-9] actor.Actor (Actor.java:161) - Bootstrap 1723610555 configured.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-9] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-10] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-10] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-10] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 678837135 has connected to its target.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-10] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-10] actor.Actor$ClientHandler (Actor.java:590) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-10] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-10] actor.Actor (Actor.java:161) - Bootstrap 1549000253 configured.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-10] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-11] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-11] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-11] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 861456174 has connected to its target.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-11] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-11] actor.Actor$ClientHandler (Actor.java:590) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-11] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-11] actor.Actor (Actor.java:161) - Bootstrap 1206291491 configured.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-11] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-12] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-12] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-12] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 1913297756 has connected to its target.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-12] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-12] actor.Actor$ClientHandler (Actor.java:590) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-12] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-12] actor.Actor (Actor.java:161) - Bootstrap 116775781 configured.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-12] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-13] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-13] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-13] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 2072056979 has connected to its target.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-13] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-13] actor.Actor$ClientHandler (Actor.java:590) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-13] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-13] actor.Actor (Actor.java:161) - Bootstrap 259514263 configured.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-13] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-14] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-14] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-14] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 97392987 has connected to its target.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-14] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-14] actor.Actor$ClientHandler (Actor.java:590) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-14] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-14] actor.Actor (Actor.java:161) - Bootstrap 1908831452 configured.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-14] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-15] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-15] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-15] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 1547514377 has connected to its target.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-15] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-15] actor.Actor$ClientHandler (Actor.java:590) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-15] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-15] actor.Actor (Actor.java:161) - Bootstrap 678227576 configured.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-15] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-16] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-16] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-16] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 389871635 has connected to its target.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-16] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-16] actor.Actor$ClientHandler (Actor.java:590) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-16] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-16] actor.Actor (Actor.java:161) - Bootstrap 1663461321 configured.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-16] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-17] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-17] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-17] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 301865365 has connected to its target.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-17] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-17] actor.Actor$ClientHandler (Actor.java:590) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-17] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-17] actor.Actor (Actor.java:161) - Bootstrap 1709327028 configured.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-17] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-18] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-18] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-18] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 82586227 has connected to its target.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-18] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-18] actor.Actor$ClientHandler (Actor.java:590) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-18] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-18] actor.Actor (Actor.java:161) - Bootstrap 1894081729 configured.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-18] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-19] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-19] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-2-19] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 85844246 has connected to its target.
+ACTOR_INFO | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-19] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-19] actor.Actor$ClientHandler (Actor.java:590) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-19] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-19] actor.Actor (Actor.java:161) - Bootstrap 1897222064 configured.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-19] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-20] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-20] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-20] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 1206931850 has connected to its target.
+ACTOR_INFO | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-20] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-20] actor.Actor$ClientHandler (Actor.java:590) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-20] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-20] actor.Actor (Actor.java:161) - Bootstrap 859488292 configured.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-20] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-21] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-21] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-21] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 986298036 has connected to its target.
+ACTOR_INFO | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-21] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-21] actor.Actor$ClientHandler (Actor.java:590) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-21] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-21] actor.Actor (Actor.java:161) - Bootstrap 1325327483 configured.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-21] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-22] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-22] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-22] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 234037612 has connected to its target.
+ACTOR_INFO | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-22] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-22] actor.Actor$ClientHandler (Actor.java:590) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-22] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-22] actor.Actor (Actor.java:161) - Bootstrap 2037641457 configured.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-22] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-23] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-23] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-23] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 1876449483 has connected to its target.
+ACTOR_INFO | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-23] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-23] actor.Actor$ClientHandler (Actor.java:590) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-23] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-23] actor.Actor (Actor.java:161) - Bootstrap 456836169 configured.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-23] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-24] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-24] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-24] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 265131368 has connected to its target.
+ACTOR_INFO | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-24] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-24] actor.Actor$ClientHandler (Actor.java:590) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-24] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-24] actor.Actor (Actor.java:161) - Bootstrap 2077224992 configured.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-24] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 2040534158 has connected to its target.
+ACTOR_INFO | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:590) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-2] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-2] actor.Actor (Actor.java:161) - Bootstrap 1143153300 configured.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-2-2] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 14:22:04 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 15:20:19 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 15:20:19 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Lexa] on port [4000]...
+ACTOR_DEBUG | 2020-05-13 15:20:20 | [Thread-2] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-13 15:20:20 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 15:20:20 | [Thread-1] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 15:20:20 | [Thread-2] actor.Actor (Actor.java:161) - Bootstrap 461192481 configured.
+ACTOR_DEBUG | 2020-05-13 15:20:20 | [Thread-1] actor.Actor (Actor.java:161) - Bootstrap 1696238817 configured.
+ACTOR_DEBUG | 2020-05-13 15:20:20 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 1127407670 configured.
+ACTOR_DEBUG | 2020-05-13 15:20:20 | [Thread-2] actor.Actor (Actor.java:163) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-13 15:20:20 | [Thread-1] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 15:20:20 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 15:20:20 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 15:20:20 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 15:20:20 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 15:20:20 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 15:20:20 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-13 15:20:20 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 15:20:20 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 1250471603 has connected to its target.
+ACTOR_INFO | 2020-05-13 15:20:20 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+WARN  | 2020-05-13 15:20:20 | [nioEventLoopGroup-2-2] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.NullPointerException: null
+	at jason.playbill.actor.Actor$ClientHandler.channelRead(Actor.java:586) ~[alex/:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:377) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:355) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:321) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:295) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:377) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:355) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:377) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+ACTOR_DEBUG | 2020-05-13 15:20:22 | [Thread-2] actor.Actor (Actor.java:166) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-05-13 15:20:22 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 15:44:19 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 15:44:19 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Lexa] on port [4000]...
+ACTOR_DEBUG | 2020-05-13 15:44:19 | [Thread-2] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-13 15:44:19 | [Thread-1] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 15:44:19 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 15:44:19 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 87002485 configured.
+ACTOR_DEBUG | 2020-05-13 15:44:19 | [Thread-1] actor.Actor (Actor.java:161) - Bootstrap 968711943 configured.
+ACTOR_DEBUG | 2020-05-13 15:44:19 | [Thread-2] actor.Actor (Actor.java:161) - Bootstrap 247900500 configured.
+ACTOR_DEBUG | 2020-05-13 15:44:19 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 15:44:19 | [Thread-1] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 15:44:19 | [Thread-2] actor.Actor (Actor.java:163) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-13 15:44:19 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 15:44:19 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 15:44:19 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 15:44:19 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 15:44:19 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 15:44:19 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-13 15:44:19 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 366368353 has connected to its target.
+ACTOR_INFO | 2020-05-13 15:44:19 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+WARN  | 2020-05-13 15:44:19 | [nioEventLoopGroup-2-2] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.NullPointerException: null
+	at jason.playbill.actor.Actor$ClientHandler.channelRead(Actor.java:586) ~[alex/:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:377) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:355) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:321) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:295) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:377) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:355) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:377) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+ACTOR_DEBUG | 2020-05-13 15:44:21 | [Thread-2] actor.Actor (Actor.java:166) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-05-13 15:44:21 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 15:45:22 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 15:45:22 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Lexa] on port [4000]...
+ACTOR_DEBUG | 2020-05-13 15:45:22 | [Thread-2] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-13 15:45:22 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 15:45:22 | [Thread-1] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 15:45:22 | [Thread-1] actor.Actor (Actor.java:161) - Bootstrap 694152603 configured.
+ACTOR_DEBUG | 2020-05-13 15:45:22 | [Thread-2] actor.Actor (Actor.java:161) - Bootstrap 1605526954 configured.
+ACTOR_DEBUG | 2020-05-13 15:45:22 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 703340034 configured.
+ACTOR_DEBUG | 2020-05-13 15:45:22 | [Thread-1] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 15:45:22 | [Thread-2] actor.Actor (Actor.java:163) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-13 15:45:22 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 15:45:22 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 15:45:22 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 15:45:22 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 15:45:22 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 15:45:22 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 15:45:22 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-13 15:45:22 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 1224834098 has connected to its target.
+ACTOR_INFO | 2020-05-13 15:45:22 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+WARN  | 2020-05-13 15:45:22 | [nioEventLoopGroup-2-2] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.NullPointerException: null
+	at jason.playbill.actor.Actor$ClientHandler.channelRead(Actor.java:586) ~[alex/:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:377) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:355) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:321) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:295) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:377) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:355) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:377) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+ACTOR_DEBUG | 2020-05-13 15:45:24 | [Thread-2] actor.Actor (Actor.java:166) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-05-13 15:45:24 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+WARN  | 2020-05-13 15:45:34 | [nioEventLoopGroup-2-2] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+ACTOR_DEBUG | 2020-05-13 15:45:34 | [Thread-1] actor.Actor (Actor.java:166) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-13 15:45:34 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [Lexa]...
+ACTOR_DEBUG | 2020-05-13 15:46:08 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 15:46:08 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Lexa] on port [4000]...
+ACTOR_DEBUG | 2020-05-13 15:46:08 | [Thread-1] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 15:46:08 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 15:46:08 | [Thread-2] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-13 15:46:08 | [Thread-2] actor.Actor (Actor.java:161) - Bootstrap 587097002 configured.
+ACTOR_DEBUG | 2020-05-13 15:46:08 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 756208667 configured.
+ACTOR_DEBUG | 2020-05-13 15:46:08 | [Thread-1] actor.Actor (Actor.java:161) - Bootstrap 278886697 configured.
+ACTOR_DEBUG | 2020-05-13 15:46:08 | [Thread-2] actor.Actor (Actor.java:163) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-13 15:46:08 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 15:46:08 | [Thread-1] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 15:46:08 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 15:46:08 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 15:46:08 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 15:46:08 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 15:46:08 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-13 15:46:08 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 15:46:08 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 1494998646 has connected to its target.
+ACTOR_INFO | 2020-05-13 15:46:08 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_DEBUG | 2020-05-13 15:47:03 | [Thread-2] actor.Actor (Actor.java:166) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-05-13 15:47:03 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+WARN  | 2020-05-13 15:47:03 | [nioEventLoopGroup-2-1] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.NullPointerException: null
+	at jason.playbill.actor.Actor$ClientHandler.channelRead(Actor.java:586) ~[alex/:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:377) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:355) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:321) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:295) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:377) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:355) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:377) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+ACTOR_DEBUG | 2020-05-13 15:49:19 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 15:49:19 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Lexa] on port [4000]...
+ACTOR_DEBUG | 2020-05-13 15:49:20 | [Thread-2] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-13 15:49:20 | [Thread-1] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 15:49:20 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 15:49:20 | [Thread-2] actor.Actor (Actor.java:161) - Bootstrap 1288414905 configured.
+ACTOR_DEBUG | 2020-05-13 15:49:20 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 1318699798 configured.
+ACTOR_DEBUG | 2020-05-13 15:49:20 | [Thread-1] actor.Actor (Actor.java:161) - Bootstrap 1809673778 configured.
+ACTOR_DEBUG | 2020-05-13 15:49:20 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 15:49:20 | [Thread-2] actor.Actor (Actor.java:163) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-13 15:49:20 | [Thread-1] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 15:49:20 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 15:49:20 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 15:49:20 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 15:49:20 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 15:49:20 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 15:49:20 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-13 15:49:20 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 1732532822 has connected to its target.
+ACTOR_INFO | 2020-05-13 15:49:20 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-13 15:49:20 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:600) - [Lexa] received a confirmation from [Xander] about rollcall.
+ACTOR_DEBUG | 2020-05-13 15:49:22 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 15:49:22 | [Thread-2] actor.Actor (Actor.java:166) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-05-13 15:53:20 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 15:53:20 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Lexa] on port [4000]...
+ACTOR_DEBUG | 2020-05-13 15:53:20 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 15:53:20 | [Thread-2] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-13 15:53:20 | [Thread-1] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 15:53:20 | [Thread-1] actor.Actor (Actor.java:161) - Bootstrap 2144713214 configured.
+ACTOR_DEBUG | 2020-05-13 15:53:20 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 18042492 configured.
+ACTOR_DEBUG | 2020-05-13 15:53:20 | [Thread-2] actor.Actor (Actor.java:161) - Bootstrap 2139355789 configured.
+ACTOR_DEBUG | 2020-05-13 15:53:20 | [Thread-1] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 15:53:20 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 15:53:20 | [Thread-2] actor.Actor (Actor.java:163) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-13 15:53:21 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 15:53:21 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 15:53:21 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 15:53:21 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 15:53:21 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-13 15:53:21 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 15:53:21 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 780959311 has connected to its target.
+ACTOR_INFO | 2020-05-13 15:53:21 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_DEBUG | 2020-05-13 15:53:34 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 15:53:34 | [Thread-2] actor.Actor (Actor.java:166) - Client roll-calling port 4002 has closed.
+ACTOR_INFO | 2020-05-13 15:53:57 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:600) - [Lexa] received a confirmation from [Xander] about rollcall.
+WARN  | 2020-05-13 15:53:57 | [nioEventLoopGroup-2-3] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+ACTOR_DEBUG | 2020-05-13 15:53:57 | [Thread-1] actor.Actor (Actor.java:166) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-13 15:54:36 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 15:54:36 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Lexa] on port [4000]...
+ACTOR_DEBUG | 2020-05-13 15:54:36 | [Thread-1] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 15:54:36 | [Thread-2] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-13 15:54:36 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 15:54:36 | [Thread-2] actor.Actor (Actor.java:161) - Bootstrap 1289305685 configured.
+ACTOR_DEBUG | 2020-05-13 15:54:36 | [Thread-1] actor.Actor (Actor.java:161) - Bootstrap 953193227 configured.
+ACTOR_DEBUG | 2020-05-13 15:54:36 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 1127407670 configured.
+ACTOR_DEBUG | 2020-05-13 15:54:36 | [Thread-2] actor.Actor (Actor.java:163) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-13 15:54:36 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 15:54:36 | [Thread-1] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 15:54:36 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 15:54:36 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 15:54:36 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 15:54:36 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 15:54:36 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-13 15:54:36 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 15:54:36 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 1093015147 has connected to its target.
+ACTOR_INFO | 2020-05-13 15:54:36 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-13 15:54:36 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:590) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-13 15:54:38 | [Thread-2] actor.Actor (Actor.java:166) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-05-13 15:54:38 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 15:54:38 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [Lexa]...
+ACTOR_DEBUG | 2020-05-13 15:54:38 | [Thread-5] actor.Actor (Actor.java:202) - Server for [Lexa] bound to port 4000.
+ACTOR_DEBUG | 2020-05-13 15:54:38 | [main] actor.Actor (Actor.java:108) - Successfully instantiated [Lexa].
+ACTOR_INFO | 2020-05-13 15:54:38 | [Thread-4] actor.Actor$ScriptReader (Actor.java:377) - [Lexa] going to cue scene1/cue1.
+ACTOR_DEBUG | 2020-05-13 15:54:38 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:623) - [Lexa]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 15:54:38 | [nioEventLoopGroup-4-1] actor.Actor$2 (Actor.java:197) - Channel pipeline [257e44d4] to Server [Lexa] has been initialized.
+ACTOR_INFO | 2020-05-13 15:54:38 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:648) - [Lexa] received a roll-call request from [Xander], who is on port 4001.
+ACTOR_ERROR | 2020-05-13 15:54:38 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:656) - [Lexa] already has [Xander] in their contact list.
+ACTOR_INFO | 2020-05-13 15:54:39 | [Thread-4] actor.Actor (Actor.java:259) - [Lexa] spoke "My name is Alexandra Syaani Laskea." to the user.
+ACTOR_INFO | 2020-05-13 15:54:40 | [Thread-4] actor.Actor (Actor.java:259) - [Lexa] spoke "You killed my father." to the user.
+ACTOR_INFO | 2020-05-13 15:54:41 | [Thread-4] actor.Actor (Actor.java:259) - [Lexa] spoke "Prepare to die." to the user.
+ACTOR_INFO | 2020-05-13 15:54:41 | [Thread-4] actor.Actor (Actor.java:287) - [Lexa] sent [Xander] to the next cue.
+ACTOR_INFO | 2020-05-13 15:54:41 | [Thread-4] actor.Actor$ScriptReader (Actor.java:377) - [Lexa] going to cue scene1/cue2.
+ACTOR_INFO | 2020-05-13 15:54:41 | [Thread-4] actor.Actor$ScriptReader (Actor.java:509) - [Lexa] entering conversation.
+ACTOR_INFO | 2020-05-13 15:54:41 | [Thread-4] actor.Actor$ScriptReader (Actor.java:517) - [Lexa] will be conversing with [Xander].
+WARN  | 2020-05-13 15:54:41 | [nioEventLoopGroup-2-2] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.NullPointerException: null
+	at jason.playbill.actor.Actor$ClientHandler.channelRead(Actor.java:586) ~[alex/:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:377) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:355) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:321) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:295) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:377) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:355) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:377) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+ACTOR_INFO | 2020-05-13 15:54:42 | [Thread-4] actor.Actor (Actor.java:275) - [Lexa] direct-messaged "dude, lex." to [Xander].
+ACTOR_INFO | 2020-05-13 15:54:42 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:600) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-13 15:54:43 | [Thread-4] actor.Actor (Actor.java:275) - [Lexa] direct-messaged "have you no chill?" to [Xander].
+ACTOR_INFO | 2020-05-13 15:54:43 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:600) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-13 15:54:44 | [Thread-4] actor.Actor (Actor.java:275) - [Lexa] direct-messaged "What? It's a good movie!" to [Xander].
+ACTOR_INFO | 2020-05-13 15:54:44 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:600) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-13 15:54:45 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:636) - [Lexa] received the direct-message "what?" from [Xander].
+ACTOR_INFO | 2020-05-13 15:54:46 | [Thread-4] actor.Actor (Actor.java:275) - [Lexa] direct-messaged "Wait, you haven't-" to [Xander].
+ACTOR_INFO | 2020-05-13 15:54:46 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:600) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-13 15:54:47 | [Thread-4] actor.Actor (Actor.java:275) - [Lexa] direct-messaged "..." to [Xander].
+ACTOR_INFO | 2020-05-13 15:54:47 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:600) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-13 15:54:49 | [Thread-4] actor.Actor (Actor.java:275) - [Lexa] direct-messaged "You haven't seen the Princess Bride?" to [Xander].
+ACTOR_INFO | 2020-05-13 15:54:49 | [Thread-4] actor.Actor$ScriptReader (Actor.java:377) - [Lexa] going to cue scene1/cue3.
+ACTOR_INFO | 2020-05-13 15:54:49 | [Thread-4] actor.Actor$ScriptReader (Actor.java:412) - [Lexa] has been instructed to exit the stage.
+ACTOR_INFO | 2020-05-13 15:54:49 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:600) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_DEBUG | 2020-05-13 15:54:49 | [Thread-1] actor.Actor (Actor.java:166) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-13 15:54:49 | [Thread-4] actor.Actor (Actor.java:214) - Worker group is shutting down for [Lexa]
+ACTOR_DEBUG | 2020-05-13 15:54:49 | [Thread-4] actor.Actor (Actor.java:220) - Boss group is shutting down for Lexa
+ACTOR_DEBUG | 2020-05-13 15:54:49 | [Thread-4] actor.Actor (Actor.java:233) - Client group is shutting down for Lexa
+ACTOR_DEBUG | 2020-05-13 15:54:49 | [Thread-4] actor.Actor (Actor.java:245) - Exit actor [Lexa].
+ACTOR_DEBUG | 2020-05-13 15:55:24 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 15:55:24 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Lexa] on port [4000]...
+ACTOR_DEBUG | 2020-05-13 15:55:24 | [Thread-1] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 15:55:24 | [Thread-2] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-13 15:55:24 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 15:55:24 | [Thread-1] actor.Actor (Actor.java:161) - Bootstrap 1137121040 configured.
+ACTOR_DEBUG | 2020-05-13 15:55:24 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 1127407670 configured.
+ACTOR_DEBUG | 2020-05-13 15:55:24 | [Thread-2] actor.Actor (Actor.java:161) - Bootstrap 968711943 configured.
+ACTOR_DEBUG | 2020-05-13 15:55:25 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 15:55:25 | [Thread-1] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 15:55:25 | [Thread-2] actor.Actor (Actor.java:163) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-13 15:55:25 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 15:55:25 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 15:55:25 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 15:55:25 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 15:55:25 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 15:55:25 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-13 15:55:25 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 75907201 has connected to its target.
+ACTOR_INFO | 2020-05-13 15:55:25 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-13 15:55:25 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:590) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-13 15:55:27 | [Thread-2] actor.Actor (Actor.java:166) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-05-13 15:55:27 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 15:55:27 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [Lexa]...
+ACTOR_DEBUG | 2020-05-13 15:55:27 | [Thread-5] actor.Actor (Actor.java:202) - Server for [Lexa] bound to port 4000.
+ACTOR_DEBUG | 2020-05-13 15:55:27 | [main] actor.Actor (Actor.java:108) - Successfully instantiated [Lexa].
+ACTOR_INFO | 2020-05-13 15:55:27 | [Thread-4] actor.Actor$ScriptReader (Actor.java:377) - [Lexa] going to cue scene1/cue1.
+ACTOR_DEBUG | 2020-05-13 15:55:27 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:623) - [Lexa]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 15:55:27 | [nioEventLoopGroup-4-1] actor.Actor$2 (Actor.java:197) - Channel pipeline [5696897c] to Server [Lexa] has been initialized.
+ACTOR_INFO | 2020-05-13 15:55:27 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:648) - [Lexa] received a roll-call request from [Xander], who is on port 4001.
+ACTOR_ERROR | 2020-05-13 15:55:27 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:656) - [Lexa] already has [Xander] in their contact list.
+ACTOR_INFO | 2020-05-13 15:55:28 | [Thread-4] actor.Actor (Actor.java:259) - [Lexa] spoke "My name is Alexandra Syaani Laskea." to the user.
+ACTOR_INFO | 2020-05-13 15:55:29 | [Thread-4] actor.Actor (Actor.java:259) - [Lexa] spoke "You killed my father." to the user.
+ACTOR_INFO | 2020-05-13 15:55:30 | [Thread-4] actor.Actor (Actor.java:259) - [Lexa] spoke "Prepare to die." to the user.
+ACTOR_INFO | 2020-05-13 15:55:30 | [Thread-4] actor.Actor (Actor.java:287) - [Lexa] sent [Xander] to the next cue.
+ACTOR_INFO | 2020-05-13 15:55:30 | [Thread-4] actor.Actor$ScriptReader (Actor.java:377) - [Lexa] going to cue scene1/cue2.
+ACTOR_INFO | 2020-05-13 15:55:30 | [Thread-4] actor.Actor$ScriptReader (Actor.java:509) - [Lexa] entering conversation.
+ACTOR_INFO | 2020-05-13 15:55:30 | [Thread-4] actor.Actor$ScriptReader (Actor.java:517) - [Lexa] will be conversing with [Xander].
+WARN  | 2020-05-13 15:55:30 | [nioEventLoopGroup-2-3] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.NullPointerException: null
+	at jason.playbill.actor.Actor$ClientHandler.channelRead(Actor.java:586) ~[alex/:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:377) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:355) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:321) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:295) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:377) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:355) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:377) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+ACTOR_INFO | 2020-05-13 15:55:31 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:636) - [Lexa] received the direct-message "dude, lex." from [Xander].
+ACTOR_INFO | 2020-05-13 15:55:31 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:636) - [Lexa] received the direct-message "have you no chill?" from [Xander].
+ACTOR_INFO | 2020-05-13 15:55:32 | [Thread-4] actor.Actor (Actor.java:275) - [Lexa] direct-messaged "What? It's a good movie!" to [Xander].
+ACTOR_INFO | 2020-05-13 15:55:32 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:600) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-13 15:55:33 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:636) - [Lexa] received the direct-message "what?" from [Xander].
+ACTOR_INFO | 2020-05-13 15:55:35 | [Thread-4] actor.Actor (Actor.java:275) - [Lexa] direct-messaged "Wait, you haven't-" to [Xander].
+ACTOR_INFO | 2020-05-13 15:55:35 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:600) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-13 15:55:35 | [Thread-4] actor.Actor (Actor.java:275) - [Lexa] direct-messaged "..." to [Xander].
+ACTOR_INFO | 2020-05-13 15:55:35 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:600) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-13 15:55:37 | [Thread-4] actor.Actor (Actor.java:275) - [Lexa] direct-messaged "You haven't seen the Princess Bride?" to [Xander].
+ACTOR_INFO | 2020-05-13 15:55:37 | [Thread-4] actor.Actor$ScriptReader (Actor.java:377) - [Lexa] going to cue scene1/cue3.
+ACTOR_INFO | 2020-05-13 15:55:37 | [Thread-4] actor.Actor$ScriptReader (Actor.java:412) - [Lexa] has been instructed to exit the stage.
+ACTOR_INFO | 2020-05-13 15:55:37 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:600) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_DEBUG | 2020-05-13 15:55:37 | [Thread-1] actor.Actor (Actor.java:166) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-13 15:55:37 | [Thread-4] actor.Actor (Actor.java:214) - Worker group is shutting down for [Lexa]
+ACTOR_DEBUG | 2020-05-13 15:55:37 | [Thread-4] actor.Actor (Actor.java:220) - Boss group is shutting down for Lexa
+ACTOR_DEBUG | 2020-05-13 15:55:37 | [Thread-4] actor.Actor (Actor.java:233) - Client group is shutting down for Lexa
+ACTOR_DEBUG | 2020-05-13 15:55:37 | [Thread-4] actor.Actor (Actor.java:245) - Exit actor [Lexa].
+ACTOR_DEBUG | 2020-05-13 16:02:06 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 16:02:06 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Lexa] on port [4000]...
+ACTOR_DEBUG | 2020-05-13 16:02:06 | [Thread-1] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 16:02:06 | [Thread-2] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-13 16:02:06 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 16:02:06 | [Thread-1] actor.Actor (Actor.java:161) - Bootstrap 1531152480 configured.
+ACTOR_DEBUG | 2020-05-13 16:02:06 | [Thread-2] actor.Actor (Actor.java:161) - Bootstrap 1705925435 configured.
+ACTOR_DEBUG | 2020-05-13 16:02:06 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 1127407670 configured.
+ACTOR_DEBUG | 2020-05-13 16:02:06 | [Thread-2] actor.Actor (Actor.java:163) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-13 16:02:06 | [Thread-1] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 16:02:06 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 16:02:06 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 16:02:06 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 16:02:06 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-13 16:02:06 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-13 16:02:06 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 16:02:06 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 16:02:06 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 1851386376 has connected to its target.
+ACTOR_DEBUG | 2020-05-13 16:02:06 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 2045837766 has connected to its target.
+ACTOR_INFO | 2020-05-13 16:02:06 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-13 16:02:06 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Lexa] to port 4002.
+ACTOR_INFO | 2020-05-13 16:02:06 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:590) - [Lexa] received a roll-call response from [CallMeKey], who is on port 4002.
+ACTOR_INFO | 2020-05-13 16:02:06 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:590) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-13 16:02:08 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 16:02:08 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [Lexa]...
+ACTOR_DEBUG | 2020-05-13 16:02:08 | [Thread-5] actor.Actor (Actor.java:202) - Server for [Lexa] bound to port 4000.
+ACTOR_DEBUG | 2020-05-13 16:02:08 | [main] actor.Actor (Actor.java:108) - Successfully instantiated [Lexa].
+ACTOR_INFO | 2020-05-13 16:02:08 | [Thread-4] actor.Actor$ScriptReader (Actor.java:377) - [Lexa] going to cue scene1/cue1.
+ACTOR_ERROR | 2020-05-13 16:02:08 | [Thread-4] actor.Actor$ScriptReader (Actor.java:481) - [Lexa] expected [Xander] to be onstage during their monologue, but  they're not.
+ACTOR_INFO | 2020-05-13 16:02:08 | [Thread-4] actor.Actor$ScriptReader (Actor.java:377) - [Lexa] going to cue scene1/cue2.
+ACTOR_INFO | 2020-05-13 16:02:08 | [Thread-4] actor.Actor$ScriptReader (Actor.java:509) - [Lexa] entering conversation.
+ACTOR_ERROR | 2020-05-13 16:02:08 | [Thread-4] actor.Actor$ScriptReader (Actor.java:513) - [Lexa] needs to converse with [Xander], but they're not onstage.
+ACTOR_INFO | 2020-05-13 16:02:08 | [Thread-4] actor.Actor$ScriptReader (Actor.java:377) - [Lexa] going to cue scene1/cue3.
+ACTOR_INFO | 2020-05-13 16:02:08 | [Thread-4] actor.Actor$ScriptReader (Actor.java:412) - [Lexa] has been instructed to exit the stage.
+ACTOR_DEBUG | 2020-05-13 16:02:08 | [Thread-4] actor.Actor (Actor.java:214) - Worker group is shutting down for [Lexa]
+ACTOR_DEBUG | 2020-05-13 16:02:08 | [Thread-4] actor.Actor (Actor.java:220) - Boss group is shutting down for Lexa
+ACTOR_DEBUG | 2020-05-13 16:02:08 | [Thread-1] actor.Actor (Actor.java:166) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-13 16:02:08 | [Thread-2] actor.Actor (Actor.java:166) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-05-13 16:02:08 | [Thread-4] actor.Actor (Actor.java:233) - Client group is shutting down for Lexa
+ACTOR_DEBUG | 2020-05-13 16:02:08 | [Thread-4] actor.Actor (Actor.java:245) - Exit actor [Lexa].

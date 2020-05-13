@@ -584,18 +584,21 @@ public class Actor {
             Contact source = receivedResponse.getSource();
 
             switch (receivedResponse.getMessageType()) {
-                case dm:
-                    break;
-                case rollcall:
+                case dm -> {
+                }
+                case rollcall -> {
                     logger.actorInfo("[{}] received a roll-call response from [{}], who is on port {}.",
                             owner.getName(), source.getName(), source.getPort());
-                    ensemble.add(new Contact(source, ctx));
-                    connecting.countDown();
-                    break;
-                case confirmation:
+                    if (findContact(source.getName()) == null) {
+                        ensemble.add(new Contact(source, ctx));
+                    }
+                    if (connecting.getCount() != 0) {
+                        connecting.countDown();
+                    }
+                }
+                case confirmation ->
                     logger.actorInfo("[{}] received a confirmation from [{}] about {}.",
                             owner.getName(), source.getName(), receivedResponse.getData());
-                    break;
             }
         }
     }
@@ -628,7 +631,7 @@ public class Actor {
             response.setSource(new Contact(owner));
 
             switch (received.getMessageType()) {
-                case dm:
+                case dm -> {
                     logger.actorInfo("[{}] received the direct-message \"{}\" from [{}].",
                             owner.getName(), received.getData(), source.getName());
                     System.out.printf("> %s%s%s says: %s%s%s\n",
@@ -639,16 +642,25 @@ public class Actor {
                     synchronized (scriptSync) {
                         scriptSync.notify();
                     }
-                    break;
-                case rollcall:
+                }
+                case rollcall -> {
                     logger.actorInfo("[{}] received a roll-call request from [{}], who is on port {}.",
                             owner.getName(), source.getName(), source.getPort());
-                    ensemble.add(new Contact(received.getSource(), ctx));
+                    if (findContact(source.getName()) == null) {
+                        Client runnable = new Client(owner, source.getPort());
+                        Thread client = new Thread(runnable);
+                        client.start();
+                        clients.add(client);
+                    } else {
+                        logger.actorError("[{}] already has [{}] in their contact list.",
+                                owner.getName(), source.getName());
+                    }
                     response.setMessageType(Message.MessageType.rollcall);
-                    break;
-                case confirmation:
-                    break;
-                case nextCue:
+                    response.setData(null);
+                }
+                case confirmation -> {
+                }
+                case nextCue -> {
                     /*String[] cue = (String[])receivedResponse.getData();
                     logger.actorInfo("[{}] received cue {}/{} from [{}].",
                             owner.getName(), cue[0], cue[1], source.getName());
@@ -656,7 +668,7 @@ public class Actor {
                     synchronized (scriptSync) {
                         scriptSync.notify();
                     }
-                    break;
+                }
             }
 
             ctx.writeAndFlush(response);

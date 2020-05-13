@@ -1318,3 +1318,890 @@ ACTOR_INFO | 2020-05-13 02:10:18 | [nioEventLoopGroup-4-1] actor.Actor$ServerHan
 ACTOR_INFO | 2020-05-13 02:10:18 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:632) - [Xander] received the direct-message "have you no chill?" from [Lexa].
 ACTOR_INFO | 2020-05-13 02:10:19 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:632) - [Xander] received the direct-message "What? It's a good movie!" from [Lexa].
 ACTOR_INFO | 2020-05-13 02:10:20 | [Thread-4] actor.Actor (Actor.java:275) - [Xander] direct-messaged "what?" to [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:08:44 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 14:08:44 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Xander] on port [4001]...
+ACTOR_DEBUG | 2020-05-13 14:08:44 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 14:08:44 | [Thread-2] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-13 14:08:44 | [Thread-0] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 14:08:45 | [Thread-2] actor.Actor (Actor.java:161) - Bootstrap 968711943 configured.
+ACTOR_DEBUG | 2020-05-13 14:08:45 | [Thread-0] actor.Actor (Actor.java:161) - Bootstrap 1705325388 configured.
+ACTOR_DEBUG | 2020-05-13 14:08:45 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 719430339 configured.
+ACTOR_DEBUG | 2020-05-13 14:08:45 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 14:08:45 | [Thread-2] actor.Actor (Actor.java:163) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-13 14:08:45 | [Thread-0] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 14:08:45 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 14:08:45 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 14:08:45 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 14:08:45 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 14:08:45 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 14:08:45 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-13 14:08:47 | [Thread-0] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 14:08:47 | [Thread-2] actor.Actor (Actor.java:166) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-05-13 14:08:47 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 14:08:47 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [Xander]...
+ACTOR_DEBUG | 2020-05-13 14:08:47 | [main] actor.Actor (Actor.java:108) - Successfully instantiated [Xander].
+ACTOR_DEBUG | 2020-05-13 14:08:47 | [Thread-5] actor.Actor (Actor.java:202) - Server for [Xander] bound to port 4001.
+ACTOR_INFO | 2020-05-13 14:08:47 | [Thread-4] actor.Actor$ScriptReader (Actor.java:377) - [Xander] going to cue scene1/cue1.
+ACTOR_DEBUG | 2020-05-13 14:08:47 | [Thread-4] actor.Actor$ScriptReader (Actor.java:441) - [Xander] is waiting for a monologue to finish.
+ACTOR_DEBUG | 2020-05-13 14:08:54 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:619) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 14:08:54 | [nioEventLoopGroup-4-1] actor.Actor$2 (Actor.java:197) - Channel pipeline [af12f71d] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 14:08:54 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:644) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 14:08:59 | [Thread-4] actor.Actor$ScriptReader (Actor.java:444) - The monologue that [Xander] was waiting on has finished.
+ACTOR_INFO | 2020-05-13 14:08:59 | [Thread-4] actor.Actor$ScriptReader (Actor.java:377) - [Xander] going to cue scene1/cue2.
+ACTOR_INFO | 2020-05-13 14:08:59 | [Thread-4] actor.Actor$ScriptReader (Actor.java:509) - [Xander] entering conversation.
+ACTOR_INFO | 2020-05-13 14:08:59 | [Thread-4] actor.Actor$ScriptReader (Actor.java:517) - [Xander] will be conversing with [Lexa].
+ACTOR_INFO | 2020-05-13 14:09:00 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:632) - [Xander] received the direct-message "dude, lex." from [Lexa].
+ACTOR_INFO | 2020-05-13 14:09:01 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:632) - [Xander] received the direct-message "have you no chill?" from [Lexa].
+ACTOR_INFO | 2020-05-13 14:09:02 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:632) - [Xander] received the direct-message "What? It's a good movie!" from [Lexa].
+ACTOR_INFO | 2020-05-13 14:09:03 | [Thread-4] actor.Actor (Actor.java:275) - [Xander] direct-messaged "what?" to [Lexa].
+ACTOR_DEBUG | 2020-05-13 14:21:55 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 14:21:55 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Xander] on port [4001]...
+ACTOR_DEBUG | 2020-05-13 14:21:55 | [Thread-2] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-13 14:21:55 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 14:21:55 | [Thread-0] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 14:21:55 | [Thread-2] actor.Actor (Actor.java:161) - Bootstrap 1288414905 configured.
+ACTOR_DEBUG | 2020-05-13 14:21:55 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 1354031485 configured.
+ACTOR_DEBUG | 2020-05-13 14:21:55 | [Thread-0] actor.Actor (Actor.java:161) - Bootstrap 795489419 configured.
+ACTOR_DEBUG | 2020-05-13 14:21:55 | [Thread-2] actor.Actor (Actor.java:163) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-13 14:21:55 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 14:21:55 | [Thread-0] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 14:21:55 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 14:21:55 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 14:21:55 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 14:21:55 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-13 14:21:55 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 14:21:55 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 14:21:57 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 14:21:57 | [Thread-2] actor.Actor (Actor.java:166) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-05-13 14:21:57 | [Thread-0] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 14:21:57 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [Xander]...
+ACTOR_DEBUG | 2020-05-13 14:21:57 | [main] actor.Actor (Actor.java:108) - Successfully instantiated [Xander].
+ACTOR_DEBUG | 2020-05-13 14:21:57 | [Thread-5] actor.Actor (Actor.java:202) - Server for [Xander] bound to port 4001.
+ACTOR_INFO | 2020-05-13 14:21:57 | [Thread-4] actor.Actor$ScriptReader (Actor.java:377) - [Xander] going to cue scene1/cue1.
+ACTOR_DEBUG | 2020-05-13 14:21:57 | [Thread-4] actor.Actor$ScriptReader (Actor.java:441) - [Xander] is waiting for a monologue to finish.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:624) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-1] actor.Actor$2 (Actor.java:197) - Channel pipeline [f5f4274d] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:649) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:624) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-2] actor.Actor$2 (Actor.java:197) - Channel pipeline [d120a0e1] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:649) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:624) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-3] actor.Actor$2 (Actor.java:197) - Channel pipeline [dea7375c] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:649) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-4] actor.Actor$ServerHandler (Actor.java:624) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-4] actor.Actor$2 (Actor.java:197) - Channel pipeline [a3eb3e58] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-4] actor.Actor$ServerHandler (Actor.java:649) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-5] actor.Actor$ServerHandler (Actor.java:624) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-5] actor.Actor$2 (Actor.java:197) - Channel pipeline [acf65b0b] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-5] actor.Actor$ServerHandler (Actor.java:649) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-6] actor.Actor$ServerHandler (Actor.java:624) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-6] actor.Actor$2 (Actor.java:197) - Channel pipeline [0e99c23d] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-6] actor.Actor$ServerHandler (Actor.java:649) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-7] actor.Actor$ServerHandler (Actor.java:624) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-7] actor.Actor$2 (Actor.java:197) - Channel pipeline [20d9f01c] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-7] actor.Actor$ServerHandler (Actor.java:649) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-8] actor.Actor$ServerHandler (Actor.java:624) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-8] actor.Actor$2 (Actor.java:197) - Channel pipeline [116e6562] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-8] actor.Actor$ServerHandler (Actor.java:649) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-9] actor.Actor$ServerHandler (Actor.java:624) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-9] actor.Actor$2 (Actor.java:197) - Channel pipeline [bd1f9460] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-9] actor.Actor$ServerHandler (Actor.java:649) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-10] actor.Actor$ServerHandler (Actor.java:624) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-10] actor.Actor$2 (Actor.java:197) - Channel pipeline [cdcd3b62] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-10] actor.Actor$ServerHandler (Actor.java:649) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-11] actor.Actor$ServerHandler (Actor.java:624) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-11] actor.Actor$2 (Actor.java:197) - Channel pipeline [80ab4c88] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-11] actor.Actor$ServerHandler (Actor.java:649) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-12] actor.Actor$ServerHandler (Actor.java:624) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-12] actor.Actor$2 (Actor.java:197) - Channel pipeline [1c1876f0] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-12] actor.Actor$ServerHandler (Actor.java:649) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-13] actor.Actor$ServerHandler (Actor.java:624) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-13] actor.Actor$2 (Actor.java:197) - Channel pipeline [fbaefbc0] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-13] actor.Actor$ServerHandler (Actor.java:649) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-14] actor.Actor$ServerHandler (Actor.java:624) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-14] actor.Actor$2 (Actor.java:197) - Channel pipeline [633edf41] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-14] actor.Actor$ServerHandler (Actor.java:649) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-15] actor.Actor$ServerHandler (Actor.java:624) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-15] actor.Actor$2 (Actor.java:197) - Channel pipeline [222de69a] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-15] actor.Actor$ServerHandler (Actor.java:649) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-16] actor.Actor$ServerHandler (Actor.java:624) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-16] actor.Actor$2 (Actor.java:197) - Channel pipeline [1a3a0c1a] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-16] actor.Actor$ServerHandler (Actor.java:649) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-17] actor.Actor$ServerHandler (Actor.java:624) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 14:22:02 | [nioEventLoopGroup-4-17] actor.Actor$2 (Actor.java:197) - Channel pipeline [cbde9fa2] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 14:22:03 | [nioEventLoopGroup-4-17] actor.Actor$ServerHandler (Actor.java:649) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-4-18] actor.Actor$ServerHandler (Actor.java:624) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-4-18] actor.Actor$2 (Actor.java:197) - Channel pipeline [1f3334a7] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 14:22:03 | [nioEventLoopGroup-4-18] actor.Actor$ServerHandler (Actor.java:649) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-4-19] actor.Actor$ServerHandler (Actor.java:624) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-4-19] actor.Actor$2 (Actor.java:197) - Channel pipeline [09ffd8d9] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 14:22:03 | [nioEventLoopGroup-4-19] actor.Actor$ServerHandler (Actor.java:649) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-4-20] actor.Actor$ServerHandler (Actor.java:624) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-4-20] actor.Actor$2 (Actor.java:197) - Channel pipeline [5dc2d6e5] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 14:22:03 | [nioEventLoopGroup-4-20] actor.Actor$ServerHandler (Actor.java:649) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-4-21] actor.Actor$ServerHandler (Actor.java:624) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-4-21] actor.Actor$2 (Actor.java:197) - Channel pipeline [2ddf0cc3] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 14:22:03 | [nioEventLoopGroup-4-21] actor.Actor$ServerHandler (Actor.java:649) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-4-22] actor.Actor$ServerHandler (Actor.java:624) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-4-22] actor.Actor$2 (Actor.java:197) - Channel pipeline [94b199ab] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 14:22:03 | [nioEventLoopGroup-4-22] actor.Actor$ServerHandler (Actor.java:649) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-4-23] actor.Actor$ServerHandler (Actor.java:624) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 14:22:03 | [nioEventLoopGroup-4-23] actor.Actor$2 (Actor.java:197) - Channel pipeline [2367ad1e] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 14:22:03 | [nioEventLoopGroup-4-23] actor.Actor$ServerHandler (Actor.java:649) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+WARN  | 2020-05-13 14:22:19 | [nioEventLoopGroup-4-12] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+WARN  | 2020-05-13 14:22:19 | [nioEventLoopGroup-4-9] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+WARN  | 2020-05-13 14:22:19 | [nioEventLoopGroup-4-5] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+WARN  | 2020-05-13 14:22:19 | [nioEventLoopGroup-4-10] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+WARN  | 2020-05-13 14:22:19 | [nioEventLoopGroup-4-21] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+WARN  | 2020-05-13 14:22:19 | [nioEventLoopGroup-4-17] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+WARN  | 2020-05-13 14:22:19 | [nioEventLoopGroup-4-20] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+WARN  | 2020-05-13 14:22:19 | [nioEventLoopGroup-4-14] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+WARN  | 2020-05-13 14:22:19 | [nioEventLoopGroup-4-19] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+WARN  | 2020-05-13 14:22:19 | [nioEventLoopGroup-4-7] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+WARN  | 2020-05-13 14:22:19 | [nioEventLoopGroup-4-4] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+WARN  | 2020-05-13 14:22:19 | [nioEventLoopGroup-4-2] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+WARN  | 2020-05-13 14:22:19 | [nioEventLoopGroup-4-8] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+WARN  | 2020-05-13 14:22:19 | [nioEventLoopGroup-4-11] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+WARN  | 2020-05-13 14:22:19 | [nioEventLoopGroup-4-23] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+WARN  | 2020-05-13 14:22:19 | [nioEventLoopGroup-4-3] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+WARN  | 2020-05-13 14:22:19 | [nioEventLoopGroup-4-1] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+WARN  | 2020-05-13 14:22:19 | [nioEventLoopGroup-4-16] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+WARN  | 2020-05-13 14:22:19 | [nioEventLoopGroup-4-6] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+WARN  | 2020-05-13 14:22:19 | [nioEventLoopGroup-4-13] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+WARN  | 2020-05-13 14:22:19 | [nioEventLoopGroup-4-15] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+WARN  | 2020-05-13 14:22:19 | [nioEventLoopGroup-4-18] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+WARN  | 2020-05-13 14:22:19 | [nioEventLoopGroup-4-22] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+ACTOR_DEBUG | 2020-05-13 15:20:10 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 15:20:10 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Xander] on port [4001]...
+ACTOR_DEBUG | 2020-05-13 15:20:10 | [Thread-0] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 15:20:10 | [Thread-2] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-13 15:20:10 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 15:20:10 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 1436191677 configured.
+ACTOR_DEBUG | 2020-05-13 15:20:10 | [Thread-2] actor.Actor (Actor.java:161) - Bootstrap 1838337326 configured.
+ACTOR_DEBUG | 2020-05-13 15:20:10 | [Thread-0] actor.Actor (Actor.java:161) - Bootstrap 1972228424 configured.
+ACTOR_DEBUG | 2020-05-13 15:20:10 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 15:20:10 | [Thread-2] actor.Actor (Actor.java:163) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-13 15:20:10 | [Thread-0] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 15:20:10 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:20:10 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:20:10 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:20:10 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 15:20:10 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 15:20:10 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-13 15:20:12 | [Thread-2] actor.Actor (Actor.java:166) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-05-13 15:20:12 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 15:20:12 | [Thread-0] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 15:20:12 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [Xander]...
+ACTOR_DEBUG | 2020-05-13 15:20:12 | [Thread-5] actor.Actor (Actor.java:202) - Server for [Xander] bound to port 4001.
+ACTOR_DEBUG | 2020-05-13 15:20:12 | [main] actor.Actor (Actor.java:108) - Successfully instantiated [Xander].
+ACTOR_INFO | 2020-05-13 15:20:12 | [Thread-4] actor.Actor$ScriptReader (Actor.java:377) - [Xander] going to cue scene1/cue1.
+ACTOR_DEBUG | 2020-05-13 15:20:12 | [Thread-4] actor.Actor$ScriptReader (Actor.java:441) - [Xander] is waiting for a monologue to finish.
+ACTOR_DEBUG | 2020-05-13 15:20:20 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:621) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 15:20:20 | [nioEventLoopGroup-4-1] actor.Actor$2 (Actor.java:197) - Channel pipeline [caff82e0] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 15:20:20 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:646) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 15:20:20 | [Thread-6] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 15:20:20 | [Thread-6] actor.Actor (Actor.java:161) - Bootstrap 2004166526 configured.
+ACTOR_DEBUG | 2020-05-13 15:20:20 | [Thread-6] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 15:20:20 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:20:20 | [nioEventLoopGroup-2-4] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 15:20:22 | [Thread-6] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 15:42:48 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 15:42:48 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Xander] on port [4001]...
+ACTOR_DEBUG | 2020-05-13 15:42:48 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 15:42:48 | [Thread-0] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 15:42:48 | [Thread-2] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-13 15:42:48 | [Thread-2] actor.Actor (Actor.java:161) - Bootstrap 1289305685 configured.
+ACTOR_DEBUG | 2020-05-13 15:42:48 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 459464238 configured.
+ACTOR_DEBUG | 2020-05-13 15:42:48 | [Thread-0] actor.Actor (Actor.java:161) - Bootstrap 1972228424 configured.
+ACTOR_DEBUG | 2020-05-13 15:42:48 | [Thread-2] actor.Actor (Actor.java:163) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-13 15:42:48 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 15:42:48 | [Thread-0] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 15:42:48 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:42:48 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:42:48 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:42:48 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-13 15:42:48 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 15:42:48 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 15:44:08 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 15:44:08 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Xander] on port [4001]...
+ACTOR_DEBUG | 2020-05-13 15:44:08 | [Thread-0] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 15:44:08 | [Thread-2] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-13 15:44:08 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 15:44:08 | [Thread-0] actor.Actor (Actor.java:161) - Bootstrap 2120128622 configured.
+ACTOR_DEBUG | 2020-05-13 15:44:08 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 1273935949 configured.
+ACTOR_DEBUG | 2020-05-13 15:44:08 | [Thread-2] actor.Actor (Actor.java:161) - Bootstrap 968711943 configured.
+ACTOR_DEBUG | 2020-05-13 15:44:08 | [Thread-0] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 15:44:08 | [Thread-2] actor.Actor (Actor.java:163) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-13 15:44:08 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 15:44:08 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:44:08 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:44:08 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:44:08 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 15:44:08 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-13 15:44:08 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 15:44:10 | [Thread-2] actor.Actor (Actor.java:166) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-05-13 15:44:10 | [Thread-0] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 15:44:10 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 15:44:10 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [Xander]...
+ACTOR_DEBUG | 2020-05-13 15:44:10 | [Thread-5] actor.Actor (Actor.java:202) - Server for [Xander] bound to port 4001.
+ACTOR_DEBUG | 2020-05-13 15:44:10 | [main] actor.Actor (Actor.java:108) - Successfully instantiated [Xander].
+ACTOR_INFO | 2020-05-13 15:44:10 | [Thread-4] actor.Actor$ScriptReader (Actor.java:377) - [Xander] going to cue scene1/cue1.
+ACTOR_DEBUG | 2020-05-13 15:44:10 | [Thread-4] actor.Actor$ScriptReader (Actor.java:441) - [Xander] is waiting for a monologue to finish.
+ACTOR_DEBUG | 2020-05-13 15:44:19 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:623) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 15:44:19 | [nioEventLoopGroup-4-1] actor.Actor$2 (Actor.java:197) - Channel pipeline [a015667a] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 15:44:19 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:648) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 15:44:19 | [Thread-6] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 15:44:19 | [Thread-6] actor.Actor (Actor.java:161) - Bootstrap 2004166526 configured.
+ACTOR_DEBUG | 2020-05-13 15:44:19 | [Thread-6] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 15:44:19 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:44:19 | [nioEventLoopGroup-2-4] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 15:44:21 | [Thread-6] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 15:45:06 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 15:45:06 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Xander] on port [4001]...
+ACTOR_DEBUG | 2020-05-13 15:45:06 | [Thread-2] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-13 15:45:06 | [Thread-0] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 15:45:06 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 15:45:06 | [Thread-0] actor.Actor (Actor.java:161) - Bootstrap 1972228424 configured.
+ACTOR_DEBUG | 2020-05-13 15:45:06 | [Thread-2] actor.Actor (Actor.java:161) - Bootstrap 461192481 configured.
+ACTOR_DEBUG | 2020-05-13 15:45:06 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 1127407670 configured.
+ACTOR_DEBUG | 2020-05-13 15:45:06 | [Thread-0] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 15:45:06 | [Thread-2] actor.Actor (Actor.java:163) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-13 15:45:06 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 15:45:06 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:45:06 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:45:06 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:45:06 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-13 15:45:06 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 15:45:06 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 15:45:08 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 15:45:08 | [Thread-2] actor.Actor (Actor.java:166) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-05-13 15:45:08 | [Thread-0] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 15:45:08 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [Xander]...
+ACTOR_DEBUG | 2020-05-13 15:45:08 | [Thread-5] actor.Actor (Actor.java:202) - Server for [Xander] bound to port 4001.
+ACTOR_DEBUG | 2020-05-13 15:45:08 | [main] actor.Actor (Actor.java:108) - Successfully instantiated [Xander].
+ACTOR_INFO | 2020-05-13 15:45:08 | [Thread-4] actor.Actor$ScriptReader (Actor.java:377) - [Xander] going to cue scene1/cue1.
+ACTOR_DEBUG | 2020-05-13 15:45:08 | [Thread-4] actor.Actor$ScriptReader (Actor.java:441) - [Xander] is waiting for a monologue to finish.
+ACTOR_DEBUG | 2020-05-13 15:45:22 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:623) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 15:45:22 | [nioEventLoopGroup-4-1] actor.Actor$2 (Actor.java:197) - Channel pipeline [99040361] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 15:45:22 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:648) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 15:45:22 | [Thread-6] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 15:45:22 | [Thread-6] actor.Actor (Actor.java:161) - Bootstrap 2004166526 configured.
+ACTOR_DEBUG | 2020-05-13 15:45:22 | [Thread-6] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 15:45:22 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:45:22 | [nioEventLoopGroup-2-4] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 15:45:24 | [Thread-6] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 15:46:00 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 15:46:00 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Xander] on port [4001]...
+ACTOR_DEBUG | 2020-05-13 15:46:00 | [Thread-2] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-13 15:46:00 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 15:46:00 | [Thread-0] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 15:46:00 | [Thread-2] actor.Actor (Actor.java:161) - Bootstrap 461192481 configured.
+ACTOR_DEBUG | 2020-05-13 15:46:00 | [Thread-0] actor.Actor (Actor.java:161) - Bootstrap 1972228424 configured.
+ACTOR_DEBUG | 2020-05-13 15:46:00 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 1127407670 configured.
+ACTOR_DEBUG | 2020-05-13 15:46:00 | [Thread-2] actor.Actor (Actor.java:163) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-13 15:46:00 | [Thread-0] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 15:46:00 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 15:46:00 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:46:00 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:46:00 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:46:00 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-13 15:46:00 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 15:46:00 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 15:46:02 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 15:46:02 | [Thread-2] actor.Actor (Actor.java:166) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-05-13 15:46:02 | [Thread-0] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 15:46:02 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [Xander]...
+ACTOR_DEBUG | 2020-05-13 15:46:02 | [main] actor.Actor (Actor.java:108) - Successfully instantiated [Xander].
+ACTOR_DEBUG | 2020-05-13 15:46:02 | [Thread-5] actor.Actor (Actor.java:202) - Server for [Xander] bound to port 4001.
+ACTOR_INFO | 2020-05-13 15:46:02 | [Thread-4] actor.Actor$ScriptReader (Actor.java:377) - [Xander] going to cue scene1/cue1.
+ACTOR_DEBUG | 2020-05-13 15:46:02 | [Thread-4] actor.Actor$ScriptReader (Actor.java:441) - [Xander] is waiting for a monologue to finish.
+ACTOR_DEBUG | 2020-05-13 15:46:08 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:623) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 15:46:08 | [nioEventLoopGroup-4-1] actor.Actor$2 (Actor.java:197) - Channel pipeline [bbf1569e] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 15:46:08 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:648) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 15:46:08 | [Thread-6] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 15:46:08 | [Thread-6] actor.Actor (Actor.java:161) - Bootstrap 2004166526 configured.
+ACTOR_DEBUG | 2020-05-13 15:46:08 | [Thread-6] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 15:46:08 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:46:08 | [nioEventLoopGroup-2-4] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 15:46:10 | [Thread-6] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+WARN  | 2020-05-13 15:47:03 | [nioEventLoopGroup-4-1] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+ACTOR_DEBUG | 2020-05-13 15:49:10 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 15:49:10 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Xander] on port [4001]...
+ACTOR_DEBUG | 2020-05-13 15:49:10 | [Thread-0] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 15:49:10 | [Thread-2] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-13 15:49:10 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 15:49:10 | [Thread-0] actor.Actor (Actor.java:161) - Bootstrap 1155479145 configured.
+ACTOR_DEBUG | 2020-05-13 15:49:10 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 1127407670 configured.
+ACTOR_DEBUG | 2020-05-13 15:49:10 | [Thread-2] actor.Actor (Actor.java:161) - Bootstrap 968711943 configured.
+ACTOR_DEBUG | 2020-05-13 15:49:10 | [Thread-0] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 15:49:10 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 15:49:10 | [Thread-2] actor.Actor (Actor.java:163) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-13 15:49:11 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:49:11 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:49:11 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:49:11 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-13 15:49:11 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 15:49:11 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 15:49:13 | [Thread-0] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 15:49:13 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 15:49:13 | [Thread-2] actor.Actor (Actor.java:166) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-05-13 15:49:13 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [Xander]...
+ACTOR_DEBUG | 2020-05-13 15:49:13 | [Thread-5] actor.Actor (Actor.java:202) - Server for [Xander] bound to port 4001.
+ACTOR_DEBUG | 2020-05-13 15:49:13 | [main] actor.Actor (Actor.java:108) - Successfully instantiated [Xander].
+ACTOR_INFO | 2020-05-13 15:49:13 | [Thread-4] actor.Actor$ScriptReader (Actor.java:377) - [Xander] going to cue scene1/cue1.
+ACTOR_DEBUG | 2020-05-13 15:49:13 | [Thread-4] actor.Actor$ScriptReader (Actor.java:441) - [Xander] is waiting for a monologue to finish.
+ACTOR_DEBUG | 2020-05-13 15:49:20 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:623) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 15:49:20 | [nioEventLoopGroup-4-1] actor.Actor$2 (Actor.java:197) - Channel pipeline [ae644c61] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 15:49:20 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:648) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 15:49:20 | [Thread-6] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 15:49:20 | [Thread-6] actor.Actor (Actor.java:161) - Bootstrap 943075241 configured.
+ACTOR_DEBUG | 2020-05-13 15:49:20 | [Thread-6] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 15:49:20 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:49:20 | [nioEventLoopGroup-2-4] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 15:49:22 | [Thread-6] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 15:53:13 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 15:53:13 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Xander] on port [4001]...
+ACTOR_DEBUG | 2020-05-13 15:53:13 | [Thread-0] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 15:53:13 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 15:53:13 | [Thread-2] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-13 15:53:13 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 1436191677 configured.
+ACTOR_DEBUG | 2020-05-13 15:53:13 | [Thread-2] actor.Actor (Actor.java:161) - Bootstrap 968711943 configured.
+ACTOR_DEBUG | 2020-05-13 15:53:13 | [Thread-0] actor.Actor (Actor.java:161) - Bootstrap 701137581 configured.
+ACTOR_DEBUG | 2020-05-13 15:53:13 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 15:53:13 | [Thread-2] actor.Actor (Actor.java:163) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-13 15:53:13 | [Thread-0] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 15:53:13 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:53:13 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:53:13 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:53:13 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 15:53:13 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 15:53:13 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-13 15:53:15 | [Thread-0] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 15:53:15 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 15:53:15 | [Thread-2] actor.Actor (Actor.java:166) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-05-13 15:53:15 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [Xander]...
+ACTOR_DEBUG | 2020-05-13 15:53:15 | [Thread-5] actor.Actor (Actor.java:202) - Server for [Xander] bound to port 4001.
+ACTOR_DEBUG | 2020-05-13 15:53:15 | [main] actor.Actor (Actor.java:108) - Successfully instantiated [Xander].
+ACTOR_INFO | 2020-05-13 15:53:15 | [Thread-4] actor.Actor$ScriptReader (Actor.java:377) - [Xander] going to cue scene1/cue1.
+ACTOR_DEBUG | 2020-05-13 15:53:15 | [Thread-4] actor.Actor$ScriptReader (Actor.java:441) - [Xander] is waiting for a monologue to finish.
+ACTOR_DEBUG | 2020-05-13 15:53:21 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:623) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 15:53:21 | [nioEventLoopGroup-4-1] actor.Actor$2 (Actor.java:197) - Channel pipeline [6c89aa5e] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 15:53:21 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:648) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 15:53:21 | [Thread-6] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 15:53:21 | [Thread-6] actor.Actor (Actor.java:161) - Bootstrap 943075241 configured.
+ACTOR_DEBUG | 2020-05-13 15:53:21 | [Thread-6] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 15:53:21 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:53:21 | [nioEventLoopGroup-2-4] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 15:53:23 | [Thread-6] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 15:54:28 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 15:54:28 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Xander] on port [4001]...
+ACTOR_DEBUG | 2020-05-13 15:54:29 | [Thread-2] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-13 15:54:29 | [Thread-0] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 15:54:29 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 15:54:29 | [Thread-0] actor.Actor (Actor.java:161) - Bootstrap 1972228424 configured.
+ACTOR_DEBUG | 2020-05-13 15:54:29 | [Thread-2] actor.Actor (Actor.java:161) - Bootstrap 470786480 configured.
+ACTOR_DEBUG | 2020-05-13 15:54:29 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 1596284443 configured.
+ACTOR_DEBUG | 2020-05-13 15:54:29 | [Thread-0] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 15:54:29 | [Thread-2] actor.Actor (Actor.java:163) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-13 15:54:29 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 15:54:29 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:54:29 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:54:29 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:54:29 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-13 15:54:29 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 15:54:29 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 15:54:31 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 15:54:31 | [Thread-0] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 15:54:31 | [Thread-2] actor.Actor (Actor.java:166) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-05-13 15:54:31 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [Xander]...
+ACTOR_DEBUG | 2020-05-13 15:54:31 | [main] actor.Actor (Actor.java:108) - Successfully instantiated [Xander].
+ACTOR_DEBUG | 2020-05-13 15:54:31 | [Thread-5] actor.Actor (Actor.java:202) - Server for [Xander] bound to port 4001.
+ACTOR_INFO | 2020-05-13 15:54:31 | [Thread-4] actor.Actor$ScriptReader (Actor.java:377) - [Xander] going to cue scene1/cue1.
+ACTOR_DEBUG | 2020-05-13 15:54:31 | [Thread-4] actor.Actor$ScriptReader (Actor.java:441) - [Xander] is waiting for a monologue to finish.
+ACTOR_DEBUG | 2020-05-13 15:54:36 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:623) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 15:54:36 | [nioEventLoopGroup-4-1] actor.Actor$2 (Actor.java:197) - Channel pipeline [97c5fc57] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 15:54:36 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:648) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 15:54:36 | [Thread-6] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 15:54:36 | [Thread-6] actor.Actor (Actor.java:161) - Bootstrap 2004166526 configured.
+ACTOR_DEBUG | 2020-05-13 15:54:36 | [Thread-6] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 15:54:36 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:54:36 | [nioEventLoopGroup-2-4] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 15:54:38 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 1978497906 has connected to its target.
+ACTOR_INFO | 2020-05-13 15:54:38 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Xander] to port 4000.
+ACTOR_INFO | 2020-05-13 15:54:38 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:590) - [Xander] received a roll-call response from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 15:54:41 | [Thread-4] actor.Actor$ScriptReader (Actor.java:444) - The monologue that [Xander] was waiting on has finished.
+ACTOR_INFO | 2020-05-13 15:54:41 | [Thread-4] actor.Actor$ScriptReader (Actor.java:377) - [Xander] going to cue scene1/cue2.
+ACTOR_INFO | 2020-05-13 15:54:41 | [Thread-4] actor.Actor$ScriptReader (Actor.java:509) - [Xander] entering conversation.
+ACTOR_INFO | 2020-05-13 15:54:41 | [Thread-4] actor.Actor$ScriptReader (Actor.java:517) - [Xander] will be conversing with [Lexa].
+ACTOR_INFO | 2020-05-13 15:54:42 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:636) - [Xander] received the direct-message "dude, lex." from [Lexa].
+ACTOR_INFO | 2020-05-13 15:54:43 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:636) - [Xander] received the direct-message "have you no chill?" from [Lexa].
+ACTOR_INFO | 2020-05-13 15:54:44 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:636) - [Xander] received the direct-message "What? It's a good movie!" from [Lexa].
+ACTOR_INFO | 2020-05-13 15:54:45 | [Thread-4] actor.Actor (Actor.java:275) - [Xander] direct-messaged "what?" to [Lexa].
+ACTOR_INFO | 2020-05-13 15:54:45 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:600) - [Xander] received a confirmation from [Lexa] about message.
+ACTOR_INFO | 2020-05-13 15:54:46 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:636) - [Xander] received the direct-message "Wait, you haven't-" from [Lexa].
+ACTOR_INFO | 2020-05-13 15:54:47 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:636) - [Xander] received the direct-message "..." from [Lexa].
+ACTOR_INFO | 2020-05-13 15:54:49 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:636) - [Xander] received the direct-message "You haven't seen the Princess Bride?" from [Lexa].
+ACTOR_DEBUG | 2020-05-13 15:54:49 | [Thread-6] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_INFO | 2020-05-13 15:54:49 | [Thread-4] actor.Actor$ScriptReader (Actor.java:377) - [Xander] going to cue scene1/cue3.
+ACTOR_INFO | 2020-05-13 15:54:49 | [Thread-4] actor.Actor$ScriptReader (Actor.java:412) - [Xander] has been instructed to exit the stage.
+ACTOR_DEBUG | 2020-05-13 15:54:49 | [Thread-4] actor.Actor (Actor.java:214) - Worker group is shutting down for [Xander]
+ACTOR_DEBUG | 2020-05-13 15:54:49 | [Thread-4] actor.Actor (Actor.java:220) - Boss group is shutting down for Xander
+ACTOR_DEBUG | 2020-05-13 15:54:49 | [Thread-4] actor.Actor (Actor.java:233) - Client group is shutting down for Xander
+ACTOR_DEBUG | 2020-05-13 15:54:49 | [Thread-4] actor.Actor (Actor.java:245) - Exit actor [Xander].
+ACTOR_DEBUG | 2020-05-13 15:55:16 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 15:55:16 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Xander] on port [4001]...
+ACTOR_DEBUG | 2020-05-13 15:55:16 | [Thread-2] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-13 15:55:16 | [Thread-0] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 15:55:16 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 15:55:16 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 1127407670 configured.
+ACTOR_DEBUG | 2020-05-13 15:55:16 | [Thread-0] actor.Actor (Actor.java:161) - Bootstrap 1155479145 configured.
+ACTOR_DEBUG | 2020-05-13 15:55:16 | [Thread-2] actor.Actor (Actor.java:161) - Bootstrap 968711943 configured.
+ACTOR_DEBUG | 2020-05-13 15:55:16 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 15:55:16 | [Thread-0] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 15:55:16 | [Thread-2] actor.Actor (Actor.java:163) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-13 15:55:17 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:55:17 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:55:17 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:55:17 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-13 15:55:17 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 15:55:17 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 15:55:19 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 15:55:19 | [Thread-2] actor.Actor (Actor.java:166) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-05-13 15:55:19 | [Thread-0] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 15:55:19 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [Xander]...
+ACTOR_DEBUG | 2020-05-13 15:55:19 | [main] actor.Actor (Actor.java:108) - Successfully instantiated [Xander].
+ACTOR_DEBUG | 2020-05-13 15:55:19 | [Thread-5] actor.Actor (Actor.java:202) - Server for [Xander] bound to port 4001.
+ACTOR_INFO | 2020-05-13 15:55:19 | [Thread-4] actor.Actor$ScriptReader (Actor.java:377) - [Xander] going to cue scene1/cue1.
+ACTOR_DEBUG | 2020-05-13 15:55:19 | [Thread-4] actor.Actor$ScriptReader (Actor.java:441) - [Xander] is waiting for a monologue to finish.
+ACTOR_DEBUG | 2020-05-13 15:55:25 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:623) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 15:55:25 | [nioEventLoopGroup-4-1] actor.Actor$2 (Actor.java:197) - Channel pipeline [53527c15] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 15:55:25 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:648) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 15:55:25 | [Thread-6] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 15:55:25 | [Thread-6] actor.Actor (Actor.java:161) - Bootstrap 943075241 configured.
+ACTOR_DEBUG | 2020-05-13 15:55:25 | [Thread-6] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 15:55:25 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 15:55:25 | [nioEventLoopGroup-2-4] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 15:55:27 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 666489904 has connected to its target.
+ACTOR_INFO | 2020-05-13 15:55:27 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Xander] to port 4000.
+ACTOR_INFO | 2020-05-13 15:55:27 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:590) - [Xander] received a roll-call response from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 15:55:30 | [Thread-4] actor.Actor$ScriptReader (Actor.java:444) - The monologue that [Xander] was waiting on has finished.
+ACTOR_INFO | 2020-05-13 15:55:30 | [Thread-4] actor.Actor$ScriptReader (Actor.java:377) - [Xander] going to cue scene1/cue2.
+ACTOR_INFO | 2020-05-13 15:55:30 | [Thread-4] actor.Actor$ScriptReader (Actor.java:509) - [Xander] entering conversation.
+ACTOR_INFO | 2020-05-13 15:55:30 | [Thread-4] actor.Actor$ScriptReader (Actor.java:517) - [Xander] will be conversing with [Lexa].
+ACTOR_INFO | 2020-05-13 15:55:31 | [Thread-4] actor.Actor (Actor.java:275) - [Xander] direct-messaged "dude, lex." to [Lexa].
+ACTOR_INFO | 2020-05-13 15:55:31 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:600) - [Xander] received a confirmation from [Lexa] about message.
+ACTOR_INFO | 2020-05-13 15:55:31 | [Thread-4] actor.Actor (Actor.java:275) - [Xander] direct-messaged "have you no chill?" to [Lexa].
+ACTOR_INFO | 2020-05-13 15:55:31 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:600) - [Xander] received a confirmation from [Lexa] about message.
+ACTOR_INFO | 2020-05-13 15:55:32 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:636) - [Xander] received the direct-message "What? It's a good movie!" from [Lexa].
+ACTOR_INFO | 2020-05-13 15:55:33 | [Thread-4] actor.Actor (Actor.java:275) - [Xander] direct-messaged "what?" to [Lexa].
+ACTOR_INFO | 2020-05-13 15:55:33 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:600) - [Xander] received a confirmation from [Lexa] about message.
+ACTOR_INFO | 2020-05-13 15:55:35 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:636) - [Xander] received the direct-message "Wait, you haven't-" from [Lexa].
+ACTOR_INFO | 2020-05-13 15:55:35 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:636) - [Xander] received the direct-message "..." from [Lexa].
+ACTOR_INFO | 2020-05-13 15:55:37 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:636) - [Xander] received the direct-message "You haven't seen the Princess Bride?" from [Lexa].
+ACTOR_DEBUG | 2020-05-13 15:55:37 | [Thread-6] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_INFO | 2020-05-13 15:55:37 | [Thread-4] actor.Actor$ScriptReader (Actor.java:377) - [Xander] going to cue scene1/cue3.
+ACTOR_INFO | 2020-05-13 15:55:37 | [Thread-4] actor.Actor$ScriptReader (Actor.java:412) - [Xander] has been instructed to exit the stage.
+ACTOR_DEBUG | 2020-05-13 15:55:37 | [Thread-4] actor.Actor (Actor.java:214) - Worker group is shutting down for [Xander]
+ACTOR_DEBUG | 2020-05-13 15:55:37 | [Thread-4] actor.Actor (Actor.java:220) - Boss group is shutting down for Xander
+ACTOR_DEBUG | 2020-05-13 15:55:37 | [Thread-4] actor.Actor (Actor.java:233) - Client group is shutting down for Xander
+ACTOR_DEBUG | 2020-05-13 15:55:37 | [Thread-4] actor.Actor (Actor.java:245) - Exit actor [Xander].
+ACTOR_DEBUG | 2020-05-13 16:01:56 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 16:01:56 | [main] actor.Actor (Actor.java:86) - Instantiating actor [Xander] on port [4001]...
+ACTOR_DEBUG | 2020-05-13 16:01:57 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 16:01:57 | [Thread-2] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-13 16:01:57 | [Thread-0] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 16:01:57 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 388206040 configured.
+ACTOR_DEBUG | 2020-05-13 16:01:57 | [Thread-0] actor.Actor (Actor.java:161) - Bootstrap 1972228424 configured.
+ACTOR_DEBUG | 2020-05-13 16:01:57 | [Thread-2] actor.Actor (Actor.java:161) - Bootstrap 968711943 configured.
+ACTOR_DEBUG | 2020-05-13 16:01:57 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 16:01:57 | [Thread-0] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 16:01:57 | [Thread-2] actor.Actor (Actor.java:163) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-13 16:01:57 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 16:01:57 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 16:01:57 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 16:01:57 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-13 16:01:57 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 16:01:57 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 16:01:57 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:569) - ChannelHandler 1026640749 has connected to its target.
+ACTOR_INFO | 2020-05-13 16:01:57 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:578) - Roll-call sent from [Xander] to port 4002.
+ACTOR_INFO | 2020-05-13 16:01:57 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:590) - [Xander] received a roll-call response from [CallMeKey], who is on port 4002.
+ACTOR_DEBUG | 2020-05-13 16:01:59 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 16:01:59 | [Thread-0] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 16:01:59 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [Xander]...
+ACTOR_DEBUG | 2020-05-13 16:01:59 | [Thread-5] actor.Actor (Actor.java:202) - Server for [Xander] bound to port 4001.
+ACTOR_DEBUG | 2020-05-13 16:01:59 | [main] actor.Actor (Actor.java:108) - Successfully instantiated [Xander].
+ACTOR_INFO | 2020-05-13 16:01:59 | [Thread-4] actor.Actor$ScriptReader (Actor.java:377) - [Xander] going to cue scene1/cue1.
+ACTOR_DEBUG | 2020-05-13 16:01:59 | [Thread-4] actor.Actor$ScriptReader (Actor.java:441) - [Xander] is waiting for a monologue to finish.
+ACTOR_DEBUG | 2020-05-13 16:01:59 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:623) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 16:01:59 | [nioEventLoopGroup-4-1] actor.Actor$2 (Actor.java:197) - Channel pipeline [219f1b9e] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 16:01:59 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:648) - [Xander] received a roll-call request from [CallMeKey], who is on port 4002.
+ACTOR_ERROR | 2020-05-13 16:01:59 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:656) - [Xander] already has [CallMeKey] in their contact list.
+ACTOR_DEBUG | 2020-05-13 16:02:06 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:623) - [Xander]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-13 16:02:06 | [nioEventLoopGroup-4-2] actor.Actor$2 (Actor.java:197) - Channel pipeline [7356cf48] to Server [Xander] has been initialized.
+ACTOR_INFO | 2020-05-13 16:02:06 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:648) - [Xander] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-13 16:02:06 | [Thread-6] actor.Actor (Actor.java:144) - Initializing a client for [Xander] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 16:02:06 | [Thread-6] actor.Actor (Actor.java:161) - Bootstrap 839516295 configured.
+ACTOR_DEBUG | 2020-05-13 16:02:06 | [Thread-6] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 16:02:06 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:563) - A new client handler has been instantiated by [Xander].
+ACTOR_DEBUG | 2020-05-13 16:02:06 | [nioEventLoopGroup-2-4] actor.Actor$1 (Actor.java:158) - Pipeline from [Xander] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 16:02:08 | [Thread-6] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.

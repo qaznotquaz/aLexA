@@ -15,7 +15,7 @@
         "Lexa": "leading",
         "Xander": "idle",
         "Fate": "offstage",
-        "CallMeKey": "offstage"
+        "CallMeKey": "idle"
       },
       "text": {
         "1": {
@@ -42,7 +42,7 @@
         "Lexa": "responding",
         "Xander": "leading",
         "Fate": "offstage",
-        "CallMeKey": "offstage"
+        "CallMeKey": "listening"
       },
       "cuesTo": {
         "scene": "scene1",
@@ -51,12 +51,12 @@
       "text": {
         "1": {
           "delay": 1000,
-          "from": "Lexa",
+          "from": "Xander",
           "text": "dude, lex."
         },
         "2": {
           "delay": 500,
-          "from": "Lexa",
+          "from": "Xander",
           "text": "have you no chill?"
         },
         "3": {
