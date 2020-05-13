@@ -4,8 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CastList/Alexander/Alexander.iml" filepath="$PROJECT_DIR$/CastList/Alexander/Alexander.iml" />
       <module fileurl="file://$PROJECT_DIR$/CastList/Alexandra/Alexandra.iml" filepath="$PROJECT_DIR$/CastList/Alexandra/Alexandra.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CastList/CallMeKey/CallMeKey.iml" filepath="$PROJECT_DIR$/CastList/CallMeKey/CallMeKey.iml" />
       <module fileurl="file://$PROJECT_DIR$/CastList/Fate/Fate.iml" filepath="$PROJECT_DIR$/CastList/Fate/Fate.iml" />
-      <module fileurl="file://$PROJECT_DIR$/CastList/Key/Key.iml" filepath="$PROJECT_DIR$/CastList/Key/Key.iml" />
       <module fileurl="file://$PROJECT_DIR$/alex.iml" filepath="$PROJECT_DIR$/alex.iml" />
     </modules>
   </component>

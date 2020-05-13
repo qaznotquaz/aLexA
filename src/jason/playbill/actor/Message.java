@@ -37,6 +37,7 @@ public class Message implements Serializable {
         dm,
         rollcall,
         confirmation,
+        nextCue,
         empty
     }
 }

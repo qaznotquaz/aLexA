@@ -1,17 +1,11 @@
-import jason.playbill.ConsoleColors;
-import jason.playbill.actor.Actor;
-import jason.playbill.actor.Contact;
-
-import java.util.Scanner;
-
 import static jason.playbill.ConsoleColors.*;
+import jason.playbill.actor.Actor;
 
-import static java.lang.Thread.sleep;
+public class CallMeKey {
 
-public class Xander {
     public static void main(String[] args) throws InterruptedException {
         Object sync = new Object();
-        Actor Xander = new Actor("Xander", ANSI_BRIGHT_RED, 4001, sync);
+        Actor CallMeKey = new Actor("CallMeKey", ANSI_BRIGHT_BLACK, 4002, sync);
         //noinspection SynchronizationOnLocalVariableOrMethodParameter
         synchronized (sync) {
             sync.wait();

@@ -40,6 +40,15 @@ public class Contact implements Serializable {
         ctx.writeAndFlush(message);
     }
 
+    public void cueNext(Contact source) {
+        Message message = new Message();
+        message.setSource(source);
+        message.setMessageType(Message.MessageType.nextCue);
+        message.setData(null);
+
+        ctx.writeAndFlush(message);
+    }
+
     public String getName() {
         return name;
     }

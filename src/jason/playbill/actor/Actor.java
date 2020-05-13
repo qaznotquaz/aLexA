@@ -11,12 +11,8 @@ import io.netty.handler.codec.serialization.ClassResolvers;
 import io.netty.handler.codec.serialization.ObjectDecoder;
 import io.netty.handler.codec.serialization.ObjectEncoder;
 
-import java.awt.geom.Area;
 import java.io.IOException;
 import java.net.InetSocketAddress;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Optional;
@@ -26,7 +22,6 @@ import io.netty.util.concurrent.Future;
 import jason.playbill.actor.logger.ActorLogger;
 import jason.playbill.playscript.Playscript;
 import org.jetbrains.annotations.NotNull;
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -53,9 +48,9 @@ public class Actor {
      */
     private final CountDownLatch servStart = new CountDownLatch(1);
 
-    private CountDownLatch reciting = new CountDownLatch(1);
-
-    private CountDownLatch messageWaiting;
+    //private CountDownLatch messageWaiting;
+    private final Object scriptSync = new Object();
+    private final Object leavingSync;
     /**
      * The Hostname that the actor will be connecting to.
      */
@@ -72,7 +67,7 @@ public class Actor {
     private EventLoopGroup serverBossGroup;
     private EventLoopGroup serverWorkerGroup;
 
-    Playscript currentScript;
+    private Thread scriptReader;
 
     private String name;
     private String color;
@@ -85,7 +80,8 @@ public class Actor {
      * @param color the new actor's main color.
      * @param port  the port on which to open the actor's server.
      */
-    public Actor(String name, String color, int port) {
+    public Actor(String name, String color, int port, Object leavingSync) {
+        this.leavingSync = leavingSync;
         logger.actorDebug("");
         logger.actorDebug("Instantiating actor [{}] on port [{}]...", name, port);
 
@@ -105,7 +101,7 @@ public class Actor {
                 throw new EnsembleCollisionException("There's already an actor on the port " + port);
             }
 
-            Thread scriptReader = new Thread(new ScriptReader(this, 0, 0));
+            scriptReader = new Thread(new ScriptReader(this, 0, 0));
             Thread server = new Thread(new Server(this));
             server.start();
             servStart.await();
@@ -211,16 +207,17 @@ public class Actor {
      * Server close.
      */
     public void serverClose() {
-        Future<?> workerShutdown = serverWorkerGroup.shutdownGracefully();
-        Future<?> bossShutdown = serverBossGroup.shutdownGracefully();
-        if (workerShutdown.isDone()){
-            logger.actorDebug("Worker group shut down for [{}]", this.getName());
+        serverWorkerGroup.shutdownGracefully();
+        serverBossGroup.shutdownGracefully();
+
+        if (serverWorkerGroup.isShuttingDown()){
+            logger.actorDebug("Worker group is shutting down for [{}]", this.getName());
         } else {
             logger.actorError("Worker group for [{}] failed to shut down.", this.getName());
         }
 
-        if (bossShutdown.isDone()){
-            logger.actorDebug("Boss group shut down for {}", this.name);
+        if (serverBossGroup.isShuttingDown()){
+            logger.actorDebug("Boss group is shutting down for {}", this.name);
         } else {
             logger.actorError("Boss group for [{}] failed to shut down.", this.getName());
         }
@@ -230,10 +227,10 @@ public class Actor {
      * Client close.
      */
     public void clientClose() {
-        Future<?> clintShutdown = clientGroup.shutdownGracefully();
+        clientGroup.shutdownGracefully();
 
-        if (clintShutdown.isDone()){
-            logger.actorDebug("Client group shut down for {}", this.name);
+        if (clientGroup.isShuttingDown()){
+            logger.actorDebug("Client group is shutting down for {}", this.name);
         } else {
             logger.actorError("Client group for [{}] failed to shut down.", this.getName());
         }
@@ -242,11 +239,14 @@ public class Actor {
     /**
      * Actor exits the stage.
      */
-    public void exit() throws InterruptedException {
-        reciting.await();
+    public void exit() {
         this.serverClose();
         this.clientClose();
         logger.actorDebug("Exit actor [{}].", this.getName());
+
+        synchronized (leavingSync){
+            leavingSync.notify();
+        }
     }
 
     /**
@@ -269,6 +269,8 @@ public class Actor {
         Contact target = findContact(targetName);
 
         if (target != null) {
+            System.out.printf("> %sMe%s: %s%s%s\n",
+                    color, ANSI_RESET, color, line, ANSI_RESET);
             target.dm(new Contact(this), line);
             logger.actorInfo("[{}] direct-messaged \"{}\" to [{}].", this.getName(), line, targetName);
         } else {
@@ -277,21 +279,15 @@ public class Actor {
         }
     }
 
-    public void monologue(@NotNull JSONObject text) throws InterruptedException {
-        int lineNum = 1;
-        JSONObject line = text.getJSONObject(String.valueOf(lineNum));
-        boolean speaking = true;
+    public void cueNext(String targetName) {
+        Contact target = findContact(targetName);
 
-        while (speaking){
-            this.speaks((line).getString("text"));
-            Thread.sleep((line).getInt("delay"));
-
-            lineNum++;
-            try {
-                line = text.getJSONObject(String.valueOf(lineNum));
-            } catch (JSONException e){
-                speaking = false;
-            }
+        if (target != null) {
+            target.cueNext(new Contact(this));
+            logger.actorInfo("[{}] sent [{}] to the next cue.", this.getName(), targetName);
+        } else {
+            logger.actorError("[{}] tried to send [{}] to the next cue, but couldn't find them.", this.getName(), targetName);
+            throw new NullPointerException("There isn't any actor by the name " + targetName);
         }
     }
 
@@ -385,14 +381,27 @@ public class Actor {
             JSONObject presencesJson = cue.getJSONObject("actors");
             Playscript.Presence tempPre;
             Playscript.Presence myPresence = null;
-            ArrayList<Playscript.Presence> otherPresences = new ArrayList<>();
+            /*ArrayList<String> reqOnstage = new ArrayList<>(); // the list of other actors who must be onstage
+            ArrayList<String> optOnstage = new ArrayList<>(); // the list of other actors who don't have to be onstage but can be*/
+            ArrayList<String> participating = new ArrayList<>();
+            ArrayList<String> onstage = new ArrayList<>();
 
             for(String name:names){
                 tempPre = presencesJson.getEnum(Playscript.Presence.class, name);
                 if(name.equals(owner.getName())){
                     myPresence = tempPre;
                 } else {
-                    otherPresences.add(tempPre);
+                    /*if(tempPre.equals(Playscript.Presence.responding) || tempPre.equals(Playscript.Presence.leading)){
+                        reqOnstage.add(name);
+                    } else if (tempPre.equals(Playscript.Presence.listening)){
+                        optOnstage.add(name);
+                    }*/
+                    if (tempPre != Playscript.Presence.offstage && tempPre != Playscript.Presence.idle){
+                        participating.add(name);
+                        onstage.add(name);
+                    } else if (tempPre == Playscript.Presence.idle) {
+                        onstage.add(name);
+                    }
                 }
             }
 
@@ -400,10 +409,12 @@ public class Actor {
 
             switch (Objects.requireNonNull(myPresence)) {
                 case offstage -> {
+                    logger.actorInfo("[{}] has been instructed to exit the stage.", owner.getName());
                     owner.exit();
+                    return;
                 }
                 case idle -> {
-                    return;
+                    //return;
                 }
                 case leading -> {
                     //todo: presence case
@@ -416,14 +427,32 @@ public class Actor {
                 }
             }
 
+            JSONObject cuesTo;
+
             switch (type) {
                 case monologue:
-                    owner.monologue(cue.getJSONObject("text"));
-                    JSONObject cuesTo = cue.getJSONObject("cuesTo");
+                    if(myPresence == Playscript.Presence.leading) {
+                        monologue(onstage, cue.getJSONObject("text"));
+                        synchronized (scriptSync) {
+                            scriptSync.notify();
+                        }
+                    } else {
+                        synchronized (scriptSync) {
+                            logger.actorDebug("[{}] is waiting for a monologue to finish.",
+                                    owner.getName());
+                            scriptSync.wait();
+                            logger.actorDebug("The monologue that [{}] was waiting on has finished.",
+                                    owner.getName());
+                        }
+                    }
+
+                    cuesTo = cue.getJSONObject("cuesTo");
                     goToCue(cuesTo.getString("scene"), cuesTo.getString("cue"));
                     break;
                 case conversation:
-                    //todo dialogue direction
+                    converse(participating, cue.getJSONObject("text"));
+                    cuesTo = cue.getJSONObject("cuesTo");
+                    goToCue(cuesTo.getString("scene"), cuesTo.getString("cue"));
                     break;
                 case enter:
                     //todo enter direction
@@ -443,6 +472,75 @@ public class Actor {
                 case writeFile:
                     //todo writefile direction
                     break;
+            }
+        }
+
+        public void monologue(ArrayList<String> onstage, JSONObject text) throws InterruptedException {
+            for (String member:onstage) {
+                if(findContact(member) == null){
+                    logger.actorError("[{}] expected [{}] to be onstage during their monologue, but  they're not.",
+                            owner.getName(), member);
+                    return;
+                }
+            }
+
+            int lineNum = 1;
+            JSONObject line = text.getJSONObject(String.valueOf(lineNum));
+            boolean speaking = true;
+
+            while (speaking){
+                Thread.sleep(line.getInt("delay"));
+                owner.speaks(line.getString("text"));
+
+                lineNum++;
+                try {
+                    line = text.getJSONObject(String.valueOf(lineNum));
+                } catch (JSONException e){
+                    speaking = false;
+                }
+            }
+
+            for (String member:onstage) {
+                cueNext(member);
+            }
+        }
+
+        public void converse(ArrayList<String> onstage, JSONObject text) throws InterruptedException {
+            logger.actorInfo("[{}] entering conversation.",
+                    owner.getName());
+            for (String member:onstage) {
+                if(findContact(member) == null){
+                    logger.actorError("[{}] needs to converse with [{}], but they're not onstage.",
+                            owner.getName(), member);
+                    return;
+                } else {
+                    logger.actorInfo("[{}] will be conversing with [{}].",
+                            owner.getName(), member);
+                }
+            }
+
+            int lineNum = 1;
+            JSONObject line = text.getJSONObject(String.valueOf(lineNum));
+            boolean conversing = true;
+
+            while(conversing){
+                if (line.getString("from").equals(owner.name)){
+                    Thread.sleep(line.getInt("delay"));
+                    for (String member:onstage) {
+                        dm(line.getString("text"), member);
+                    }
+                } else {
+                    synchronized (scriptSync) {
+                        scriptSync.wait();
+                    }
+                }
+
+                lineNum++;
+                try {
+                    line = text.getJSONObject(String.valueOf(lineNum));
+                } catch (JSONException e){
+                    conversing = false;
+                }
             }
         }
     }
@@ -497,7 +595,6 @@ public class Actor {
                 case confirmation:
                     logger.actorInfo("[{}] received a confirmation from [{}] about {}.",
                             owner.getName(), source.getName(), receivedResponse.getData());
-                    messageWaiting.countDown();
                     break;
             }
         }
@@ -518,8 +615,8 @@ public class Actor {
          * @param owner the owner
          */
         ServerHandler(Actor owner) {
-            logger.actorDebug("[{}]'s server handler has been instantiated.", owner.getName());
             this.owner = owner;
+            logger.actorDebug("[{}]'s server handler has been instantiated.", owner.getName());
         }
 
         @Override
@@ -534,16 +631,31 @@ public class Actor {
                 case dm:
                     logger.actorInfo("[{}] received the direct-message \"{}\" from [{}].",
                             owner.getName(), received.getData(), source.getName());
+                    System.out.printf("> %s%s%s says: %s%s%s\n",
+                            source.getColor(), source.getName(), ANSI_RESET,
+                            source.getColor(), received.getData(), ANSI_RESET);
                     response.setMessageType(Message.MessageType.confirmation);
                     response.setData("message");
+                    synchronized (scriptSync) {
+                        scriptSync.notify();
+                    }
                     break;
                 case rollcall:
                     logger.actorInfo("[{}] received a roll-call request from [{}], who is on port {}.",
                             owner.getName(), source.getName(), source.getPort());
-                    ensemble.add(new Contact((Contact) received.getData(), ctx));
+                    ensemble.add(new Contact(received.getSource(), ctx));
                     response.setMessageType(Message.MessageType.rollcall);
                     break;
                 case confirmation:
+                    break;
+                case nextCue:
+                    /*String[] cue = (String[])receivedResponse.getData();
+                    logger.actorInfo("[{}] received cue {}/{} from [{}].",
+                            owner.getName(), cue[0], cue[1], source.getName());
+                    owner.goToCue(cue[0], cue[1]);*/
+                    synchronized (scriptSync) {
+                        scriptSync.notify();
+                    }
                     break;
             }
 

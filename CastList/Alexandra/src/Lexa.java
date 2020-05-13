@@ -1,3 +1,4 @@
+import jason.playbill.ConsoleColors;
 import jason.playbill.actor.Actor;
 
 import java.util.Scanner;
@@ -40,19 +41,12 @@ public class Lexa {
 
         //int port = args.length > 0 ? Integer.parseInt(args[0]) : 8080;
 
-        Actor Lexa = new Actor("Lexa", ANSI_CYAN, 4000);
-
-        /*logger.error("this is a good thing");
-        logger.debug("perhaps this too");
-        Thread.sleep(5000);
-        logger.trace("please");
-        logger.info("unlikely");*/
-        //Actor Addie = new Actor("Addie", ANSI_BG_PURPLE, 4003);
-
-        //Scanner waiting = new Scanner(System.in);
-        //waiting.nextLine();
-
-        Lexa.exit();
+        Object sync = new Object();
+        Actor Lexa = new Actor("Lexa", ANSI_CYAN, 4000, sync);
+        //noinspection SynchronizationOnLocalVariableOrMethodParameter
+        synchronized (sync) {
+            sync.wait();
+        }
 
         /*System.out.print('/');
         Thread.sleep(250);

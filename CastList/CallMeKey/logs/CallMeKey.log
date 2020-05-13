@@ -1,0 +1,517 @@
+ACTOR_DEBUG | 2020-05-12 23:48:48 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-12 23:48:48 | [main] actor.Actor (Actor.java:86) - Instantiating actor [CallMeKey] on port [4002]...
+ACTOR_DEBUG | 2020-05-12 23:48:48 | [Thread-0] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-12 23:48:48 | [Thread-1] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-12 23:48:48 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-12 23:48:48 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 496055275 configured.
+ACTOR_DEBUG | 2020-05-12 23:48:48 | [Thread-1] actor.Actor (Actor.java:161) - Bootstrap 1440164420 configured.
+ACTOR_DEBUG | 2020-05-12 23:48:48 | [Thread-0] actor.Actor (Actor.java:161) - Bootstrap 1364292009 configured.
+ACTOR_DEBUG | 2020-05-12 23:48:48 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-12 23:48:48 | [Thread-0] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-12 23:48:48 | [Thread-1] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-12 23:48:48 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:521) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-12 23:48:48 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:521) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-12 23:48:48 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:521) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-12 23:48:48 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-12 23:48:48 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-12 23:48:48 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-12 23:48:48 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:527) - ChannelHandler 1657464869 has connected to its target.
+ACTOR_INFO | 2020-05-12 23:48:48 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:536) - Roll-call sent from [CallMeKey] to port 4001.
+ACTOR_DEBUG | 2020-05-12 23:48:50 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-12 23:48:50 | [Thread-0] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-12 23:57:27 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-12 23:57:27 | [main] actor.Actor (Actor.java:86) - Instantiating actor [CallMeKey] on port [4002]...
+ACTOR_DEBUG | 2020-05-12 23:57:27 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-12 23:57:27 | [Thread-0] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-12 23:57:27 | [Thread-1] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-12 23:57:27 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 821624824 configured.
+ACTOR_DEBUG | 2020-05-12 23:57:27 | [Thread-0] actor.Actor (Actor.java:161) - Bootstrap 2013100825 configured.
+ACTOR_DEBUG | 2020-05-12 23:57:27 | [Thread-1] actor.Actor (Actor.java:161) - Bootstrap 1292880764 configured.
+ACTOR_DEBUG | 2020-05-12 23:57:27 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-12 23:57:27 | [Thread-0] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-12 23:57:27 | [Thread-1] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-12 23:57:27 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:521) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-12 23:57:27 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:521) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-12 23:57:27 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:521) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-12 23:57:27 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-12 23:57:27 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-12 23:57:27 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-12 23:57:29 | [Thread-1] actor.Actor (Actor.java:166) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-12 23:57:29 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-12 23:57:29 | [Thread-0] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-12 23:57:29 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [CallMeKey]...
+ACTOR_DEBUG | 2020-05-12 23:57:29 | [Thread-5] actor.Actor (Actor.java:202) - Server for [CallMeKey] bound to port 4002.
+ACTOR_DEBUG | 2020-05-12 23:57:29 | [main] actor.Actor (Actor.java:108) - Successfully instantiated [CallMeKey].
+ACTOR_INFO | 2020-05-12 23:57:29 | [Thread-4] actor.Actor$ScriptReader (Actor.java:359) - [CallMeKey] going to cue scene1/cue1.
+ACTOR_DEBUG | 2020-05-12 23:57:39 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:585) - [CallMeKey]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-12 23:57:39 | [nioEventLoopGroup-4-1] actor.Actor$2 (Actor.java:197) - Channel pipeline [7ca47ae0] to Server [CallMeKey] has been initialized.
+ACTOR_INFO | 2020-05-12 23:57:39 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:608) - [CallMeKey] received a roll-call request from [Xander], who is on port 4001.
+WARN  | 2020-05-12 23:57:39 | [nioEventLoopGroup-4-1] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.NullPointerException: null
+	at jason.playbill.actor.Contact.<init>(Contact.java:28) ~[alex/:?]
+	at jason.playbill.actor.Actor$ServerHandler.channelRead(Actor.java:610) ~[alex/:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:377) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:355) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:321) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:295) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:377) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:355) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:377) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+ACTOR_DEBUG | 2020-05-12 23:57:47 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:585) - [CallMeKey]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-12 23:57:47 | [nioEventLoopGroup-4-2] actor.Actor$2 (Actor.java:197) - Channel pipeline [d27f4d23] to Server [CallMeKey] has been initialized.
+ACTOR_INFO | 2020-05-12 23:57:47 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:608) - [CallMeKey] received a roll-call request from [Lexa], who is on port 4000.
+WARN  | 2020-05-12 23:57:47 | [nioEventLoopGroup-4-2] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.NullPointerException: null
+	at jason.playbill.actor.Contact.<init>(Contact.java:28) ~[alex/:?]
+	at jason.playbill.actor.Actor$ServerHandler.channelRead(Actor.java:610) ~[alex/:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:377) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:355) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:321) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:295) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:377) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:355) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:377) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+ACTOR_DEBUG | 2020-05-13 00:01:40 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 00:01:40 | [main] actor.Actor (Actor.java:86) - Instantiating actor [CallMeKey] on port [4002]...
+ACTOR_DEBUG | 2020-05-13 00:01:40 | [Thread-1] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 00:01:40 | [Thread-0] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 00:01:40 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 00:01:40 | [Thread-1] actor.Actor (Actor.java:161) - Bootstrap 336612875 configured.
+ACTOR_DEBUG | 2020-05-13 00:01:40 | [Thread-0] actor.Actor (Actor.java:161) - Bootstrap 1292880764 configured.
+ACTOR_DEBUG | 2020-05-13 00:01:40 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 1817623457 configured.
+ACTOR_DEBUG | 2020-05-13 00:01:40 | [Thread-0] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 00:01:40 | [Thread-1] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 00:01:40 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 00:01:40 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:521) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:01:40 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:521) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:01:40 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:521) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:01:40 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 00:01:40 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 00:01:40 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 00:01:42 | [Thread-0] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 00:01:42 | [Thread-1] actor.Actor (Actor.java:166) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-13 00:01:42 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 00:01:42 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [CallMeKey]...
+ACTOR_DEBUG | 2020-05-13 00:01:42 | [Thread-5] actor.Actor (Actor.java:202) - Server for [CallMeKey] bound to port 4002.
+ACTOR_DEBUG | 2020-05-13 00:01:42 | [main] actor.Actor (Actor.java:108) - Successfully instantiated [CallMeKey].
+ACTOR_INFO | 2020-05-13 00:01:42 | [Thread-4] actor.Actor$ScriptReader (Actor.java:359) - [CallMeKey] going to cue scene1/cue1.
+ACTOR_DEBUG | 2020-05-13 00:03:15 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 00:03:15 | [main] actor.Actor (Actor.java:86) - Instantiating actor [CallMeKey] on port [4002]...
+ACTOR_DEBUG | 2020-05-13 00:03:37 | [Thread-0] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 00:03:39 | [Thread-1] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 00:03:47 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 00:03:47 | [Thread-0] actor.Actor (Actor.java:161) - Bootstrap 1267570170 configured.
+ACTOR_DEBUG | 2020-05-13 00:03:47 | [Thread-1] actor.Actor (Actor.java:161) - Bootstrap 142073353 configured.
+ACTOR_DEBUG | 2020-05-13 00:03:47 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 2023065318 configured.
+ACTOR_DEBUG | 2020-05-13 00:03:47 | [Thread-0] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 00:03:47 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 00:03:47 | [Thread-1] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 00:03:47 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:521) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:03:47 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:521) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:03:47 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:521) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:03:47 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 00:03:47 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 00:03:47 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 00:03:49 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 00:03:49 | [Thread-1] actor.Actor (Actor.java:166) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-13 00:03:49 | [Thread-0] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 00:09:39 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [CallMeKey]...
+ACTOR_DEBUG | 2020-05-13 00:09:43 | [Thread-5] actor.Actor (Actor.java:202) - Server for [CallMeKey] bound to port 4002.
+ACTOR_DEBUG | 2020-05-13 00:09:43 | [main] actor.Actor (Actor.java:108) - Successfully instantiated [CallMeKey].
+ACTOR_INFO | 2020-05-13 00:09:52 | [Thread-4] actor.Actor$ScriptReader (Actor.java:359) - [CallMeKey] going to cue scene1/cue1.
+ACTOR_DEBUG | 2020-05-13 00:10:02 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 00:10:02 | [main] actor.Actor (Actor.java:86) - Instantiating actor [CallMeKey] on port [4002]...
+ACTOR_DEBUG | 2020-05-13 00:10:02 | [Thread-0] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 00:10:02 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 00:10:02 | [Thread-1] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 00:10:02 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 950609528 configured.
+ACTOR_DEBUG | 2020-05-13 00:10:02 | [Thread-1] actor.Actor (Actor.java:161) - Bootstrap 138332060 configured.
+ACTOR_DEBUG | 2020-05-13 00:10:02 | [Thread-0] actor.Actor (Actor.java:161) - Bootstrap 1350128200 configured.
+ACTOR_DEBUG | 2020-05-13 00:10:02 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 00:10:02 | [Thread-1] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 00:10:02 | [Thread-0] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 00:10:02 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:521) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:10:02 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:521) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:10:02 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:521) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:10:02 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 00:10:02 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 00:10:02 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 00:10:04 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 00:10:04 | [Thread-1] actor.Actor (Actor.java:166) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-13 00:10:04 | [Thread-0] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 00:10:04 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [CallMeKey]...
+ACTOR_DEBUG | 2020-05-13 00:10:04 | [main] actor.Actor (Actor.java:108) - Successfully instantiated [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:10:04 | [Thread-5] actor.Actor (Actor.java:202) - Server for [CallMeKey] bound to port 4002.
+ACTOR_INFO | 2020-05-13 00:10:23 | [Thread-4] actor.Actor$ScriptReader (Actor.java:359) - [CallMeKey] going to cue scene1/cue1.
+ACTOR_DEBUG | 2020-05-13 00:11:31 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 00:11:31 | [main] actor.Actor (Actor.java:86) - Instantiating actor [CallMeKey] on port [4002]...
+ACTOR_DEBUG | 2020-05-13 00:11:31 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 00:11:31 | [Thread-0] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 00:11:31 | [Thread-1] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 00:11:31 | [Thread-1] actor.Actor (Actor.java:161) - Bootstrap 467322996 configured.
+ACTOR_DEBUG | 2020-05-13 00:11:31 | [Thread-0] actor.Actor (Actor.java:161) - Bootstrap 1933788315 configured.
+ACTOR_DEBUG | 2020-05-13 00:11:31 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 833063974 configured.
+ACTOR_DEBUG | 2020-05-13 00:11:31 | [Thread-1] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 00:11:31 | [Thread-0] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 00:11:31 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 00:11:32 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:521) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:11:32 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:521) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:11:32 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:521) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:11:32 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 00:11:32 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 00:11:32 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 00:11:34 | [Thread-1] actor.Actor (Actor.java:166) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-13 00:11:34 | [Thread-0] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 00:11:34 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 00:11:34 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [CallMeKey]...
+ACTOR_DEBUG | 2020-05-13 00:11:34 | [main] actor.Actor (Actor.java:108) - Successfully instantiated [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:11:34 | [Thread-5] actor.Actor (Actor.java:202) - Server for [CallMeKey] bound to port 4002.
+ACTOR_INFO | 2020-05-13 00:11:48 | [Thread-4] actor.Actor$ScriptReader (Actor.java:359) - [CallMeKey] going to cue scene1/cue1.
+ACTOR_DEBUG | 2020-05-13 00:14:35 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 00:14:35 | [main] actor.Actor (Actor.java:86) - Instantiating actor [CallMeKey] on port [4002]...
+ACTOR_DEBUG | 2020-05-13 00:14:35 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 00:14:35 | [Thread-1] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 00:14:35 | [Thread-0] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 00:14:35 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 496055275 configured.
+ACTOR_DEBUG | 2020-05-13 00:14:35 | [Thread-1] actor.Actor (Actor.java:161) - Bootstrap 2080630103 configured.
+ACTOR_DEBUG | 2020-05-13 00:14:35 | [Thread-0] actor.Actor (Actor.java:161) - Bootstrap 940020141 configured.
+ACTOR_DEBUG | 2020-05-13 00:14:35 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 00:14:35 | [Thread-1] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 00:14:35 | [Thread-0] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 00:14:35 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:520) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:14:35 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:520) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:14:35 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:520) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:14:35 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 00:14:35 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 00:14:35 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 00:14:37 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 00:14:37 | [Thread-0] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 00:14:37 | [Thread-1] actor.Actor (Actor.java:166) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-13 00:14:37 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [CallMeKey]...
+ACTOR_DEBUG | 2020-05-13 00:14:37 | [main] actor.Actor (Actor.java:108) - Successfully instantiated [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:14:37 | [Thread-5] actor.Actor (Actor.java:202) - Server for [CallMeKey] bound to port 4002.
+ACTOR_INFO | 2020-05-13 00:14:37 | [Thread-4] actor.Actor$ScriptReader (Actor.java:358) - [CallMeKey] going to cue scene1/cue1.
+ACTOR_ERROR | 2020-05-13 00:14:37 | [Thread-4] actor.Actor (Actor.java:215) - Worker group for [CallMeKey] failed to shut down.
+ACTOR_ERROR | 2020-05-13 00:14:37 | [Thread-4] actor.Actor (Actor.java:221) - Boss group for [CallMeKey] failed to shut down.
+ACTOR_ERROR | 2020-05-13 00:14:37 | [Thread-4] actor.Actor (Actor.java:234) - Client group for [CallMeKey] failed to shut down.
+ACTOR_DEBUG | 2020-05-13 00:14:37 | [Thread-4] actor.Actor (Actor.java:244) - Exit actor [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:14:37 | [Thread-4] actor.Actor$ScriptReader (Actor.java:416) - [CallMeKey] is waiting for a monologue to finish.
+ACTOR_DEBUG | 2020-05-13 00:14:42 | [main] actor.Actor (Actor.java:213) - Worker group shut down for [CallMeKey]
+ACTOR_DEBUG | 2020-05-13 00:14:42 | [main] actor.Actor (Actor.java:219) - Boss group shut down for CallMeKey
+ACTOR_DEBUG | 2020-05-13 00:14:42 | [main] actor.Actor (Actor.java:232) - Client group shut down for CallMeKey
+ACTOR_DEBUG | 2020-05-13 00:14:42 | [main] actor.Actor (Actor.java:244) - Exit actor [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:15:09 | [main] actor.Actor (Actor.java:83) - 
+ACTOR_DEBUG | 2020-05-13 00:15:09 | [main] actor.Actor (Actor.java:84) - Instantiating actor [CallMeKey] on port [4002]...
+ACTOR_DEBUG | 2020-05-13 00:15:09 | [Thread-0] actor.Actor (Actor.java:142) - Initializing a client for [CallMeKey] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 00:15:09 | [Thread-3] actor.Actor (Actor.java:142) - Initializing a client for [CallMeKey] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 00:15:09 | [Thread-1] actor.Actor (Actor.java:142) - Initializing a client for [CallMeKey] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 00:15:09 | [Thread-0] actor.Actor (Actor.java:159) - Bootstrap 1040147126 configured.
+ACTOR_DEBUG | 2020-05-13 00:15:09 | [Thread-3] actor.Actor (Actor.java:159) - Bootstrap 1172762103 configured.
+ACTOR_DEBUG | 2020-05-13 00:15:09 | [Thread-1] actor.Actor (Actor.java:159) - Bootstrap 1244487065 configured.
+ACTOR_DEBUG | 2020-05-13 00:15:09 | [Thread-0] actor.Actor (Actor.java:161) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 00:15:09 | [Thread-3] actor.Actor (Actor.java:161) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 00:15:09 | [Thread-1] actor.Actor (Actor.java:161) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 00:15:09 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:518) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:15:09 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:518) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:15:09 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:518) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:15:09 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:156) - Pipeline from [CallMeKey] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 00:15:09 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:156) - Pipeline from [CallMeKey] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 00:15:09 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:156) - Pipeline from [CallMeKey] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 00:15:11 | [Thread-1] actor.Actor (Actor.java:164) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-13 00:15:11 | [Thread-3] actor.Actor (Actor.java:164) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 00:15:11 | [Thread-0] actor.Actor (Actor.java:164) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 00:15:11 | [Thread-5] actor.Actor (Actor.java:179) - Initializing server for [CallMeKey]...
+ACTOR_DEBUG | 2020-05-13 00:15:11 | [Thread-5] actor.Actor (Actor.java:200) - Server for [CallMeKey] bound to port 4002.
+ACTOR_DEBUG | 2020-05-13 00:15:11 | [main] actor.Actor (Actor.java:106) - Successfully instantiated [CallMeKey].
+ACTOR_INFO | 2020-05-13 00:15:11 | [Thread-4] actor.Actor$ScriptReader (Actor.java:356) - [CallMeKey] going to cue scene1/cue1.
+ACTOR_ERROR | 2020-05-13 00:15:24 | [main] actor.Actor (Actor.java:213) - Worker group for [CallMeKey] failed to shut down.
+ACTOR_ERROR | 2020-05-13 00:15:26 | [main] actor.Actor (Actor.java:219) - Boss group for [CallMeKey] failed to shut down.
+ACTOR_ERROR | 2020-05-13 00:15:31 | [Thread-4] actor.Actor (Actor.java:213) - Worker group for [CallMeKey] failed to shut down.
+ACTOR_ERROR | 2020-05-13 00:15:36 | [main] actor.Actor (Actor.java:232) - Client group for [CallMeKey] failed to shut down.
+ACTOR_DEBUG | 2020-05-13 00:15:36 | [main] actor.Actor (Actor.java:242) - Exit actor [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:15:36 | [Thread-4] actor.Actor (Actor.java:217) - Boss group shut down for CallMeKey
+ACTOR_ERROR | 2020-05-13 00:16:01 | [Thread-4] actor.Actor (Actor.java:232) - Client group for [CallMeKey] failed to shut down.
+ACTOR_DEBUG | 2020-05-13 00:16:06 | [Thread-4] actor.Actor (Actor.java:242) - Exit actor [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:16:14 | [Thread-4] actor.Actor$ScriptReader (Actor.java:414) - [CallMeKey] is waiting for a monologue to finish.
+ACTOR_DEBUG | 2020-05-13 00:21:04 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 00:21:04 | [main] actor.Actor (Actor.java:86) - Instantiating actor [CallMeKey] on port [4002]...
+ACTOR_DEBUG | 2020-05-13 00:21:04 | [Thread-1] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 00:21:04 | [Thread-0] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 00:21:04 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 00:21:04 | [Thread-1] actor.Actor (Actor.java:161) - Bootstrap 230595890 configured.
+ACTOR_DEBUG | 2020-05-13 00:21:04 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 1779464589 configured.
+ACTOR_DEBUG | 2020-05-13 00:21:04 | [Thread-0] actor.Actor (Actor.java:161) - Bootstrap 1018026254 configured.
+ACTOR_DEBUG | 2020-05-13 00:21:04 | [Thread-1] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 00:21:04 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 00:21:04 | [Thread-0] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 00:21:04 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:524) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:21:04 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:524) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:21:04 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:524) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:21:04 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 00:21:04 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 00:21:04 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 00:21:06 | [Thread-1] actor.Actor (Actor.java:166) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-13 00:21:06 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 00:21:06 | [Thread-0] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 00:21:06 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [CallMeKey]...
+ACTOR_DEBUG | 2020-05-13 00:21:06 | [main] actor.Actor (Actor.java:108) - Successfully instantiated [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:21:06 | [Thread-5] actor.Actor (Actor.java:202) - Server for [CallMeKey] bound to port 4002.
+ACTOR_INFO | 2020-05-13 00:21:06 | [Thread-4] actor.Actor$ScriptReader (Actor.java:362) - [CallMeKey] going to cue scene1/cue1.
+ACTOR_ERROR | 2020-05-13 00:21:10 | [Thread-4] actor.Actor (Actor.java:215) - Worker group for [CallMeKey] failed to shut down.
+ACTOR_ERROR | 2020-05-13 00:21:10 | [Thread-4] actor.Actor (Actor.java:221) - Boss group for [CallMeKey] failed to shut down.
+ACTOR_ERROR | 2020-05-13 00:21:10 | [Thread-4] actor.Actor (Actor.java:234) - Client group for [CallMeKey] failed to shut down.
+ACTOR_DEBUG | 2020-05-13 00:21:12 | [Thread-4] actor.Actor (Actor.java:244) - Exit actor [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:21:36 | [Thread-4] actor.Actor$ScriptReader (Actor.java:420) - [CallMeKey] is waiting for a monologue to finish.
+ACTOR_DEBUG | 2020-05-13 00:22:00 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 00:22:00 | [main] actor.Actor (Actor.java:86) - Instantiating actor [CallMeKey] on port [4002]...
+ACTOR_DEBUG | 2020-05-13 00:22:00 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 00:22:00 | [Thread-0] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 00:22:00 | [Thread-1] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 00:22:00 | [Thread-0] actor.Actor (Actor.java:161) - Bootstrap 329963011 configured.
+ACTOR_DEBUG | 2020-05-13 00:22:00 | [Thread-1] actor.Actor (Actor.java:161) - Bootstrap 743987198 configured.
+ACTOR_DEBUG | 2020-05-13 00:22:00 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 885478229 configured.
+ACTOR_DEBUG | 2020-05-13 00:22:00 | [Thread-0] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 00:22:00 | [Thread-1] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 00:22:00 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 00:22:00 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:525) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:22:00 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:525) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:22:00 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:525) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:22:00 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 00:22:00 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 00:22:00 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 00:22:02 | [Thread-1] actor.Actor (Actor.java:166) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-13 00:22:02 | [Thread-0] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 00:22:02 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 00:22:02 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [CallMeKey]...
+ACTOR_DEBUG | 2020-05-13 00:22:02 | [Thread-5] actor.Actor (Actor.java:202) - Server for [CallMeKey] bound to port 4002.
+ACTOR_DEBUG | 2020-05-13 00:22:02 | [main] actor.Actor (Actor.java:108) - Successfully instantiated [CallMeKey].
+ACTOR_INFO | 2020-05-13 00:22:02 | [Thread-4] actor.Actor$ScriptReader (Actor.java:362) - [CallMeKey] going to cue scene1/cue1.
+ACTOR_ERROR | 2020-05-13 00:22:04 | [Thread-4] actor.Actor (Actor.java:215) - Worker group for [CallMeKey] failed to shut down.
+ACTOR_ERROR | 2020-05-13 00:22:04 | [Thread-4] actor.Actor (Actor.java:221) - Boss group for [CallMeKey] failed to shut down.
+ACTOR_ERROR | 2020-05-13 00:22:04 | [Thread-4] actor.Actor (Actor.java:234) - Client group for [CallMeKey] failed to shut down.
+ACTOR_DEBUG | 2020-05-13 00:22:05 | [Thread-4] actor.Actor (Actor.java:244) - Exit actor [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:22:19 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 00:22:19 | [main] actor.Actor (Actor.java:86) - Instantiating actor [CallMeKey] on port [4002]...
+ACTOR_DEBUG | 2020-05-13 00:22:19 | [Thread-0] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 00:22:19 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 00:22:19 | [Thread-1] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 00:22:19 | [Thread-0] actor.Actor (Actor.java:161) - Bootstrap 361549416 configured.
+ACTOR_DEBUG | 2020-05-13 00:22:19 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 1972228424 configured.
+ACTOR_DEBUG | 2020-05-13 00:22:19 | [Thread-1] actor.Actor (Actor.java:161) - Bootstrap 1604298861 configured.
+ACTOR_DEBUG | 2020-05-13 00:22:19 | [Thread-0] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 00:22:19 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 00:22:19 | [Thread-1] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 00:22:19 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:525) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:22:19 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:525) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:22:19 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:525) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:22:19 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 00:22:19 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 00:22:19 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 00:22:21 | [Thread-1] actor.Actor (Actor.java:166) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-13 00:22:21 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 00:22:21 | [Thread-0] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 00:22:21 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [CallMeKey]...
+ACTOR_DEBUG | 2020-05-13 00:22:21 | [Thread-5] actor.Actor (Actor.java:202) - Server for [CallMeKey] bound to port 4002.
+ACTOR_DEBUG | 2020-05-13 00:22:21 | [main] actor.Actor (Actor.java:108) - Successfully instantiated [CallMeKey].
+ACTOR_INFO | 2020-05-13 00:22:21 | [Thread-4] actor.Actor$ScriptReader (Actor.java:362) - [CallMeKey] going to cue scene1/cue1.
+ACTOR_ERROR | 2020-05-13 00:22:21 | [Thread-4] actor.Actor (Actor.java:215) - Worker group for [CallMeKey] failed to shut down.
+ACTOR_ERROR | 2020-05-13 00:22:21 | [Thread-4] actor.Actor (Actor.java:221) - Boss group for [CallMeKey] failed to shut down.
+ACTOR_ERROR | 2020-05-13 00:22:21 | [Thread-4] actor.Actor (Actor.java:234) - Client group for [CallMeKey] failed to shut down.
+ACTOR_DEBUG | 2020-05-13 00:22:21 | [Thread-4] actor.Actor (Actor.java:244) - Exit actor [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:34:36 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 00:34:36 | [main] actor.Actor (Actor.java:86) - Instantiating actor [CallMeKey] on port [4002]...
+ACTOR_DEBUG | 2020-05-13 00:34:36 | [Thread-0] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 00:34:36 | [Thread-1] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 00:34:36 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 00:34:36 | [Thread-0] actor.Actor (Actor.java:161) - Bootstrap 762731935 configured.
+ACTOR_DEBUG | 2020-05-13 00:34:36 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 1817623457 configured.
+ACTOR_DEBUG | 2020-05-13 00:34:36 | [Thread-1] actor.Actor (Actor.java:161) - Bootstrap 1110690097 configured.
+ACTOR_DEBUG | 2020-05-13 00:34:36 | [Thread-0] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 00:34:36 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 00:34:36 | [Thread-1] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 00:34:36 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:527) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:34:36 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:527) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:34:36 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:527) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:34:36 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 00:34:36 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 00:34:36 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 00:34:38 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 00:34:38 | [Thread-0] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 00:34:38 | [Thread-1] actor.Actor (Actor.java:166) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-13 00:34:38 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [CallMeKey]...
+ACTOR_DEBUG | 2020-05-13 00:34:39 | [Thread-5] actor.Actor (Actor.java:202) - Server for [CallMeKey] bound to port 4002.
+ACTOR_DEBUG | 2020-05-13 00:34:39 | [main] actor.Actor (Actor.java:108) - Successfully instantiated [CallMeKey].
+ACTOR_INFO | 2020-05-13 00:34:39 | [Thread-4] actor.Actor$ScriptReader (Actor.java:364) - [CallMeKey] going to cue scene1/cue1.
+ACTOR_ERROR | 2020-05-13 00:34:39 | [Thread-4] actor.Actor (Actor.java:216) - Worker group for [CallMeKey] failed to shut down.
+ACTOR_ERROR | 2020-05-13 00:34:39 | [Thread-4] actor.Actor (Actor.java:222) - Boss group for [CallMeKey] failed to shut down.
+ACTOR_ERROR | 2020-05-13 00:34:39 | [Thread-4] actor.Actor (Actor.java:236) - Client group for [CallMeKey] failed to shut down.
+ACTOR_DEBUG | 2020-05-13 00:34:39 | [Thread-4] actor.Actor (Actor.java:246) - Exit actor [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:35:23 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 00:35:23 | [main] actor.Actor (Actor.java:86) - Instantiating actor [CallMeKey] on port [4002]...
+ACTOR_DEBUG | 2020-05-13 00:35:23 | [Thread-1] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 00:35:23 | [Thread-0] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 00:35:23 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 00:35:23 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 1602738750 configured.
+ACTOR_DEBUG | 2020-05-13 00:35:23 | [Thread-1] actor.Actor (Actor.java:161) - Bootstrap 1749106008 configured.
+ACTOR_DEBUG | 2020-05-13 00:35:23 | [Thread-0] actor.Actor (Actor.java:161) - Bootstrap 1927375995 configured.
+ACTOR_DEBUG | 2020-05-13 00:35:23 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 00:35:23 | [Thread-1] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 00:35:23 | [Thread-0] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 00:35:23 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:527) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:35:23 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:527) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:35:23 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:527) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:35:23 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 00:35:23 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 00:35:23 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 00:35:25 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 00:35:25 | [Thread-1] actor.Actor (Actor.java:166) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-13 00:35:25 | [Thread-0] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 00:35:25 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [CallMeKey]...
+ACTOR_DEBUG | 2020-05-13 00:35:25 | [Thread-5] actor.Actor (Actor.java:202) - Server for [CallMeKey] bound to port 4002.
+ACTOR_DEBUG | 2020-05-13 00:35:25 | [main] actor.Actor (Actor.java:108) - Successfully instantiated [CallMeKey].
+ACTOR_INFO | 2020-05-13 00:35:25 | [Thread-4] actor.Actor$ScriptReader (Actor.java:364) - [CallMeKey] going to cue scene1/cue1.
+ACTOR_ERROR | 2020-05-13 00:35:26 | [Thread-4] actor.Actor (Actor.java:216) - Worker group for [CallMeKey] failed to shut down.
+ACTOR_ERROR | 2020-05-13 00:35:26 | [Thread-4] actor.Actor (Actor.java:222) - Boss group for [CallMeKey] failed to shut down.
+ACTOR_ERROR | 2020-05-13 00:35:26 | [Thread-4] actor.Actor (Actor.java:236) - Client group for [CallMeKey] failed to shut down.
+ACTOR_DEBUG | 2020-05-13 00:35:26 | [Thread-4] actor.Actor (Actor.java:246) - Exit actor [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:36:07 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 00:36:07 | [main] actor.Actor (Actor.java:86) - Instantiating actor [CallMeKey] on port [4002]...
+ACTOR_DEBUG | 2020-05-13 00:36:07 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 00:36:07 | [Thread-0] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 00:36:07 | [Thread-1] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 00:36:07 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 1288234941 configured.
+ACTOR_DEBUG | 2020-05-13 00:36:07 | [Thread-0] actor.Actor (Actor.java:161) - Bootstrap 847843046 configured.
+ACTOR_DEBUG | 2020-05-13 00:36:07 | [Thread-1] actor.Actor (Actor.java:161) - Bootstrap 1979893556 configured.
+ACTOR_DEBUG | 2020-05-13 00:36:07 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 00:36:07 | [Thread-0] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 00:36:07 | [Thread-1] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 00:36:07 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:527) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:36:07 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:527) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:36:07 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:527) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:36:07 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 00:36:07 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 00:36:07 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 00:36:09 | [Thread-1] actor.Actor (Actor.java:166) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-13 00:36:09 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 00:36:09 | [Thread-0] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 00:36:09 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [CallMeKey]...
+ACTOR_DEBUG | 2020-05-13 00:36:10 | [Thread-5] actor.Actor (Actor.java:202) - Server for [CallMeKey] bound to port 4002.
+ACTOR_DEBUG | 2020-05-13 00:36:10 | [main] actor.Actor (Actor.java:108) - Successfully instantiated [CallMeKey].
+ACTOR_INFO | 2020-05-13 00:36:10 | [Thread-4] actor.Actor$ScriptReader (Actor.java:364) - [CallMeKey] going to cue scene1/cue1.
+ACTOR_DEBUG | 2020-05-13 00:36:13 | [Thread-4] actor.Actor (Actor.java:214) - Worker group shut down for [CallMeKey]
+ACTOR_DEBUG | 2020-05-13 00:36:13 | [Thread-4] actor.Actor (Actor.java:220) - Boss group shut down for CallMeKey
+ACTOR_ERROR | 2020-05-13 00:36:13 | [Thread-4] actor.Actor (Actor.java:236) - Client group for [CallMeKey] failed to shut down.
+ACTOR_DEBUG | 2020-05-13 00:36:13 | [Thread-4] actor.Actor (Actor.java:246) - Exit actor [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:36:36 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 00:36:36 | [main] actor.Actor (Actor.java:86) - Instantiating actor [CallMeKey] on port [4002]...
+ACTOR_DEBUG | 2020-05-13 00:36:36 | [Thread-0] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 00:36:36 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 00:36:36 | [Thread-1] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 00:36:36 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 50155602 configured.
+ACTOR_DEBUG | 2020-05-13 00:36:36 | [Thread-0] actor.Actor (Actor.java:161) - Bootstrap 274049374 configured.
+ACTOR_DEBUG | 2020-05-13 00:36:36 | [Thread-1] actor.Actor (Actor.java:161) - Bootstrap 1979893556 configured.
+ACTOR_DEBUG | 2020-05-13 00:36:36 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 00:36:36 | [Thread-0] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 00:36:36 | [Thread-1] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 00:36:36 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:527) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:36:36 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:527) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:36:36 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:527) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:36:36 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 00:36:36 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 00:36:36 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 00:36:38 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 00:36:38 | [Thread-0] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 00:36:38 | [Thread-1] actor.Actor (Actor.java:166) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-13 00:36:38 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [CallMeKey]...
+ACTOR_DEBUG | 2020-05-13 00:36:38 | [Thread-5] actor.Actor (Actor.java:202) - Server for [CallMeKey] bound to port 4002.
+ACTOR_DEBUG | 2020-05-13 00:36:38 | [main] actor.Actor (Actor.java:108) - Successfully instantiated [CallMeKey].
+ACTOR_INFO | 2020-05-13 00:36:38 | [Thread-4] actor.Actor$ScriptReader (Actor.java:364) - [CallMeKey] going to cue scene1/cue1.
+ACTOR_ERROR | 2020-05-13 00:36:39 | [Thread-4] actor.Actor (Actor.java:216) - Worker group for [CallMeKey] failed to shut down.
+ACTOR_ERROR | 2020-05-13 00:36:39 | [Thread-4] actor.Actor (Actor.java:222) - Boss group for [CallMeKey] failed to shut down.
+ACTOR_ERROR | 2020-05-13 00:36:40 | [Thread-4] actor.Actor (Actor.java:236) - Client group for [CallMeKey] failed to shut down.
+ACTOR_DEBUG | 2020-05-13 00:36:40 | [Thread-4] actor.Actor (Actor.java:246) - Exit actor [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:40:51 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 00:40:51 | [main] actor.Actor (Actor.java:86) - Instantiating actor [CallMeKey] on port [4002]...
+ACTOR_DEBUG | 2020-05-13 00:40:51 | [Thread-0] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 00:40:51 | [Thread-1] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 00:40:51 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 00:40:51 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 1979893556 configured.
+ACTOR_DEBUG | 2020-05-13 00:40:51 | [Thread-0] actor.Actor (Actor.java:161) - Bootstrap 672635238 configured.
+ACTOR_DEBUG | 2020-05-13 00:40:51 | [Thread-1] actor.Actor (Actor.java:161) - Bootstrap 2134800046 configured.
+ACTOR_DEBUG | 2020-05-13 00:40:51 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 00:40:51 | [Thread-1] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 00:40:51 | [Thread-0] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 00:40:51 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:526) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:40:51 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:526) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:40:51 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:526) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:40:51 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 00:40:51 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 00:40:51 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 00:40:53 | [Thread-1] actor.Actor (Actor.java:166) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-13 00:40:53 | [Thread-0] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 00:40:53 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 00:40:53 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [CallMeKey]...
+ACTOR_DEBUG | 2020-05-13 00:40:53 | [Thread-5] actor.Actor (Actor.java:202) - Server for [CallMeKey] bound to port 4002.
+ACTOR_DEBUG | 2020-05-13 00:40:53 | [main] actor.Actor (Actor.java:108) - Successfully instantiated [CallMeKey].
+ACTOR_INFO | 2020-05-13 00:40:53 | [Thread-4] actor.Actor$ScriptReader (Actor.java:363) - [CallMeKey] going to cue scene1/cue1.
+ACTOR_DEBUG | 2020-05-13 00:40:53 | [Thread-4] actor.Actor (Actor.java:214) - Worker group is shutting down for [CallMeKey]
+ACTOR_DEBUG | 2020-05-13 00:40:53 | [Thread-4] actor.Actor (Actor.java:220) - Boss group is shutting down for CallMeKey
+ACTOR_DEBUG | 2020-05-13 00:40:53 | [Thread-4] actor.Actor (Actor.java:233) - Client group is shutting down for CallMeKey
+ACTOR_DEBUG | 2020-05-13 00:40:53 | [Thread-4] actor.Actor (Actor.java:245) - Exit actor [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:42:37 | [main] actor.Actor (Actor.java:85) - 
+ACTOR_DEBUG | 2020-05-13 00:42:37 | [main] actor.Actor (Actor.java:86) - Instantiating actor [CallMeKey] on port [4002]...
+ACTOR_DEBUG | 2020-05-13 00:42:38 | [Thread-1] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-13 00:42:38 | [Thread-0] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-13 00:42:38 | [Thread-3] actor.Actor (Actor.java:144) - Initializing a client for [CallMeKey] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-13 00:42:38 | [Thread-3] actor.Actor (Actor.java:161) - Bootstrap 1979893556 configured.
+ACTOR_DEBUG | 2020-05-13 00:42:38 | [Thread-0] actor.Actor (Actor.java:161) - Bootstrap 1670854945 configured.
+ACTOR_DEBUG | 2020-05-13 00:42:38 | [Thread-1] actor.Actor (Actor.java:161) - Bootstrap 2007083053 configured.
+ACTOR_DEBUG | 2020-05-13 00:42:38 | [Thread-0] actor.Actor (Actor.java:163) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-13 00:42:38 | [Thread-3] actor.Actor (Actor.java:163) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-13 00:42:38 | [Thread-1] actor.Actor (Actor.java:163) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-13 00:42:38 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:527) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:42:38 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:527) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:42:38 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:527) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-13 00:42:38 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-13 00:42:38 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-13 00:42:38 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:158) - Pipeline from [CallMeKey] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-13 00:42:40 | [Thread-1] actor.Actor (Actor.java:166) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-13 00:42:40 | [Thread-0] actor.Actor (Actor.java:166) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-13 00:42:40 | [Thread-3] actor.Actor (Actor.java:166) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-13 00:42:40 | [Thread-5] actor.Actor (Actor.java:181) - Initializing server for [CallMeKey]...
+ACTOR_DEBUG | 2020-05-13 00:42:40 | [Thread-5] actor.Actor (Actor.java:202) - Server for [CallMeKey] bound to port 4002.
+ACTOR_DEBUG | 2020-05-13 00:42:40 | [main] actor.Actor (Actor.java:108) - Successfully instantiated [CallMeKey].
+ACTOR_INFO | 2020-05-13 00:42:40 | [Thread-4] actor.Actor$ScriptReader (Actor.java:363) - [CallMeKey] going to cue scene1/cue1.
+ACTOR_INFO | 2020-05-13 00:42:40 | [Thread-4] actor.Actor$ScriptReader (Actor.java:394) - [CallMeKey] has been instructed to exit the stage.
+ACTOR_DEBUG | 2020-05-13 00:42:40 | [Thread-4] actor.Actor (Actor.java:214) - Worker group is shutting down for [CallMeKey]
+ACTOR_DEBUG | 2020-05-13 00:42:40 | [Thread-4] actor.Actor (Actor.java:220) - Boss group is shutting down for CallMeKey
+ACTOR_DEBUG | 2020-05-13 00:42:40 | [Thread-4] actor.Actor (Actor.java:233) - Client group is shutting down for CallMeKey
+ACTOR_DEBUG | 2020-05-13 00:42:40 | [Thread-4] actor.Actor (Actor.java:245) - Exit actor [CallMeKey].
