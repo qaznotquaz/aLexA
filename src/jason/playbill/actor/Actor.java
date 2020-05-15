@@ -50,6 +50,7 @@ public class Actor {
 
     //private CountDownLatch messageWaiting;
     private final Object scriptSync = new Object();
+    private final Object waitingForFriendsSync = new Object();
     private final Object leavingSync;
     /**
      * The Hostname that the actor will be connecting to.
@@ -72,6 +73,8 @@ public class Actor {
     private String name;
     private String color;
     private int port;
+
+    private final int formatWidth = 80;
 
     /**
      * Instantiates a new Actor.
@@ -255,7 +258,8 @@ public class Actor {
      * @param line the line
      */
     void speaks(String line) {
-        System.out.println(color + line + ANSI_RESET);
+        System.out.printf("> %s%s%s\n",
+                color, line, ANSI_RESET);
         logger.actorInfo("[{}] spoke \"{}\" to the user.", this.getName(), line);
     }
 
@@ -269,14 +273,26 @@ public class Actor {
         Contact target = findContact(targetName);
 
         if (target != null) {
-            System.out.printf("> %sMe%s: %s%s%s\n",
-                    color, ANSI_RESET, color, line, ANSI_RESET);
             target.dm(new Contact(this), line);
             logger.actorInfo("[{}] direct-messaged \"{}\" to [{}].", this.getName(), line, targetName);
         } else {
             logger.actorError("[{}] tried to direct-message [{}] but couldn't find them.", this.getName(), targetName);
             throw new NullPointerException("There isn't any actor by the name " + targetName);
         }
+    }
+
+    public void displayDmOut(Actor sender, String line) {
+        String toPrint = String.format("%s%s%s > %s%s%s",
+                sender.getColor(), sender.getName(), ANSI_RESET,
+                sender.getColor(), line, ANSI_RESET);
+        System.out.printf("%-" + formatWidth + "s\n", toPrint);
+    }
+
+    public void displayDmIn(Contact sender, String line) {
+        String toPrint = String.format("%s%s%s < %s%s%s",
+                sender.getColor(), line, ANSI_RESET,
+                sender.getColor(), sender.getName(), ANSI_RESET);
+        System.out.printf("%" + formatWidth + "s\n", toPrint);
     }
 
     public void cueNext(String targetName) {
@@ -381,9 +397,6 @@ public class Actor {
             JSONObject presencesJson = cue.getJSONObject("actors");
             Playscript.Presence tempPre;
             Playscript.Presence myPresence = null;
-            /*ArrayList<String> reqOnstage = new ArrayList<>(); // the list of other actors who must be onstage
-            ArrayList<String> optOnstage = new ArrayList<>(); // the list of other actors who don't have to be onstage but can be*/
-            ArrayList<String> participating = new ArrayList<>();
             ArrayList<String> onstage = new ArrayList<>();
 
             for(String name:names){
@@ -396,10 +409,7 @@ public class Actor {
                     } else if (tempPre.equals(Playscript.Presence.listening)){
                         optOnstage.add(name);
                     }*/
-                    if (tempPre != Playscript.Presence.offstage && tempPre != Playscript.Presence.idle){
-                        participating.add(name);
-                        onstage.add(name);
-                    } else if (tempPre == Playscript.Presence.idle) {
+                    if (tempPre != Playscript.Presence.offstage){
                         onstage.add(name);
                     }
                 }
@@ -427,6 +437,12 @@ public class Actor {
                 }
             }
 
+            synchronized (waitingForFriendsSync){
+                while (!waitForFriends(onstage)){
+                    waitingForFriendsSync.wait();
+                }
+            }
+
             JSONObject cuesTo;
 
             switch (type) {
@@ -450,7 +466,7 @@ public class Actor {
                     goToCue(cuesTo.getString("scene"), cuesTo.getString("cue"));
                     break;
                 case conversation:
-                    converse(participating, cue.getJSONObject("text"));
+                    converse(onstage, cue.getJSONObject("text"));
                     cuesTo = cue.getJSONObject("cuesTo");
                     goToCue(cuesTo.getString("scene"), cuesTo.getString("cue"));
                     break;
@@ -476,14 +492,6 @@ public class Actor {
         }
 
         public void monologue(ArrayList<String> onstage, JSONObject text) throws InterruptedException {
-            for (String member:onstage) {
-                if(findContact(member) == null){
-                    logger.actorError("[{}] expected [{}] to be onstage during their monologue, but  they're not.",
-                            owner.getName(), member);
-                    return;
-                }
-            }
-
             int lineNum = 1;
             JSONObject line = text.getJSONObject(String.valueOf(lineNum));
             boolean speaking = true;
@@ -508,6 +516,7 @@ public class Actor {
         public void converse(ArrayList<String> onstage, JSONObject text) throws InterruptedException {
             logger.actorInfo("[{}] entering conversation.",
                     owner.getName());
+
             for (String member:onstage) {
                 if(findContact(member) == null){
                     logger.actorError("[{}] needs to converse with [{}], but they're not onstage.",
@@ -526,6 +535,7 @@ public class Actor {
             while(conversing){
                 if (line.getString("from").equals(owner.name)){
                     Thread.sleep(line.getInt("delay"));
+                    displayDmOut(owner, line.getString("text"));
                     for (String member:onstage) {
                         dm(line.getString("text"), member);
                     }
@@ -542,6 +552,21 @@ public class Actor {
                     conversing = false;
                 }
             }
+        }
+
+        public boolean waitForFriends(ArrayList<String> waitingFor){
+            boolean foundAll = true;
+            for (String contact:waitingFor) {
+                if(findContact(contact) == null){
+                    logger.actorError("[{}] is expecting [{}] to be onstage, but they're not.",
+                            owner.getName(), contact);
+                    foundAll = false;
+                } else {
+                    logger.actorInfo("[{}] has found [{}] onstage.",
+                            owner.getName(), contact);
+                }
+            }
+            return foundAll;
         }
     }
 
@@ -590,10 +615,18 @@ public class Actor {
                     logger.actorInfo("[{}] received a roll-call response from [{}], who is on port {}.",
                             owner.getName(), source.getName(), source.getPort());
                     if (findContact(source.getName()) == null) {
-                        ensemble.add(new Contact(source, ctx));
-                    }
-                    if (connecting.getCount() != 0) {
-                        connecting.countDown();
+                        synchronized (waitingForFriendsSync){
+                            ensemble.add(new Contact(source, ctx));
+                            logger.actorDebug("[{}] added [{}] to their contact list.",
+                                    owner.getName(), source.getName());
+                            waitingForFriendsSync.notify();
+
+                        }
+                        if (connecting.getCount() != 0) {
+                            connecting.countDown();
+                        }
+                    } else {
+                        logger.actorError("[{}] did NOT add [{}] to their contact list.");
                     }
                 }
                 case confirmation ->
@@ -634,9 +667,7 @@ public class Actor {
                 case dm -> {
                     logger.actorInfo("[{}] received the direct-message \"{}\" from [{}].",
                             owner.getName(), received.getData(), source.getName());
-                    System.out.printf("> %s%s%s says: %s%s%s\n",
-                            source.getColor(), source.getName(), ANSI_RESET,
-                            source.getColor(), received.getData(), ANSI_RESET);
+                    displayDmIn(source, (String) received.getData());
                     response.setMessageType(Message.MessageType.confirmation);
                     response.setData("message");
                     synchronized (scriptSync) {
@@ -668,6 +699,8 @@ public class Actor {
                     synchronized (scriptSync) {
                         scriptSync.notify();
                     }
+                    response.setMessageType(Message.MessageType.confirmation);
+                    response.setData("nextCue");
                 }
             }
 

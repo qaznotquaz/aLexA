@@ -15,7 +15,7 @@
         "Lexa": "leading",
         "Xander": "idle",
         "Fate": "offstage",
-        "CallMeKey": "offstage"
+        "CallMeKey": "idle"
       },
       "text": {
         "1": {
@@ -42,7 +42,7 @@
         "Lexa": "responding",
         "Xander": "leading",
         "Fate": "offstage",
-        "CallMeKey": "offstage"
+        "CallMeKey": "responding"
       },
       "cuesTo": {
         "scene": "scene1",
@@ -51,12 +51,12 @@
       "text": {
         "1": {
           "delay": 1000,
-          "from": "Lexa",
+          "from": "Xander",
           "text": "dude, lex."
         },
         "2": {
           "delay": 500,
-          "from": "Lexa",
+          "from": "Xander",
           "text": "have you no chill?"
         },
         "3": {
@@ -83,6 +83,46 @@
           "delay": 2300,
           "from": "Lexa",
           "text": "You haven't seen the Princess Bride?"
+        },
+        "8": {
+          "delay": 1000,
+          "from": "CallMeKey",
+          "text": "(you have got to be kidding me, x)"
+        },
+        "9": {
+          "delay": 1400,
+          "from": "CallMeKey",
+          "text": "(are you honest? are you for real?)"
+        },
+        "10": {
+          "delay": 200,
+          "from": "CallMeKey",
+          "text": "(please be lying)"
+        },
+        "11": {
+          "delay": 200,
+          "from": "Lexa",
+          "text": "Please be lying."
+        },
+        "12": {
+          "delay": 1000,
+          "from": "Xander",
+          "text": "what's a princess"
+        },
+        "13": {
+          "delay": 1000,
+          "from": "Lexa",
+          "text": "Stoooooop talking."
+        },
+        "14": {
+          "delay": 400,
+          "from": "Lexa",
+          "text": "Just. Stop."
+        },
+        "15": {
+          "delay": 2000,
+          "from": "CallMeKey",
+          "text": "(sounds like a watch party is in order.)"
         }
       }
     },
