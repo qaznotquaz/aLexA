@@ -1773,3 +1773,627 @@ ACTOR_DEBUG | 2020-05-15 03:52:36 | [Thread-4] actor.Actor (Actor.java:217) - Wo
 ACTOR_DEBUG | 2020-05-15 03:52:36 | [Thread-4] actor.Actor (Actor.java:223) - Boss group is shutting down for CallMeKey
 ACTOR_DEBUG | 2020-05-15 03:52:36 | [Thread-4] actor.Actor (Actor.java:236) - Client group is shutting down for CallMeKey
 ACTOR_DEBUG | 2020-05-15 03:52:36 | [Thread-4] actor.Actor (Actor.java:248) - Exit actor [CallMeKey].
+ACTOR_DEBUG | 2020-05-15 11:08:39 | [main] actor.Actor (Actor.java:88) - 
+ACTOR_DEBUG | 2020-05-15 11:08:39 | [main] actor.Actor (Actor.java:89) - Instantiating actor [CallMeKey] on port [4002]...
+ACTOR_DEBUG | 2020-05-15 11:08:39 | [Thread-0] actor.Actor (Actor.java:147) - Initializing a client for [CallMeKey] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-15 11:08:39 | [Thread-3] actor.Actor (Actor.java:147) - Initializing a client for [CallMeKey] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-15 11:08:39 | [Thread-1] actor.Actor (Actor.java:147) - Initializing a client for [CallMeKey] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-15 11:08:39 | [Thread-0] actor.Actor (Actor.java:164) - Bootstrap 351639859 configured.
+ACTOR_DEBUG | 2020-05-15 11:08:39 | [Thread-3] actor.Actor (Actor.java:164) - Bootstrap 22001524 configured.
+ACTOR_DEBUG | 2020-05-15 11:08:39 | [Thread-1] actor.Actor (Actor.java:164) - Bootstrap 654802722 configured.
+ACTOR_DEBUG | 2020-05-15 11:08:39 | [Thread-0] actor.Actor (Actor.java:166) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-15 11:08:39 | [Thread-3] actor.Actor (Actor.java:166) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-15 11:08:39 | [Thread-1] actor.Actor (Actor.java:166) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-15 11:08:39 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-15 11:08:39 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-15 11:08:39 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-15 11:08:39 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:161) - Pipeline from [CallMeKey] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-15 11:08:39 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:161) - Pipeline from [CallMeKey] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-15 11:08:39 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:161) - Pipeline from [CallMeKey] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-15 11:08:39 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 859108292 has connected to its target.
+ACTOR_INFO | 2020-05-15 11:08:39 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [CallMeKey] to port 4001.
+ACTOR_INFO | 2020-05-15 11:08:39 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:615) - [CallMeKey] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-15 11:08:39 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:620) - [CallMeKey] added [Xander] to their contact list.
+ACTOR_DEBUG | 2020-05-15 11:08:41 | [Thread-3] actor.Actor (Actor.java:169) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-15 11:08:41 | [Thread-0] actor.Actor (Actor.java:169) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-15 11:08:41 | [Thread-5] actor.Actor (Actor.java:184) - Initializing server for [CallMeKey]...
+ACTOR_DEBUG | 2020-05-15 11:08:41 | [main] actor.Actor (Actor.java:111) - Successfully instantiated [CallMeKey].
+ACTOR_DEBUG | 2020-05-15 11:08:41 | [Thread-5] actor.Actor (Actor.java:205) - Server for [CallMeKey] bound to port 4002.
+ACTOR_INFO | 2020-05-15 11:08:41 | [Thread-4] actor.Actor$ScriptReader (Actor.java:393) - [CallMeKey] going to cue scene1/cue1.
+ACTOR_ERROR | 2020-05-15 11:08:41 | [Thread-4] actor.Actor$ScriptReader (Actor.java:561) - [CallMeKey] is expecting [Lexa] to be onstage, but they're not.
+ACTOR_INFO | 2020-05-15 11:08:41 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Xander] onstage.
+ACTOR_DEBUG | 2020-05-15 11:08:41 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:655) - [CallMeKey]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-15 11:08:41 | [nioEventLoopGroup-4-1] actor.Actor$2 (Actor.java:200) - Channel pipeline [d234f9ef] to Server [CallMeKey] has been initialized.
+ACTOR_INFO | 2020-05-15 11:08:41 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:678) - [CallMeKey] received a roll-call request from [Xander], who is on port 4001.
+ACTOR_ERROR | 2020-05-15 11:08:41 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:686) - [CallMeKey] already has [Xander] in their contact list.
+ACTOR_DEBUG | 2020-05-15 11:08:45 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:655) - [CallMeKey]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-15 11:08:45 | [nioEventLoopGroup-4-2] actor.Actor$2 (Actor.java:200) - Channel pipeline [bccec85a] to Server [CallMeKey] has been initialized.
+ACTOR_INFO | 2020-05-15 11:08:45 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:678) - [CallMeKey] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-15 11:08:45 | [Thread-6] actor.Actor (Actor.java:147) - Initializing a client for [CallMeKey] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-15 11:08:45 | [Thread-6] actor.Actor (Actor.java:164) - Bootstrap 1329662652 configured.
+ACTOR_DEBUG | 2020-05-15 11:08:45 | [Thread-6] actor.Actor (Actor.java:166) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-15 11:08:45 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-15 11:08:45 | [nioEventLoopGroup-2-4] actor.Actor$1 (Actor.java:161) - Pipeline from [CallMeKey] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-15 11:08:47 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 735347287 has connected to its target.
+ACTOR_INFO | 2020-05-15 11:08:47 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [CallMeKey] to port 4000.
+ACTOR_INFO | 2020-05-15 11:08:47 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:615) - [CallMeKey] received a roll-call response from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-15 11:08:47 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:620) - [CallMeKey] added [Lexa] to their contact list.
+ACTOR_INFO | 2020-05-15 11:08:47 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Lexa] onstage.
+ACTOR_INFO | 2020-05-15 11:08:47 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Xander] onstage.
+ACTOR_DEBUG | 2020-05-15 11:08:47 | [Thread-4] actor.Actor$ScriptReader (Actor.java:457) - [CallMeKey] is waiting for a monologue to finish.
+ACTOR_DEBUG | 2020-05-15 11:08:50 | [Thread-4] actor.Actor$ScriptReader (Actor.java:460) - The monologue that [CallMeKey] was waiting on has finished.
+ACTOR_INFO | 2020-05-15 11:08:50 | [Thread-4] actor.Actor$ScriptReader (Actor.java:393) - [CallMeKey] going to cue scene1/cue2.
+ACTOR_INFO | 2020-05-15 11:08:50 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Lexa] onstage.
+ACTOR_INFO | 2020-05-15 11:08:50 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Xander] onstage.
+ACTOR_INFO | 2020-05-15 11:08:50 | [Thread-4] actor.Actor$ScriptReader (Actor.java:517) - [CallMeKey] entering conversation.
+ACTOR_INFO | 2020-05-15 11:08:50 | [Thread-4] actor.Actor$ScriptReader (Actor.java:526) - [CallMeKey] will be conversing with [Lexa].
+ACTOR_INFO | 2020-05-15 11:08:50 | [Thread-4] actor.Actor$ScriptReader (Actor.java:526) - [CallMeKey] will be conversing with [Xander].
+ACTOR_INFO | 2020-05-15 11:08:51 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "dude, lex." from [Xander].
+ACTOR_INFO | 2020-05-15 11:08:51 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "have you no chill?" from [Xander].
+ACTOR_INFO | 2020-05-15 11:08:52 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "What? It's a good movie!" from [Lexa].
+ACTOR_INFO | 2020-05-15 11:08:53 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "what?" from [Xander].
+ACTOR_INFO | 2020-05-15 11:08:55 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "Wait, you haven't-" from [Lexa].
+ACTOR_INFO | 2020-05-15 11:08:55 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "..." from [Lexa].
+ACTOR_INFO | 2020-05-15 11:08:57 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "You haven't seen the Princess Bride?" from [Lexa].
+ACTOR_INFO | 2020-05-15 11:08:58 | [Thread-4] actor.Actor (Actor.java:277) - [CallMeKey] direct-messaged "(you have got to be kidding me, x)" to [Lexa].
+ACTOR_INFO | 2020-05-15 11:08:58 | [Thread-4] actor.Actor (Actor.java:277) - [CallMeKey] direct-messaged "(you have got to be kidding me, x)" to [Xander].
+ACTOR_INFO | 2020-05-15 11:08:58 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:633) - [CallMeKey] received a confirmation from [Lexa] about message.
+ACTOR_INFO | 2020-05-15 11:08:58 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:633) - [CallMeKey] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-15 11:09:00 | [Thread-4] actor.Actor (Actor.java:277) - [CallMeKey] direct-messaged "(are you honest? are you for real?)" to [Lexa].
+ACTOR_INFO | 2020-05-15 11:09:00 | [Thread-4] actor.Actor (Actor.java:277) - [CallMeKey] direct-messaged "(are you honest? are you for real?)" to [Xander].
+ACTOR_INFO | 2020-05-15 11:09:00 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:633) - [CallMeKey] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-15 11:09:00 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:633) - [CallMeKey] received a confirmation from [Lexa] about message.
+ACTOR_INFO | 2020-05-15 11:09:00 | [Thread-4] actor.Actor (Actor.java:277) - [CallMeKey] direct-messaged "(please be lying)" to [Lexa].
+ACTOR_INFO | 2020-05-15 11:09:00 | [Thread-4] actor.Actor (Actor.java:277) - [CallMeKey] direct-messaged "(please be lying)" to [Xander].
+ACTOR_INFO | 2020-05-15 11:09:00 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:633) - [CallMeKey] received a confirmation from [Lexa] about message.
+ACTOR_INFO | 2020-05-15 11:09:00 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:633) - [CallMeKey] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-15 11:09:00 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "Please be lying." from [Lexa].
+ACTOR_INFO | 2020-05-15 11:09:01 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "what's a princess" from [Xander].
+ACTOR_INFO | 2020-05-15 11:09:02 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "Stoooooop talking." from [Lexa].
+ACTOR_INFO | 2020-05-15 11:09:03 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "Just. Stop." from [Lexa].
+ACTOR_INFO | 2020-05-15 11:09:05 | [Thread-4] actor.Actor (Actor.java:277) - [CallMeKey] direct-messaged "(sounds like a watch party is in order.)" to [Lexa].
+ACTOR_INFO | 2020-05-15 11:09:05 | [Thread-4] actor.Actor (Actor.java:277) - [CallMeKey] direct-messaged "(sounds like a watch party is in order.)" to [Xander].
+ACTOR_INFO | 2020-05-15 11:09:05 | [Thread-4] actor.Actor$ScriptReader (Actor.java:393) - [CallMeKey] going to cue scene1/cue3.
+ACTOR_INFO | 2020-05-15 11:09:05 | [Thread-4] actor.Actor$ScriptReader (Actor.java:422) - [CallMeKey] has been instructed to exit the stage.
+ACTOR_INFO | 2020-05-15 11:09:05 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:633) - [CallMeKey] received a confirmation from [Lexa] about message.
+ACTOR_INFO | 2020-05-15 11:09:05 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:633) - [CallMeKey] received a confirmation from [Xander] about message.
+ACTOR_DEBUG | 2020-05-15 11:09:05 | [Thread-6] actor.Actor (Actor.java:169) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-15 11:09:05 | [Thread-1] actor.Actor (Actor.java:169) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-15 11:09:05 | [Thread-4] actor.Actor (Actor.java:217) - Worker group is shutting down for [CallMeKey]
+ACTOR_DEBUG | 2020-05-15 11:09:05 | [Thread-4] actor.Actor (Actor.java:223) - Boss group is shutting down for CallMeKey
+ACTOR_DEBUG | 2020-05-15 11:09:05 | [Thread-4] actor.Actor (Actor.java:236) - Client group is shutting down for CallMeKey
+ACTOR_DEBUG | 2020-05-15 11:09:05 | [Thread-4] actor.Actor (Actor.java:248) - Exit actor [CallMeKey].
+ACTOR_DEBUG | 2020-05-15 11:28:56 | [main] actor.Actor (Actor.java:88) - 
+ACTOR_DEBUG | 2020-05-15 11:28:56 | [main] actor.Actor (Actor.java:89) - Instantiating actor [CallMeKey] on port [4002]...
+ACTOR_DEBUG | 2020-05-15 11:28:56 | [Thread-0] actor.Actor (Actor.java:147) - Initializing a client for [CallMeKey] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-15 11:28:56 | [Thread-3] actor.Actor (Actor.java:147) - Initializing a client for [CallMeKey] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-15 11:28:56 | [Thread-1] actor.Actor (Actor.java:147) - Initializing a client for [CallMeKey] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-15 11:28:56 | [Thread-3] actor.Actor (Actor.java:164) - Bootstrap 1564087856 configured.
+ACTOR_DEBUG | 2020-05-15 11:28:56 | [Thread-0] actor.Actor (Actor.java:164) - Bootstrap 339498080 configured.
+ACTOR_DEBUG | 2020-05-15 11:28:56 | [Thread-1] actor.Actor (Actor.java:164) - Bootstrap 654802722 configured.
+ACTOR_DEBUG | 2020-05-15 11:28:56 | [Thread-3] actor.Actor (Actor.java:166) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-15 11:28:56 | [Thread-0] actor.Actor (Actor.java:166) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-15 11:28:56 | [Thread-1] actor.Actor (Actor.java:166) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-15 11:28:56 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-15 11:28:56 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-15 11:28:56 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-15 11:28:56 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:161) - Pipeline from [CallMeKey] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-15 11:28:56 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:161) - Pipeline from [CallMeKey] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-15 11:28:56 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:161) - Pipeline from [CallMeKey] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-15 11:28:56 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 926507245 has connected to its target.
+ACTOR_DEBUG | 2020-05-15 11:28:56 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 286879517 has connected to its target.
+ACTOR_INFO | 2020-05-15 11:28:56 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [CallMeKey] to port 4001.
+ACTOR_INFO | 2020-05-15 11:28:56 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [CallMeKey] to port 4003.
+ACTOR_INFO | 2020-05-15 11:28:56 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:615) - [CallMeKey] received a roll-call response from [Fate], who is on port 4003.
+ACTOR_INFO | 2020-05-15 11:28:56 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:615) - [CallMeKey] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-15 11:28:56 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:620) - [CallMeKey] added [Fate] to their contact list.
+ACTOR_DEBUG | 2020-05-15 11:28:56 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:620) - [CallMeKey] added [Xander] to their contact list.
+ACTOR_DEBUG | 2020-05-15 11:28:58 | [Thread-0] actor.Actor (Actor.java:169) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-15 11:28:58 | [Thread-5] actor.Actor (Actor.java:184) - Initializing server for [CallMeKey]...
+ACTOR_DEBUG | 2020-05-15 11:28:58 | [main] actor.Actor (Actor.java:111) - Successfully instantiated [CallMeKey].
+ACTOR_DEBUG | 2020-05-15 11:28:58 | [Thread-5] actor.Actor (Actor.java:205) - Server for [CallMeKey] bound to port 4002.
+ACTOR_INFO | 2020-05-15 11:28:58 | [Thread-4] actor.Actor$ScriptReader (Actor.java:393) - [CallMeKey] going to cue scene1/cue1.
+ACTOR_ERROR | 2020-05-15 11:28:58 | [Thread-4] actor.Actor$ScriptReader (Actor.java:561) - [CallMeKey] is expecting [Lexa] to be onstage, but they're not.
+ACTOR_INFO | 2020-05-15 11:28:58 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Xander] onstage.
+ACTOR_INFO | 2020-05-15 11:28:58 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Fate] onstage.
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:655) - [CallMeKey]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [nioEventLoopGroup-4-1] actor.Actor$2 (Actor.java:200) - Channel pipeline [51904a95] to Server [CallMeKey] has been initialized.
+ACTOR_INFO | 2020-05-15 11:29:03 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:678) - [CallMeKey] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [Thread-6] actor.Actor (Actor.java:147) - Initializing a client for [CallMeKey] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [Thread-6] actor.Actor (Actor.java:164) - Bootstrap 768018515 configured.
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [Thread-6] actor.Actor (Actor.java:166) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [nioEventLoopGroup-2-4] actor.Actor$1 (Actor.java:161) - Pipeline from [CallMeKey] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-15 11:29:04 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 1551665031 has connected to its target.
+ACTOR_INFO | 2020-05-15 11:29:04 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [CallMeKey] to port 4000.
+ACTOR_INFO | 2020-05-15 11:29:04 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:615) - [CallMeKey] received a roll-call response from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-15 11:29:04 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:620) - [CallMeKey] added [Lexa] to their contact list.
+ACTOR_INFO | 2020-05-15 11:29:04 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Lexa] onstage.
+ACTOR_INFO | 2020-05-15 11:29:04 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Xander] onstage.
+ACTOR_INFO | 2020-05-15 11:29:04 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Fate] onstage.
+ACTOR_DEBUG | 2020-05-15 11:29:04 | [Thread-4] actor.Actor$ScriptReader (Actor.java:457) - [CallMeKey] is waiting for a monologue to finish.
+ACTOR_DEBUG | 2020-05-15 11:29:06 | [Thread-4] actor.Actor$ScriptReader (Actor.java:460) - The monologue that [CallMeKey] was waiting on has finished.
+ACTOR_INFO | 2020-05-15 11:29:06 | [Thread-4] actor.Actor$ScriptReader (Actor.java:393) - [CallMeKey] going to cue scene1/cue2.
+ACTOR_INFO | 2020-05-15 11:29:06 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Lexa] onstage.
+ACTOR_INFO | 2020-05-15 11:29:06 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Xander] onstage.
+ACTOR_INFO | 2020-05-15 11:29:06 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Fate] onstage.
+ACTOR_INFO | 2020-05-15 11:29:06 | [Thread-4] actor.Actor$ScriptReader (Actor.java:517) - [CallMeKey] entering conversation.
+ACTOR_INFO | 2020-05-15 11:29:06 | [Thread-4] actor.Actor$ScriptReader (Actor.java:526) - [CallMeKey] will be conversing with [Lexa].
+ACTOR_INFO | 2020-05-15 11:29:06 | [Thread-4] actor.Actor$ScriptReader (Actor.java:526) - [CallMeKey] will be conversing with [Xander].
+ACTOR_INFO | 2020-05-15 11:29:06 | [Thread-4] actor.Actor$ScriptReader (Actor.java:526) - [CallMeKey] will be conversing with [Fate].
+WARN  | 2020-05-15 11:29:20 | [nioEventLoopGroup-4-1] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+WARN  | 2020-05-15 11:29:20 | [nioEventLoopGroup-2-4] channel.DefaultChannelPipeline (DefaultChannelPipeline.java:1152) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:345) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:376) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.buffer.WrappedByteBuf.writeBytes(WrappedByteBuf.java:821) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+ACTOR_DEBUG | 2020-05-15 11:29:20 | [Thread-6] actor.Actor (Actor.java:169) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-15 11:29:57 | [main] actor.Actor (Actor.java:88) - 
+ACTOR_DEBUG | 2020-05-15 11:29:57 | [main] actor.Actor (Actor.java:89) - Instantiating actor [CallMeKey] on port [4002]...
+ACTOR_DEBUG | 2020-05-15 11:29:57 | [Thread-0] actor.Actor (Actor.java:147) - Initializing a client for [CallMeKey] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-15 11:29:57 | [Thread-1] actor.Actor (Actor.java:147) - Initializing a client for [CallMeKey] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-15 11:29:57 | [Thread-3] actor.Actor (Actor.java:147) - Initializing a client for [CallMeKey] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-15 11:29:57 | [Thread-3] actor.Actor (Actor.java:164) - Bootstrap 49053872 configured.
+ACTOR_DEBUG | 2020-05-15 11:29:57 | [Thread-0] actor.Actor (Actor.java:164) - Bootstrap 339498080 configured.
+ACTOR_DEBUG | 2020-05-15 11:29:57 | [Thread-1] actor.Actor (Actor.java:164) - Bootstrap 1290549055 configured.
+ACTOR_DEBUG | 2020-05-15 11:29:57 | [Thread-3] actor.Actor (Actor.java:166) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-15 11:29:57 | [Thread-0] actor.Actor (Actor.java:166) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-15 11:29:57 | [Thread-1] actor.Actor (Actor.java:166) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-15 11:29:57 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-15 11:29:57 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-15 11:29:57 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-15 11:29:57 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:161) - Pipeline from [CallMeKey] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-15 11:29:57 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:161) - Pipeline from [CallMeKey] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-15 11:29:57 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:161) - Pipeline from [CallMeKey] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-15 11:29:57 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 112423470 has connected to its target.
+ACTOR_INFO | 2020-05-15 11:29:57 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [CallMeKey] to port 4001.
+ACTOR_INFO | 2020-05-15 11:29:57 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:615) - [CallMeKey] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-15 11:29:57 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:620) - [CallMeKey] added [Xander] to their contact list.
+ACTOR_DEBUG | 2020-05-15 11:29:59 | [Thread-3] actor.Actor (Actor.java:169) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-15 11:29:59 | [Thread-0] actor.Actor (Actor.java:169) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-15 11:29:59 | [Thread-5] actor.Actor (Actor.java:184) - Initializing server for [CallMeKey]...
+ACTOR_DEBUG | 2020-05-15 11:29:59 | [main] actor.Actor (Actor.java:111) - Successfully instantiated [CallMeKey].
+ACTOR_DEBUG | 2020-05-15 11:29:59 | [Thread-5] actor.Actor (Actor.java:205) - Server for [CallMeKey] bound to port 4002.
+ACTOR_INFO | 2020-05-15 11:29:59 | [Thread-4] actor.Actor$ScriptReader (Actor.java:393) - [CallMeKey] going to cue scene1/cue1.
+ACTOR_ERROR | 2020-05-15 11:29:59 | [Thread-4] actor.Actor$ScriptReader (Actor.java:561) - [CallMeKey] is expecting [Lexa] to be onstage, but they're not.
+ACTOR_INFO | 2020-05-15 11:29:59 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Xander] onstage.
+ACTOR_ERROR | 2020-05-15 11:29:59 | [Thread-4] actor.Actor$ScriptReader (Actor.java:561) - [CallMeKey] is expecting [Fate] to be onstage, but they're not.
+ACTOR_DEBUG | 2020-05-15 11:29:59 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:655) - [CallMeKey]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-15 11:29:59 | [nioEventLoopGroup-4-1] actor.Actor$2 (Actor.java:200) - Channel pipeline [6dc1463e] to Server [CallMeKey] has been initialized.
+ACTOR_INFO | 2020-05-15 11:29:59 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:678) - [CallMeKey] received a roll-call request from [Xander], who is on port 4001.
+ACTOR_ERROR | 2020-05-15 11:29:59 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:686) - [CallMeKey] already has [Xander] in their contact list.
+ACTOR_DEBUG | 2020-05-15 11:30:09 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:655) - [CallMeKey]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-15 11:30:09 | [nioEventLoopGroup-4-2] actor.Actor$2 (Actor.java:200) - Channel pipeline [d077f47e] to Server [CallMeKey] has been initialized.
+ACTOR_INFO | 2020-05-15 11:30:09 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:678) - [CallMeKey] received a roll-call request from [Fate], who is on port 4003.
+ACTOR_DEBUG | 2020-05-15 11:30:09 | [Thread-6] actor.Actor (Actor.java:147) - Initializing a client for [CallMeKey] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-15 11:30:09 | [Thread-6] actor.Actor (Actor.java:164) - Bootstrap 1329662652 configured.
+ACTOR_DEBUG | 2020-05-15 11:30:09 | [Thread-6] actor.Actor (Actor.java:166) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-15 11:30:09 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-15 11:30:09 | [nioEventLoopGroup-2-4] actor.Actor$1 (Actor.java:161) - Pipeline from [CallMeKey] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-15 11:30:11 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 735347287 has connected to its target.
+ACTOR_INFO | 2020-05-15 11:30:11 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [CallMeKey] to port 4003.
+ACTOR_INFO | 2020-05-15 11:30:11 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:615) - [CallMeKey] received a roll-call response from [Fate], who is on port 4003.
+ACTOR_DEBUG | 2020-05-15 11:30:11 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:620) - [CallMeKey] added [Fate] to their contact list.
+ACTOR_ERROR | 2020-05-15 11:30:11 | [Thread-4] actor.Actor$ScriptReader (Actor.java:561) - [CallMeKey] is expecting [Lexa] to be onstage, but they're not.
+ACTOR_INFO | 2020-05-15 11:30:11 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Xander] onstage.
+ACTOR_INFO | 2020-05-15 11:30:11 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Fate] onstage.
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:655) - [CallMeKey]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [nioEventLoopGroup-4-3] actor.Actor$2 (Actor.java:200) - Channel pipeline [2ced7aaa] to Server [CallMeKey] has been initialized.
+ACTOR_INFO | 2020-05-15 11:30:17 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:678) - [CallMeKey] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [Thread-7] actor.Actor (Actor.java:147) - Initializing a client for [CallMeKey] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [Thread-7] actor.Actor (Actor.java:164) - Bootstrap 1597445898 configured.
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [Thread-7] actor.Actor (Actor.java:166) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [nioEventLoopGroup-2-5] actor.Actor$1 (Actor.java:161) - Pipeline from [CallMeKey] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-15 11:30:18 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 1621302988 has connected to its target.
+ACTOR_INFO | 2020-05-15 11:30:18 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [CallMeKey] to port 4000.
+ACTOR_INFO | 2020-05-15 11:30:18 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:615) - [CallMeKey] received a roll-call response from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-15 11:30:18 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:620) - [CallMeKey] added [Lexa] to their contact list.
+ACTOR_INFO | 2020-05-15 11:30:18 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Lexa] onstage.
+ACTOR_INFO | 2020-05-15 11:30:18 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Xander] onstage.
+ACTOR_INFO | 2020-05-15 11:30:18 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Fate] onstage.
+ACTOR_DEBUG | 2020-05-15 11:30:18 | [Thread-4] actor.Actor$ScriptReader (Actor.java:457) - [CallMeKey] is waiting for a monologue to finish.
+ACTOR_DEBUG | 2020-05-15 11:30:20 | [Thread-4] actor.Actor$ScriptReader (Actor.java:460) - The monologue that [CallMeKey] was waiting on has finished.
+ACTOR_INFO | 2020-05-15 11:30:20 | [Thread-4] actor.Actor$ScriptReader (Actor.java:393) - [CallMeKey] going to cue scene1/cue2.
+ACTOR_INFO | 2020-05-15 11:30:20 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Lexa] onstage.
+ACTOR_INFO | 2020-05-15 11:30:20 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Xander] onstage.
+ACTOR_INFO | 2020-05-15 11:30:20 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Fate] onstage.
+ACTOR_INFO | 2020-05-15 11:30:20 | [Thread-4] actor.Actor$ScriptReader (Actor.java:517) - [CallMeKey] entering conversation.
+ACTOR_INFO | 2020-05-15 11:30:20 | [Thread-4] actor.Actor$ScriptReader (Actor.java:526) - [CallMeKey] will be conversing with [Lexa].
+ACTOR_INFO | 2020-05-15 11:30:20 | [Thread-4] actor.Actor$ScriptReader (Actor.java:526) - [CallMeKey] will be conversing with [Xander].
+ACTOR_INFO | 2020-05-15 11:30:20 | [Thread-4] actor.Actor$ScriptReader (Actor.java:526) - [CallMeKey] will be conversing with [Fate].
+ACTOR_INFO | 2020-05-15 11:30:21 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "dude lex" from [Xander].
+ACTOR_INFO | 2020-05-15 11:30:22 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "have you no chill" from [Xander].
+ACTOR_INFO | 2020-05-15 11:30:23 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "What? It's a good movie!" from [Lexa].
+ACTOR_INFO | 2020-05-15 11:30:24 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "what" from [Xander].
+ACTOR_INFO | 2020-05-15 11:30:25 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "Wait, you haven't-" from [Lexa].
+ACTOR_INFO | 2020-05-15 11:30:26 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "..." from [Lexa].
+ACTOR_INFO | 2020-05-15 11:30:28 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "You haven't seen the Princess Bride?" from [Lexa].
+ACTOR_INFO | 2020-05-15 11:30:29 | [Thread-4] actor.Actor (Actor.java:277) - [CallMeKey] direct-messaged "(you have got to be kidding me, x)" to [Lexa].
+ACTOR_INFO | 2020-05-15 11:30:29 | [Thread-4] actor.Actor (Actor.java:277) - [CallMeKey] direct-messaged "(you have got to be kidding me, x)" to [Xander].
+ACTOR_INFO | 2020-05-15 11:30:29 | [Thread-4] actor.Actor (Actor.java:277) - [CallMeKey] direct-messaged "(you have got to be kidding me, x)" to [Fate].
+ACTOR_INFO | 2020-05-15 11:30:29 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:633) - [CallMeKey] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-15 11:30:29 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:633) - [CallMeKey] received a confirmation from [Lexa] about message.
+ACTOR_INFO | 2020-05-15 11:30:29 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:633) - [CallMeKey] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-15 11:30:30 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "Are you honest? Are you for real?" from [Fate].
+ACTOR_INFO | 2020-05-15 11:30:30 | [Thread-4] actor.Actor (Actor.java:277) - [CallMeKey] direct-messaged "(please be lying)" to [Lexa].
+ACTOR_INFO | 2020-05-15 11:30:30 | [Thread-4] actor.Actor (Actor.java:277) - [CallMeKey] direct-messaged "(please be lying)" to [Xander].
+ACTOR_INFO | 2020-05-15 11:30:30 | [Thread-4] actor.Actor (Actor.java:277) - [CallMeKey] direct-messaged "(please be lying)" to [Fate].
+ACTOR_INFO | 2020-05-15 11:30:30 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:633) - [CallMeKey] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-15 11:30:30 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:633) - [CallMeKey] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-15 11:30:30 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:633) - [CallMeKey] received a confirmation from [Lexa] about message.
+ACTOR_INFO | 2020-05-15 11:30:31 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "Please be lying." from [Lexa].
+ACTOR_INFO | 2020-05-15 11:30:32 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "whats a princess" from [Xander].
+ACTOR_INFO | 2020-05-15 11:30:33 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "Stoooooop talking." from [Lexa].
+ACTOR_INFO | 2020-05-15 11:30:33 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "Just. Stop." from [Lexa].
+ACTOR_INFO | 2020-05-15 11:30:35 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "Sounds like a watch party is in order!" from [Fate].
+ACTOR_DEBUG | 2020-05-15 11:30:35 | [Thread-6] actor.Actor (Actor.java:169) - Client roll-calling port 4003 has closed.
+ACTOR_INFO | 2020-05-15 11:30:35 | [Thread-4] actor.Actor$ScriptReader (Actor.java:393) - [CallMeKey] going to cue scene1/cue3.
+ACTOR_DEBUG | 2020-05-15 11:30:35 | [Thread-7] actor.Actor (Actor.java:169) - Client roll-calling port 4000 has closed.
+ACTOR_INFO | 2020-05-15 11:30:35 | [Thread-4] actor.Actor$ScriptReader (Actor.java:422) - [CallMeKey] has been instructed to exit the stage.
+ACTOR_DEBUG | 2020-05-15 11:30:35 | [Thread-1] actor.Actor (Actor.java:169) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-15 11:30:35 | [Thread-4] actor.Actor (Actor.java:217) - Worker group is shutting down for [CallMeKey]
+ACTOR_DEBUG | 2020-05-15 11:30:35 | [Thread-4] actor.Actor (Actor.java:223) - Boss group is shutting down for CallMeKey
+ACTOR_DEBUG | 2020-05-15 11:30:35 | [Thread-4] actor.Actor (Actor.java:236) - Client group is shutting down for CallMeKey
+ACTOR_DEBUG | 2020-05-15 11:30:35 | [Thread-4] actor.Actor (Actor.java:248) - Exit actor [CallMeKey].
+ACTOR_DEBUG | 2020-05-15 11:40:16 | [main] actor.Actor (Actor.java:88) - 
+ACTOR_DEBUG | 2020-05-15 11:40:16 | [main] actor.Actor (Actor.java:89) - Instantiating actor [CallMeKey] on port [4002]...
+ACTOR_DEBUG | 2020-05-15 11:40:16 | [Thread-0] actor.Actor (Actor.java:147) - Initializing a client for [CallMeKey] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-15 11:40:16 | [Thread-1] actor.Actor (Actor.java:147) - Initializing a client for [CallMeKey] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-15 11:40:16 | [Thread-3] actor.Actor (Actor.java:147) - Initializing a client for [CallMeKey] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-15 11:40:16 | [Thread-3] actor.Actor (Actor.java:164) - Bootstrap 885307531 configured.
+ACTOR_DEBUG | 2020-05-15 11:40:16 | [Thread-1] actor.Actor (Actor.java:164) - Bootstrap 559354460 configured.
+ACTOR_DEBUG | 2020-05-15 11:40:16 | [Thread-0] actor.Actor (Actor.java:164) - Bootstrap 986540101 configured.
+ACTOR_DEBUG | 2020-05-15 11:40:16 | [Thread-3] actor.Actor (Actor.java:166) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-15 11:40:16 | [Thread-1] actor.Actor (Actor.java:166) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-15 11:40:16 | [Thread-0] actor.Actor (Actor.java:166) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-15 11:40:16 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:589) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-15 11:40:16 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:589) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-15 11:40:16 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:589) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-15 11:40:16 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:161) - Pipeline from [CallMeKey] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-15 11:40:16 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:161) - Pipeline from [CallMeKey] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-15 11:40:16 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:161) - Pipeline from [CallMeKey] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-15 11:40:16 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:595) - ChannelHandler 1272135922 has connected to its target.
+ACTOR_DEBUG | 2020-05-15 11:40:16 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:595) - ChannelHandler 1521836431 has connected to its target.
+ACTOR_INFO | 2020-05-15 11:40:16 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:604) - Roll-call sent from [CallMeKey] to port 4003.
+ACTOR_INFO | 2020-05-15 11:40:16 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:604) - Roll-call sent from [CallMeKey] to port 4001.
+ACTOR_INFO | 2020-05-15 11:40:16 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:616) - [CallMeKey] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_INFO | 2020-05-15 11:40:16 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:616) - [CallMeKey] received a roll-call response from [Fate], who is on port 4003.
+ACTOR_DEBUG | 2020-05-15 11:40:16 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:621) - [CallMeKey] added [Fate] to their contact list.
+ACTOR_DEBUG | 2020-05-15 11:40:16 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:621) - [CallMeKey] added [Xander] to their contact list.
+ACTOR_DEBUG | 2020-05-15 11:40:18 | [Thread-0] actor.Actor (Actor.java:169) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-15 11:40:18 | [Thread-5] actor.Actor (Actor.java:184) - Initializing server for [CallMeKey]...
+ACTOR_DEBUG | 2020-05-15 11:40:18 | [main] actor.Actor (Actor.java:111) - Successfully instantiated [CallMeKey].
+ACTOR_DEBUG | 2020-05-15 11:40:18 | [Thread-5] actor.Actor (Actor.java:205) - Server for [CallMeKey] bound to port 4002.
+ACTOR_INFO | 2020-05-15 11:40:18 | [Thread-4] actor.Actor$ScriptReader (Actor.java:393) - [CallMeKey] going to cue scene1/cue1.
+ACTOR_ERROR | 2020-05-15 11:40:18 | [Thread-4] actor.Actor$ScriptReader (Actor.java:562) - [CallMeKey] is expecting [Lexa] to be onstage, but they're not.
+ACTOR_INFO | 2020-05-15 11:40:18 | [Thread-4] actor.Actor$ScriptReader (Actor.java:566) - [CallMeKey] has found [Xander] onstage.
+ACTOR_INFO | 2020-05-15 11:40:18 | [Thread-4] actor.Actor$ScriptReader (Actor.java:566) - [CallMeKey] has found [Fate] onstage.
+ACTOR_INFO | 2020-05-15 11:40:18 | [Thread-4] actor.Actor (Actor.java:263) - [CallMeKey] spoke "I'm waiting" to the user.
+ACTOR_DEBUG | 2020-05-15 11:40:18 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:656) - [CallMeKey]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-15 11:40:18 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:656) - [CallMeKey]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-15 11:40:18 | [nioEventLoopGroup-4-1] actor.Actor$2 (Actor.java:200) - Channel pipeline [01610ab0] to Server [CallMeKey] has been initialized.
+ACTOR_DEBUG | 2020-05-15 11:40:18 | [nioEventLoopGroup-4-2] actor.Actor$2 (Actor.java:200) - Channel pipeline [881b6cee] to Server [CallMeKey] has been initialized.
+ACTOR_INFO | 2020-05-15 11:40:18 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:679) - [CallMeKey] received a roll-call request from [Fate], who is on port 4003.
+ACTOR_INFO | 2020-05-15 11:40:18 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:679) - [CallMeKey] received a roll-call request from [Xander], who is on port 4001.
+ACTOR_ERROR | 2020-05-15 11:40:18 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:687) - [CallMeKey] already has [Fate] in their contact list.
+ACTOR_ERROR | 2020-05-15 11:40:18 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:687) - [CallMeKey] already has [Xander] in their contact list.
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:656) - [CallMeKey]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [nioEventLoopGroup-4-3] actor.Actor$2 (Actor.java:200) - Channel pipeline [5126ca10] to Server [CallMeKey] has been initialized.
+ACTOR_INFO | 2020-05-15 11:40:20 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:679) - [CallMeKey] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [Thread-6] actor.Actor (Actor.java:147) - Initializing a client for [CallMeKey] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [Thread-6] actor.Actor (Actor.java:164) - Bootstrap 1634508332 configured.
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [Thread-6] actor.Actor (Actor.java:166) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:589) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [nioEventLoopGroup-2-4] actor.Actor$1 (Actor.java:161) - Pipeline from [CallMeKey] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-15 11:40:21 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:595) - ChannelHandler 1439661178 has connected to its target.
+ACTOR_INFO | 2020-05-15 11:40:21 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:604) - Roll-call sent from [CallMeKey] to port 4000.
+ACTOR_INFO | 2020-05-15 11:40:21 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:616) - [CallMeKey] received a roll-call response from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-15 11:40:21 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:621) - [CallMeKey] added [Lexa] to their contact list.
+ACTOR_INFO | 2020-05-15 11:40:21 | [Thread-4] actor.Actor$ScriptReader (Actor.java:566) - [CallMeKey] has found [Lexa] onstage.
+ACTOR_INFO | 2020-05-15 11:40:21 | [Thread-4] actor.Actor$ScriptReader (Actor.java:566) - [CallMeKey] has found [Xander] onstage.
+ACTOR_INFO | 2020-05-15 11:40:21 | [Thread-4] actor.Actor$ScriptReader (Actor.java:566) - [CallMeKey] has found [Fate] onstage.
+ACTOR_DEBUG | 2020-05-15 11:40:21 | [Thread-4] actor.Actor$ScriptReader (Actor.java:458) - [CallMeKey] is waiting for a monologue to finish.
+ACTOR_DEBUG | 2020-05-15 11:40:23 | [Thread-4] actor.Actor$ScriptReader (Actor.java:461) - The monologue that [CallMeKey] was waiting on has finished.
+ACTOR_INFO | 2020-05-15 11:40:23 | [Thread-4] actor.Actor$ScriptReader (Actor.java:393) - [CallMeKey] going to cue scene1/cue2.
+ACTOR_INFO | 2020-05-15 11:40:23 | [Thread-4] actor.Actor$ScriptReader (Actor.java:566) - [CallMeKey] has found [Lexa] onstage.
+ACTOR_INFO | 2020-05-15 11:40:23 | [Thread-4] actor.Actor$ScriptReader (Actor.java:566) - [CallMeKey] has found [Xander] onstage.
+ACTOR_INFO | 2020-05-15 11:40:23 | [Thread-4] actor.Actor$ScriptReader (Actor.java:566) - [CallMeKey] has found [Fate] onstage.
+ACTOR_INFO | 2020-05-15 11:40:23 | [Thread-4] actor.Actor$ScriptReader (Actor.java:518) - [CallMeKey] entering conversation.
+ACTOR_INFO | 2020-05-15 11:40:23 | [Thread-4] actor.Actor$ScriptReader (Actor.java:527) - [CallMeKey] will be conversing with [Lexa].
+ACTOR_INFO | 2020-05-15 11:40:23 | [Thread-4] actor.Actor$ScriptReader (Actor.java:527) - [CallMeKey] will be conversing with [Xander].
+ACTOR_INFO | 2020-05-15 11:40:23 | [Thread-4] actor.Actor$ScriptReader (Actor.java:527) - [CallMeKey] will be conversing with [Fate].
+ACTOR_INFO | 2020-05-15 11:40:24 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:669) - [CallMeKey] received the direct-message "dude lex" from [Xander].
+ACTOR_INFO | 2020-05-15 11:40:25 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:669) - [CallMeKey] received the direct-message "have you no chill" from [Xander].
+ACTOR_INFO | 2020-05-15 11:40:26 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:669) - [CallMeKey] received the direct-message "What? It's a good movie!" from [Lexa].
+ACTOR_INFO | 2020-05-15 11:40:27 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:669) - [CallMeKey] received the direct-message "what" from [Xander].
+ACTOR_INFO | 2020-05-15 11:40:28 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:669) - [CallMeKey] received the direct-message "Wait, you haven't-" from [Lexa].
+ACTOR_INFO | 2020-05-15 11:40:28 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:669) - [CallMeKey] received the direct-message "..." from [Lexa].
+ACTOR_INFO | 2020-05-15 11:40:31 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:669) - [CallMeKey] received the direct-message "You haven't seen the Princess Bride?" from [Lexa].
+ACTOR_INFO | 2020-05-15 11:40:32 | [Thread-4] actor.Actor (Actor.java:277) - [CallMeKey] direct-messaged "(you have got to be kidding me, x)" to [Lexa].
+ACTOR_INFO | 2020-05-15 11:40:32 | [Thread-4] actor.Actor (Actor.java:277) - [CallMeKey] direct-messaged "(you have got to be kidding me, x)" to [Xander].
+ACTOR_INFO | 2020-05-15 11:40:32 | [Thread-4] actor.Actor (Actor.java:277) - [CallMeKey] direct-messaged "(you have got to be kidding me, x)" to [Fate].
+ACTOR_INFO | 2020-05-15 11:40:32 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:634) - [CallMeKey] received a confirmation from [Lexa] about message.
+ACTOR_INFO | 2020-05-15 11:40:32 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:634) - [CallMeKey] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-15 11:40:32 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:634) - [CallMeKey] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-15 11:40:33 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:669) - [CallMeKey] received the direct-message "Are you honest? Are you for real?" from [Fate].
+ACTOR_INFO | 2020-05-15 11:40:33 | [Thread-4] actor.Actor (Actor.java:277) - [CallMeKey] direct-messaged "(please be lying)" to [Lexa].
+ACTOR_INFO | 2020-05-15 11:40:33 | [Thread-4] actor.Actor (Actor.java:277) - [CallMeKey] direct-messaged "(please be lying)" to [Xander].
+ACTOR_INFO | 2020-05-15 11:40:33 | [Thread-4] actor.Actor (Actor.java:277) - [CallMeKey] direct-messaged "(please be lying)" to [Fate].
+ACTOR_INFO | 2020-05-15 11:40:33 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:634) - [CallMeKey] received a confirmation from [Lexa] about message.
+ACTOR_INFO | 2020-05-15 11:40:33 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:634) - [CallMeKey] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-15 11:40:33 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:634) - [CallMeKey] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-15 11:40:33 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:669) - [CallMeKey] received the direct-message "Please be lying." from [Lexa].
+ACTOR_INFO | 2020-05-15 11:40:34 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:669) - [CallMeKey] received the direct-message "whats a princess" from [Xander].
+ACTOR_INFO | 2020-05-15 11:40:35 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:669) - [CallMeKey] received the direct-message "Stoooooop talking." from [Lexa].
+ACTOR_INFO | 2020-05-15 11:40:36 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:669) - [CallMeKey] received the direct-message "Just. Stop." from [Lexa].
+ACTOR_INFO | 2020-05-15 11:40:38 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:669) - [CallMeKey] received the direct-message "Sounds like a watch party is in order!" from [Fate].
+ACTOR_DEBUG | 2020-05-15 11:40:38 | [Thread-3] actor.Actor (Actor.java:169) - Client roll-calling port 4003 has closed.
+ACTOR_INFO | 2020-05-15 11:40:38 | [Thread-4] actor.Actor$ScriptReader (Actor.java:393) - [CallMeKey] going to cue scene1/cue3.
+ACTOR_INFO | 2020-05-15 11:40:38 | [Thread-4] actor.Actor$ScriptReader (Actor.java:422) - [CallMeKey] has been instructed to exit the stage.
+ACTOR_DEBUG | 2020-05-15 11:40:38 | [Thread-6] actor.Actor (Actor.java:169) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-15 11:40:38 | [Thread-1] actor.Actor (Actor.java:169) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-15 11:40:38 | [Thread-4] actor.Actor (Actor.java:217) - Worker group is shutting down for [CallMeKey]
+ACTOR_DEBUG | 2020-05-15 11:40:38 | [Thread-4] actor.Actor (Actor.java:223) - Boss group is shutting down for CallMeKey
+ACTOR_DEBUG | 2020-05-15 11:40:38 | [Thread-4] actor.Actor (Actor.java:236) - Client group is shutting down for CallMeKey
+ACTOR_DEBUG | 2020-05-15 11:40:38 | [Thread-4] actor.Actor (Actor.java:248) - Exit actor [CallMeKey].
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [main] actor.Actor (Actor.java:88) - 
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [main] actor.Actor (Actor.java:89) - Instantiating actor [CallMeKey] on port [4002]...
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [Thread-1] actor.Actor (Actor.java:147) - Initializing a client for [CallMeKey] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [Thread-0] actor.Actor (Actor.java:147) - Initializing a client for [CallMeKey] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [Thread-3] actor.Actor (Actor.java:147) - Initializing a client for [CallMeKey] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [Thread-3] actor.Actor (Actor.java:164) - Bootstrap 436550416 configured.
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [Thread-0] actor.Actor (Actor.java:164) - Bootstrap 2058031269 configured.
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [Thread-1] actor.Actor (Actor.java:164) - Bootstrap 1010525457 configured.
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [Thread-0] actor.Actor (Actor.java:166) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [Thread-3] actor.Actor (Actor.java:166) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [Thread-1] actor.Actor (Actor.java:166) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:161) - Pipeline from [CallMeKey] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:161) - Pipeline from [CallMeKey] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:161) - Pipeline from [CallMeKey] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 1816083251 has connected to its target.
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 323144442 has connected to its target.
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 1063693959 has connected to its target.
+ACTOR_INFO | 2020-05-16 01:14:23 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [CallMeKey] to port 4003.
+ACTOR_INFO | 2020-05-16 01:14:23 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [CallMeKey] to port 4001.
+ACTOR_INFO | 2020-05-16 01:14:23 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [CallMeKey] to port 4000.
+ACTOR_INFO | 2020-05-16 01:14:23 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:615) - [CallMeKey] received a roll-call response from [Lexa], who is on port 4000.
+ACTOR_INFO | 2020-05-16 01:14:23 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:615) - [CallMeKey] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_INFO | 2020-05-16 01:14:23 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:615) - [CallMeKey] received a roll-call response from [Fate], who is on port 4003.
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:620) - [CallMeKey] added [Fate] to their contact list.
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:620) - [CallMeKey] added [Xander] to their contact list.
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:620) - [CallMeKey] added [Lexa] to their contact list.
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [Thread-5] actor.Actor (Actor.java:184) - Initializing server for [CallMeKey]...
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [Thread-5] actor.Actor (Actor.java:205) - Server for [CallMeKey] bound to port 4002.
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [main] actor.Actor (Actor.java:111) - Successfully instantiated [CallMeKey].
+ACTOR_INFO | 2020-05-16 01:14:23 | [Thread-4] actor.Actor$ScriptReader (Actor.java:393) - [CallMeKey] going to cue scene1/cue1.
+ACTOR_INFO | 2020-05-16 01:14:23 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Lexa] onstage.
+ACTOR_INFO | 2020-05-16 01:14:23 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Xander] onstage.
+ACTOR_INFO | 2020-05-16 01:14:23 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Fate] onstage.
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [Thread-4] actor.Actor$ScriptReader (Actor.java:457) - [CallMeKey] is waiting for a monologue to finish.
+ACTOR_DEBUG | 2020-05-16 01:14:24 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:655) - [CallMeKey]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-16 01:14:24 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:655) - [CallMeKey]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-16 01:14:24 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:655) - [CallMeKey]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-16 01:14:24 | [nioEventLoopGroup-4-3] actor.Actor$2 (Actor.java:200) - Channel pipeline [a77645e7] to Server [CallMeKey] has been initialized.
+ACTOR_DEBUG | 2020-05-16 01:14:24 | [nioEventLoopGroup-4-2] actor.Actor$2 (Actor.java:200) - Channel pipeline [385ab4f3] to Server [CallMeKey] has been initialized.
+ACTOR_DEBUG | 2020-05-16 01:14:24 | [nioEventLoopGroup-4-1] actor.Actor$2 (Actor.java:200) - Channel pipeline [4f19df2c] to Server [CallMeKey] has been initialized.
+ACTOR_INFO | 2020-05-16 01:14:24 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:678) - [CallMeKey] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_ERROR | 2020-05-16 01:14:24 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:686) - [CallMeKey] already has [Lexa] in their contact list.
+ACTOR_INFO | 2020-05-16 01:14:24 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:678) - [CallMeKey] received a roll-call request from [Xander], who is on port 4001.
+ACTOR_INFO | 2020-05-16 01:14:24 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:678) - [CallMeKey] received a roll-call request from [Fate], who is on port 4003.
+ACTOR_ERROR | 2020-05-16 01:14:24 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:686) - [CallMeKey] already has [Fate] in their contact list.
+ACTOR_ERROR | 2020-05-16 01:14:24 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:686) - [CallMeKey] already has [Xander] in their contact list.
+ACTOR_DEBUG | 2020-05-16 01:14:27 | [Thread-4] actor.Actor$ScriptReader (Actor.java:460) - The monologue that [CallMeKey] was waiting on has finished.
+ACTOR_INFO | 2020-05-16 01:14:27 | [Thread-4] actor.Actor$ScriptReader (Actor.java:393) - [CallMeKey] going to cue scene1/cue2.
+ACTOR_INFO | 2020-05-16 01:14:27 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Lexa] onstage.
+ACTOR_INFO | 2020-05-16 01:14:27 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Xander] onstage.
+ACTOR_INFO | 2020-05-16 01:14:27 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Fate] onstage.
+ACTOR_INFO | 2020-05-16 01:14:27 | [Thread-4] actor.Actor$ScriptReader (Actor.java:517) - [CallMeKey] entering conversation.
+ACTOR_INFO | 2020-05-16 01:14:27 | [Thread-4] actor.Actor$ScriptReader (Actor.java:526) - [CallMeKey] will be conversing with [Lexa].
+ACTOR_INFO | 2020-05-16 01:14:27 | [Thread-4] actor.Actor$ScriptReader (Actor.java:526) - [CallMeKey] will be conversing with [Xander].
+ACTOR_INFO | 2020-05-16 01:14:27 | [Thread-4] actor.Actor$ScriptReader (Actor.java:526) - [CallMeKey] will be conversing with [Fate].
+ACTOR_INFO | 2020-05-16 01:14:28 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "dude lex" from [Xander].
+ACTOR_INFO | 2020-05-16 01:14:28 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "have you no chill" from [Xander].
+ACTOR_INFO | 2020-05-16 01:14:29 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "What? It's a good movie!" from [Lexa].
+ACTOR_INFO | 2020-05-16 01:14:30 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "what" from [Xander].
+ACTOR_INFO | 2020-05-16 01:14:32 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "Wait, you haven't-" from [Lexa].
+ACTOR_INFO | 2020-05-16 01:14:32 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "..." from [Lexa].
+ACTOR_INFO | 2020-05-16 01:14:34 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "You haven't seen the Princess Bride?" from [Lexa].
+ACTOR_INFO | 2020-05-16 01:14:35 | [Thread-4] actor.Actor (Actor.java:277) - [CallMeKey] direct-messaged "(you have got to be kidding me, x)" to [Lexa].
+ACTOR_INFO | 2020-05-16 01:14:35 | [Thread-4] actor.Actor (Actor.java:277) - [CallMeKey] direct-messaged "(you have got to be kidding me, x)" to [Xander].
+ACTOR_INFO | 2020-05-16 01:14:35 | [Thread-4] actor.Actor (Actor.java:277) - [CallMeKey] direct-messaged "(you have got to be kidding me, x)" to [Fate].
+ACTOR_INFO | 2020-05-16 01:14:35 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:633) - [CallMeKey] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-16 01:14:35 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:633) - [CallMeKey] received a confirmation from [Lexa] about message.
+ACTOR_INFO | 2020-05-16 01:14:35 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:633) - [CallMeKey] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-16 01:14:37 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "Are you honest? Are you for real?" from [Fate].
+ACTOR_INFO | 2020-05-16 01:14:37 | [Thread-4] actor.Actor (Actor.java:277) - [CallMeKey] direct-messaged "(please be lying)" to [Lexa].
+ACTOR_INFO | 2020-05-16 01:14:37 | [Thread-4] actor.Actor (Actor.java:277) - [CallMeKey] direct-messaged "(please be lying)" to [Xander].
+ACTOR_INFO | 2020-05-16 01:14:37 | [Thread-4] actor.Actor (Actor.java:277) - [CallMeKey] direct-messaged "(please be lying)" to [Fate].
+ACTOR_INFO | 2020-05-16 01:14:37 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:633) - [CallMeKey] received a confirmation from [Lexa] about message.
+ACTOR_INFO | 2020-05-16 01:14:37 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:633) - [CallMeKey] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-16 01:14:37 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:633) - [CallMeKey] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-16 01:14:37 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "Please be lying." from [Lexa].
+ACTOR_INFO | 2020-05-16 01:14:38 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "whats a princess" from [Xander].
+ACTOR_INFO | 2020-05-16 01:14:39 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "Stoooooop talking." from [Lexa].
+ACTOR_INFO | 2020-05-16 01:14:39 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "Just. Stop." from [Lexa].
+ACTOR_INFO | 2020-05-16 01:14:41 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "Sounds like a watch party is in order!" from [Fate].
+ACTOR_DEBUG | 2020-05-16 01:14:41 | [Thread-0] actor.Actor (Actor.java:169) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-16 01:14:41 | [Thread-3] actor.Actor (Actor.java:169) - Client roll-calling port 4003 has closed.
+ACTOR_INFO | 2020-05-16 01:14:41 | [Thread-4] actor.Actor$ScriptReader (Actor.java:393) - [CallMeKey] going to cue scene1/cue3.
+ACTOR_INFO | 2020-05-16 01:14:41 | [Thread-4] actor.Actor$ScriptReader (Actor.java:422) - [CallMeKey] has been instructed to exit the stage.
+ACTOR_DEBUG | 2020-05-16 01:14:41 | [Thread-1] actor.Actor (Actor.java:169) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-16 01:14:41 | [Thread-4] actor.Actor (Actor.java:217) - Worker group is shutting down for [CallMeKey]
+ACTOR_DEBUG | 2020-05-16 01:14:41 | [Thread-4] actor.Actor (Actor.java:223) - Boss group is shutting down for CallMeKey
+ACTOR_DEBUG | 2020-05-16 01:14:41 | [Thread-4] actor.Actor (Actor.java:236) - Client group is shutting down for CallMeKey
+ACTOR_DEBUG | 2020-05-16 01:14:41 | [Thread-4] actor.Actor (Actor.java:248) - Exit actor [CallMeKey].
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [main] actor.Actor (Actor.java:87) - 
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [main] actor.Actor (Actor.java:88) - Instantiating actor [CallMeKey] on port [4002]...
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [Thread-0] actor.Actor (Actor.java:146) - Initializing a client for [CallMeKey] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [Thread-1] actor.Actor (Actor.java:146) - Initializing a client for [CallMeKey] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [Thread-3] actor.Actor (Actor.java:146) - Initializing a client for [CallMeKey] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [Thread-3] actor.Actor (Actor.java:163) - Bootstrap 753277403 configured.
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [Thread-1] actor.Actor (Actor.java:163) - Bootstrap 1950860862 configured.
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [Thread-0] actor.Actor (Actor.java:163) - Bootstrap 703533196 configured.
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [Thread-3] actor.Actor (Actor.java:165) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [Thread-0] actor.Actor (Actor.java:165) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [Thread-1] actor.Actor (Actor.java:165) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:160) - Pipeline from [CallMeKey] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:160) - Pipeline from [CallMeKey] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:160) - Pipeline from [CallMeKey] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 445538976 has connected to its target.
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 813651957 has connected to its target.
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 1180383385 has connected to its target.
+ACTOR_INFO | 2020-05-16 01:19:13 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [CallMeKey] to port 4001.
+ACTOR_INFO | 2020-05-16 01:19:13 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [CallMeKey] to port 4000.
+ACTOR_INFO | 2020-05-16 01:19:13 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [CallMeKey] to port 4003.
+ACTOR_INFO | 2020-05-16 01:19:13 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:615) - [CallMeKey] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_INFO | 2020-05-16 01:19:13 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:615) - [CallMeKey] received a roll-call response from [Lexa], who is on port 4000.
+ACTOR_INFO | 2020-05-16 01:19:13 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:615) - [CallMeKey] received a roll-call response from [Fate], who is on port 4003.
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:620) - [CallMeKey] added [Fate] to their contact list.
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:620) - [CallMeKey] added [Lexa] to their contact list.
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:620) - [CallMeKey] added [Xander] to their contact list.
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [Thread-5] actor.Actor (Actor.java:183) - Initializing server for [CallMeKey]...
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [main] actor.Actor (Actor.java:110) - Successfully instantiated [CallMeKey].
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [Thread-5] actor.Actor (Actor.java:204) - Server for [CallMeKey] bound to port 4002.
+ACTOR_INFO | 2020-05-16 01:19:13 | [Thread-4] actor.Actor$ScriptReader (Actor.java:392) - [CallMeKey] going to cue scene1/cue1.
+ACTOR_INFO | 2020-05-16 01:19:13 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Lexa] onstage.
+ACTOR_INFO | 2020-05-16 01:19:13 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Xander] onstage.
+ACTOR_INFO | 2020-05-16 01:19:13 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Fate] onstage.
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [Thread-4] actor.Actor$ScriptReader (Actor.java:457) - [CallMeKey] is waiting for a monologue to finish.
+ACTOR_DEBUG | 2020-05-16 01:19:14 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:655) - [CallMeKey]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-16 01:19:14 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:655) - [CallMeKey]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-16 01:19:14 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:655) - [CallMeKey]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-16 01:19:14 | [nioEventLoopGroup-4-2] actor.Actor$2 (Actor.java:199) - Channel pipeline [c76b4157] to Server [CallMeKey] has been initialized.
+ACTOR_DEBUG | 2020-05-16 01:19:14 | [nioEventLoopGroup-4-1] actor.Actor$2 (Actor.java:199) - Channel pipeline [b9afa3b0] to Server [CallMeKey] has been initialized.
+ACTOR_DEBUG | 2020-05-16 01:19:14 | [nioEventLoopGroup-4-3] actor.Actor$2 (Actor.java:199) - Channel pipeline [f1539cfb] to Server [CallMeKey] has been initialized.
+ACTOR_INFO | 2020-05-16 01:19:14 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:678) - [CallMeKey] received a roll-call request from [Xander], who is on port 4001.
+ACTOR_INFO | 2020-05-16 01:19:14 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:678) - [CallMeKey] received a roll-call request from [Fate], who is on port 4003.
+ACTOR_ERROR | 2020-05-16 01:19:14 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:686) - [CallMeKey] already has [Xander] in their contact list.
+ACTOR_INFO | 2020-05-16 01:19:14 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:678) - [CallMeKey] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_ERROR | 2020-05-16 01:19:14 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:686) - [CallMeKey] already has [Fate] in their contact list.
+ACTOR_ERROR | 2020-05-16 01:19:14 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:686) - [CallMeKey] already has [Lexa] in their contact list.
+ACTOR_DEBUG | 2020-05-16 01:20:36 | [main] actor.Actor (Actor.java:87) - 
+ACTOR_DEBUG | 2020-05-16 01:20:36 | [main] actor.Actor (Actor.java:88) - Instantiating actor [CallMeKey] on port [4002]...
+ACTOR_DEBUG | 2020-05-16 01:20:36 | [Thread-0] actor.Actor (Actor.java:146) - Initializing a client for [CallMeKey] to roll-call port 4000...
+ACTOR_DEBUG | 2020-05-16 01:20:36 | [Thread-3] actor.Actor (Actor.java:146) - Initializing a client for [CallMeKey] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-16 01:20:36 | [Thread-1] actor.Actor (Actor.java:146) - Initializing a client for [CallMeKey] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-16 01:20:36 | [Thread-3] actor.Actor (Actor.java:163) - Bootstrap 753277403 configured.
+ACTOR_DEBUG | 2020-05-16 01:20:36 | [Thread-0] actor.Actor (Actor.java:163) - Bootstrap 1197227989 configured.
+ACTOR_DEBUG | 2020-05-16 01:20:36 | [Thread-1] actor.Actor (Actor.java:163) - Bootstrap 2055222982 configured.
+ACTOR_DEBUG | 2020-05-16 01:20:36 | [Thread-0] actor.Actor (Actor.java:165) - Roll-calling port 4000...
+ACTOR_DEBUG | 2020-05-16 01:20:36 | [Thread-3] actor.Actor (Actor.java:165) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-16 01:20:36 | [Thread-1] actor.Actor (Actor.java:165) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [CallMeKey].
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:160) - Pipeline from [CallMeKey] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:160) - Pipeline from [CallMeKey] to port 4000 initialized.
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:160) - Pipeline from [CallMeKey] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 1857068111 has connected to its target.
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 206956132 has connected to its target.
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 1343130786 has connected to its target.
+ACTOR_INFO | 2020-05-16 01:20:37 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [CallMeKey] to port 4003.
+ACTOR_INFO | 2020-05-16 01:20:37 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [CallMeKey] to port 4000.
+ACTOR_INFO | 2020-05-16 01:20:37 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [CallMeKey] to port 4001.
+ACTOR_INFO | 2020-05-16 01:20:37 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:615) - [CallMeKey] received a roll-call response from [Fate], who is on port 4003.
+ACTOR_INFO | 2020-05-16 01:20:37 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:615) - [CallMeKey] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_INFO | 2020-05-16 01:20:37 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:615) - [CallMeKey] received a roll-call response from [Lexa], who is on port 4000.
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:620) - [CallMeKey] added [Lexa] to their contact list.
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:620) - [CallMeKey] added [Fate] to their contact list.
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:620) - [CallMeKey] added [Xander] to their contact list.
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [Thread-5] actor.Actor (Actor.java:183) - Initializing server for [CallMeKey]...
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [main] actor.Actor (Actor.java:110) - Successfully instantiated [CallMeKey].
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [Thread-5] actor.Actor (Actor.java:204) - Server for [CallMeKey] bound to port 4002.
+ACTOR_INFO | 2020-05-16 01:20:37 | [Thread-4] actor.Actor$ScriptReader (Actor.java:392) - [CallMeKey] going to cue scene1/cue1.
+ACTOR_INFO | 2020-05-16 01:20:37 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Lexa] onstage.
+ACTOR_INFO | 2020-05-16 01:20:37 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Xander] onstage.
+ACTOR_INFO | 2020-05-16 01:20:37 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Fate] onstage.
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [Thread-4] actor.Actor$ScriptReader (Actor.java:457) - [CallMeKey] is waiting for a monologue to finish.
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:655) - [CallMeKey]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:655) - [CallMeKey]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:655) - [CallMeKey]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [nioEventLoopGroup-4-1] actor.Actor$2 (Actor.java:199) - Channel pipeline [8a3273d0] to Server [CallMeKey] has been initialized.
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [nioEventLoopGroup-4-2] actor.Actor$2 (Actor.java:199) - Channel pipeline [5275248e] to Server [CallMeKey] has been initialized.
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [nioEventLoopGroup-4-3] actor.Actor$2 (Actor.java:199) - Channel pipeline [a72ef718] to Server [CallMeKey] has been initialized.
+ACTOR_INFO | 2020-05-16 01:20:37 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:678) - [CallMeKey] received a roll-call request from [Lexa], who is on port 4000.
+ACTOR_INFO | 2020-05-16 01:20:37 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:678) - [CallMeKey] received a roll-call request from [Xander], who is on port 4001.
+ACTOR_INFO | 2020-05-16 01:20:37 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:678) - [CallMeKey] received a roll-call request from [Fate], who is on port 4003.
+ACTOR_ERROR | 2020-05-16 01:20:37 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:686) - [CallMeKey] already has [Lexa] in their contact list.
+ACTOR_ERROR | 2020-05-16 01:20:37 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:686) - [CallMeKey] already has [Xander] in their contact list.
+ACTOR_ERROR | 2020-05-16 01:20:37 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:686) - [CallMeKey] already has [Fate] in their contact list.
+ACTOR_DEBUG | 2020-05-16 01:20:40 | [Thread-4] actor.Actor$ScriptReader (Actor.java:460) - The monologue that [CallMeKey] was waiting on has finished.
+ACTOR_INFO | 2020-05-16 01:20:40 | [Thread-4] actor.Actor$ScriptReader (Actor.java:392) - [CallMeKey] going to cue scene1/cue2.
+ACTOR_INFO | 2020-05-16 01:20:40 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Lexa] onstage.
+ACTOR_INFO | 2020-05-16 01:20:40 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Xander] onstage.
+ACTOR_INFO | 2020-05-16 01:20:40 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [CallMeKey] has found [Fate] onstage.
+ACTOR_INFO | 2020-05-16 01:20:40 | [Thread-4] actor.Actor$ScriptReader (Actor.java:517) - [CallMeKey] entering conversation.
+ACTOR_INFO | 2020-05-16 01:20:40 | [Thread-4] actor.Actor$ScriptReader (Actor.java:526) - [CallMeKey] will be conversing with [Lexa].
+ACTOR_INFO | 2020-05-16 01:20:40 | [Thread-4] actor.Actor$ScriptReader (Actor.java:526) - [CallMeKey] will be conversing with [Xander].
+ACTOR_INFO | 2020-05-16 01:20:40 | [Thread-4] actor.Actor$ScriptReader (Actor.java:526) - [CallMeKey] will be conversing with [Fate].
+ACTOR_INFO | 2020-05-16 01:20:41 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "dude lex" from [Xander].
+ACTOR_INFO | 2020-05-16 01:20:42 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "have you no chill" from [Xander].
+ACTOR_INFO | 2020-05-16 01:20:43 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "What? It's a good movie!" from [Lexa].
+ACTOR_INFO | 2020-05-16 01:20:44 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "what" from [Xander].
+ACTOR_INFO | 2020-05-16 01:20:45 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "Wait, you haven't-" from [Lexa].
+ACTOR_INFO | 2020-05-16 01:20:45 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "..." from [Lexa].
+ACTOR_INFO | 2020-05-16 01:20:48 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "You haven't seen the Princess Bride?" from [Lexa].
+ACTOR_INFO | 2020-05-16 01:20:49 | [Thread-4] actor.Actor (Actor.java:276) - [CallMeKey] direct-messaged "(you have got to be kidding me, x)" to [Lexa].
+ACTOR_INFO | 2020-05-16 01:20:49 | [Thread-4] actor.Actor (Actor.java:276) - [CallMeKey] direct-messaged "(you have got to be kidding me, x)" to [Xander].
+ACTOR_INFO | 2020-05-16 01:20:49 | [Thread-4] actor.Actor (Actor.java:276) - [CallMeKey] direct-messaged "(you have got to be kidding me, x)" to [Fate].
+ACTOR_INFO | 2020-05-16 01:20:49 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:633) - [CallMeKey] received a confirmation from [Lexa] about message.
+ACTOR_INFO | 2020-05-16 01:20:49 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:633) - [CallMeKey] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-16 01:20:49 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:633) - [CallMeKey] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-16 01:20:50 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "Are you honest? Are you for real?" from [Fate].
+ACTOR_INFO | 2020-05-16 01:20:50 | [Thread-4] actor.Actor (Actor.java:276) - [CallMeKey] direct-messaged "(please be lying)" to [Lexa].
+ACTOR_INFO | 2020-05-16 01:20:50 | [Thread-4] actor.Actor (Actor.java:276) - [CallMeKey] direct-messaged "(please be lying)" to [Xander].
+ACTOR_INFO | 2020-05-16 01:20:50 | [Thread-4] actor.Actor (Actor.java:276) - [CallMeKey] direct-messaged "(please be lying)" to [Fate].
+ACTOR_INFO | 2020-05-16 01:20:50 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:633) - [CallMeKey] received a confirmation from [Lexa] about message.
+ACTOR_INFO | 2020-05-16 01:20:50 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:633) - [CallMeKey] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-16 01:20:50 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:633) - [CallMeKey] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-16 01:20:50 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "Please be lying." from [Lexa].
+ACTOR_INFO | 2020-05-16 01:20:51 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "whats a princess" from [Xander].
+ACTOR_INFO | 2020-05-16 01:20:52 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "Stoooooop talking." from [Lexa].
+ACTOR_INFO | 2020-05-16 01:20:53 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "Just. Stop." from [Lexa].
+ACTOR_INFO | 2020-05-16 01:20:55 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [CallMeKey] received the direct-message "Sounds like a watch party is in order!" from [Fate].
+ACTOR_DEBUG | 2020-05-16 01:20:55 | [Thread-3] actor.Actor (Actor.java:168) - Client roll-calling port 4003 has closed.
+ACTOR_INFO | 2020-05-16 01:20:55 | [Thread-4] actor.Actor$ScriptReader (Actor.java:392) - [CallMeKey] going to cue scene1/cue3.
+ACTOR_INFO | 2020-05-16 01:20:55 | [Thread-4] actor.Actor$ScriptReader (Actor.java:421) - [CallMeKey] has been instructed to exit the stage.
+ACTOR_DEBUG | 2020-05-16 01:20:55 | [Thread-0] actor.Actor (Actor.java:168) - Client roll-calling port 4000 has closed.
+ACTOR_DEBUG | 2020-05-16 01:20:55 | [Thread-1] actor.Actor (Actor.java:168) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-16 01:20:55 | [Thread-4] actor.Actor (Actor.java:216) - Worker group is shutting down for [CallMeKey]
+ACTOR_DEBUG | 2020-05-16 01:20:55 | [Thread-4] actor.Actor (Actor.java:222) - Boss group is shutting down for CallMeKey
+ACTOR_DEBUG | 2020-05-16 01:20:55 | [Thread-4] actor.Actor (Actor.java:235) - Client group is shutting down for CallMeKey
+ACTOR_DEBUG | 2020-05-16 01:20:55 | [Thread-4] actor.Actor (Actor.java:247) - Exit actor [CallMeKey].

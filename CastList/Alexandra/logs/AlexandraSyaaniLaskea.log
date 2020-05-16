@@ -4707,3 +4707,755 @@ ACTOR_DEBUG | 2020-05-15 03:52:36 | [Thread-4] actor.Actor (Actor.java:217) - Wo
 ACTOR_DEBUG | 2020-05-15 03:52:36 | [Thread-4] actor.Actor (Actor.java:223) - Boss group is shutting down for Lexa
 ACTOR_DEBUG | 2020-05-15 03:52:36 | [Thread-4] actor.Actor (Actor.java:236) - Client group is shutting down for Lexa
 ACTOR_DEBUG | 2020-05-15 03:52:36 | [Thread-4] actor.Actor (Actor.java:248) - Exit actor [Lexa].
+ACTOR_DEBUG | 2020-05-15 11:08:45 | [main] actor.Actor (Actor.java:88) - 
+ACTOR_DEBUG | 2020-05-15 11:08:45 | [main] actor.Actor (Actor.java:89) - Instantiating actor [Lexa] on port [4000]...
+ACTOR_DEBUG | 2020-05-15 11:08:45 | [Thread-3] actor.Actor (Actor.java:147) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-15 11:08:45 | [Thread-2] actor.Actor (Actor.java:147) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-15 11:08:45 | [Thread-1] actor.Actor (Actor.java:147) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-15 11:08:45 | [Thread-2] actor.Actor (Actor.java:164) - Bootstrap 1569647660 configured.
+ACTOR_DEBUG | 2020-05-15 11:08:45 | [Thread-3] actor.Actor (Actor.java:164) - Bootstrap 1966703784 configured.
+ACTOR_DEBUG | 2020-05-15 11:08:45 | [Thread-1] actor.Actor (Actor.java:164) - Bootstrap 1948189659 configured.
+ACTOR_DEBUG | 2020-05-15 11:08:45 | [Thread-2] actor.Actor (Actor.java:166) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-15 11:08:45 | [Thread-3] actor.Actor (Actor.java:166) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-15 11:08:45 | [Thread-1] actor.Actor (Actor.java:166) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-15 11:08:45 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-15 11:08:45 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-15 11:08:45 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-15 11:08:45 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:161) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-15 11:08:45 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:161) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-15 11:08:45 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:161) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-15 11:08:45 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 201055787 has connected to its target.
+ACTOR_DEBUG | 2020-05-15 11:08:45 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 576222251 has connected to its target.
+ACTOR_INFO | 2020-05-15 11:08:45 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-15 11:08:45 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [Lexa] to port 4002.
+ACTOR_INFO | 2020-05-15 11:08:45 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:615) - [Lexa] received a roll-call response from [CallMeKey], who is on port 4002.
+ACTOR_INFO | 2020-05-15 11:08:45 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:615) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-15 11:08:45 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:620) - [Lexa] added [CallMeKey] to their contact list.
+ACTOR_DEBUG | 2020-05-15 11:08:45 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:620) - [Lexa] added [Xander] to their contact list.
+ACTOR_DEBUG | 2020-05-15 11:08:47 | [Thread-3] actor.Actor (Actor.java:169) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-15 11:08:47 | [Thread-5] actor.Actor (Actor.java:184) - Initializing server for [Lexa]...
+ACTOR_DEBUG | 2020-05-15 11:08:47 | [Thread-5] actor.Actor (Actor.java:205) - Server for [Lexa] bound to port 4000.
+ACTOR_DEBUG | 2020-05-15 11:08:47 | [main] actor.Actor (Actor.java:111) - Successfully instantiated [Lexa].
+ACTOR_INFO | 2020-05-15 11:08:47 | [Thread-4] actor.Actor$ScriptReader (Actor.java:393) - [Lexa] going to cue scene1/cue1.
+ACTOR_INFO | 2020-05-15 11:08:47 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [Xander] onstage.
+ACTOR_INFO | 2020-05-15 11:08:47 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [CallMeKey] onstage.
+ACTOR_DEBUG | 2020-05-15 11:08:47 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:655) - [Lexa]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-15 11:08:47 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:655) - [Lexa]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-15 11:08:47 | [nioEventLoopGroup-4-1] actor.Actor$2 (Actor.java:200) - Channel pipeline [29976d1f] to Server [Lexa] has been initialized.
+ACTOR_DEBUG | 2020-05-15 11:08:47 | [nioEventLoopGroup-4-2] actor.Actor$2 (Actor.java:200) - Channel pipeline [1ef3278b] to Server [Lexa] has been initialized.
+ACTOR_INFO | 2020-05-15 11:08:47 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:678) - [Lexa] received a roll-call request from [Xander], who is on port 4001.
+ACTOR_INFO | 2020-05-15 11:08:47 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:678) - [Lexa] received a roll-call request from [CallMeKey], who is on port 4002.
+ACTOR_ERROR | 2020-05-15 11:08:47 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:686) - [Lexa] already has [Xander] in their contact list.
+ACTOR_ERROR | 2020-05-15 11:08:47 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:686) - [Lexa] already has [CallMeKey] in their contact list.
+ACTOR_INFO | 2020-05-15 11:08:48 | [Thread-4] actor.Actor (Actor.java:263) - [Lexa] spoke "My name is Alexandra Syaani Laskea." to the user.
+ACTOR_INFO | 2020-05-15 11:08:49 | [Thread-4] actor.Actor (Actor.java:263) - [Lexa] spoke "You killed my father." to the user.
+ACTOR_INFO | 2020-05-15 11:08:50 | [Thread-4] actor.Actor (Actor.java:263) - [Lexa] spoke "Prepare to die." to the user.
+ACTOR_INFO | 2020-05-15 11:08:50 | [Thread-4] actor.Actor (Actor.java:303) - [Lexa] sent [Xander] to the next cue.
+ACTOR_INFO | 2020-05-15 11:08:50 | [Thread-4] actor.Actor (Actor.java:303) - [Lexa] sent [CallMeKey] to the next cue.
+ACTOR_INFO | 2020-05-15 11:08:50 | [Thread-4] actor.Actor$ScriptReader (Actor.java:393) - [Lexa] going to cue scene1/cue2.
+ACTOR_INFO | 2020-05-15 11:08:50 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [Xander] onstage.
+ACTOR_INFO | 2020-05-15 11:08:50 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [CallMeKey] onstage.
+ACTOR_INFO | 2020-05-15 11:08:50 | [Thread-4] actor.Actor$ScriptReader (Actor.java:517) - [Lexa] entering conversation.
+ACTOR_INFO | 2020-05-15 11:08:50 | [Thread-4] actor.Actor$ScriptReader (Actor.java:526) - [Lexa] will be conversing with [Xander].
+ACTOR_INFO | 2020-05-15 11:08:50 | [Thread-4] actor.Actor$ScriptReader (Actor.java:526) - [Lexa] will be conversing with [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:08:50 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about nextCue.
+ACTOR_INFO | 2020-05-15 11:08:50 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about nextCue.
+ACTOR_INFO | 2020-05-15 11:08:51 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "dude, lex." from [Xander].
+ACTOR_INFO | 2020-05-15 11:08:51 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "have you no chill?" from [Xander].
+ACTOR_INFO | 2020-05-15 11:08:52 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "What? It's a good movie!" to [Xander].
+ACTOR_INFO | 2020-05-15 11:08:52 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "What? It's a good movie!" to [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:08:52 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-15 11:08:52 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-15 11:08:53 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "what?" from [Xander].
+ACTOR_INFO | 2020-05-15 11:08:55 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Wait, you haven't-" to [Xander].
+ACTOR_INFO | 2020-05-15 11:08:55 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Wait, you haven't-" to [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:08:55 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-15 11:08:55 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-15 11:08:55 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "..." to [Xander].
+ACTOR_INFO | 2020-05-15 11:08:55 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "..." to [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:08:55 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-15 11:08:55 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-15 11:08:57 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "You haven't seen the Princess Bride?" to [Xander].
+ACTOR_INFO | 2020-05-15 11:08:57 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "You haven't seen the Princess Bride?" to [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:08:57 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-15 11:08:57 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-15 11:08:58 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "(you have got to be kidding me, x)" from [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:09:00 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "(are you honest? are you for real?)" from [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:09:00 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "(please be lying)" from [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:09:00 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Please be lying." to [Xander].
+ACTOR_INFO | 2020-05-15 11:09:00 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Please be lying." to [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:09:00 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-15 11:09:00 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-15 11:09:01 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "what's a princess" from [Xander].
+ACTOR_INFO | 2020-05-15 11:09:02 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Stoooooop talking." to [Xander].
+ACTOR_INFO | 2020-05-15 11:09:02 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Stoooooop talking." to [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:09:02 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-15 11:09:02 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-15 11:09:03 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Just. Stop." to [Xander].
+ACTOR_INFO | 2020-05-15 11:09:03 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Just. Stop." to [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:09:03 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-15 11:09:03 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-15 11:09:05 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "(sounds like a watch party is in order.)" from [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:09:05 | [Thread-4] actor.Actor$ScriptReader (Actor.java:393) - [Lexa] going to cue scene1/cue3.
+ACTOR_INFO | 2020-05-15 11:09:05 | [Thread-4] actor.Actor$ScriptReader (Actor.java:422) - [Lexa] has been instructed to exit the stage.
+ACTOR_DEBUG | 2020-05-15 11:09:05 | [Thread-2] actor.Actor (Actor.java:169) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-05-15 11:09:05 | [Thread-1] actor.Actor (Actor.java:169) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-15 11:09:05 | [Thread-4] actor.Actor (Actor.java:217) - Worker group is shutting down for [Lexa]
+ACTOR_DEBUG | 2020-05-15 11:09:05 | [Thread-4] actor.Actor (Actor.java:223) - Boss group is shutting down for Lexa
+ACTOR_DEBUG | 2020-05-15 11:09:05 | [Thread-4] actor.Actor (Actor.java:236) - Client group is shutting down for Lexa
+ACTOR_DEBUG | 2020-05-15 11:09:05 | [Thread-4] actor.Actor (Actor.java:248) - Exit actor [Lexa].
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [main] actor.Actor (Actor.java:88) - 
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [main] actor.Actor (Actor.java:89) - Instantiating actor [Lexa] on port [4000]...
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [Thread-3] actor.Actor (Actor.java:147) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [Thread-1] actor.Actor (Actor.java:147) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [Thread-2] actor.Actor (Actor.java:147) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [Thread-1] actor.Actor (Actor.java:164) - Bootstrap 559354460 configured.
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [Thread-2] actor.Actor (Actor.java:164) - Bootstrap 22001524 configured.
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [Thread-3] actor.Actor (Actor.java:164) - Bootstrap 1197680794 configured.
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [Thread-2] actor.Actor (Actor.java:166) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [Thread-1] actor.Actor (Actor.java:166) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [Thread-3] actor.Actor (Actor.java:166) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:161) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:161) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:161) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 1723554256 has connected to its target.
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 814150208 has connected to its target.
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 1202126254 has connected to its target.
+ACTOR_INFO | 2020-05-15 11:29:03 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [Lexa] to port 4003.
+ACTOR_INFO | 2020-05-15 11:29:03 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [Lexa] to port 4002.
+ACTOR_INFO | 2020-05-15 11:29:03 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-15 11:29:03 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:615) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_INFO | 2020-05-15 11:29:03 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:615) - [Lexa] received a roll-call response from [Fate], who is on port 4003.
+ACTOR_INFO | 2020-05-15 11:29:03 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:615) - [Lexa] received a roll-call response from [CallMeKey], who is on port 4002.
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:620) - [Lexa] added [Fate] to their contact list.
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:620) - [Lexa] added [Xander] to their contact list.
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:620) - [Lexa] added [CallMeKey] to their contact list.
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [Thread-5] actor.Actor (Actor.java:184) - Initializing server for [Lexa]...
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [Thread-5] actor.Actor (Actor.java:205) - Server for [Lexa] bound to port 4000.
+ACTOR_DEBUG | 2020-05-15 11:29:03 | [main] actor.Actor (Actor.java:111) - Successfully instantiated [Lexa].
+ACTOR_INFO | 2020-05-15 11:29:03 | [Thread-4] actor.Actor$ScriptReader (Actor.java:393) - [Lexa] going to cue scene1/cue1.
+ACTOR_INFO | 2020-05-15 11:29:03 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [Xander] onstage.
+ACTOR_INFO | 2020-05-15 11:29:03 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [Fate] onstage.
+ACTOR_INFO | 2020-05-15 11:29:03 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [CallMeKey] onstage.
+ACTOR_DEBUG | 2020-05-15 11:29:04 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:655) - [Lexa]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-15 11:29:04 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:655) - [Lexa]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-15 11:29:04 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:655) - [Lexa]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-15 11:29:04 | [nioEventLoopGroup-4-1] actor.Actor$2 (Actor.java:200) - Channel pipeline [86ad4f44] to Server [Lexa] has been initialized.
+ACTOR_DEBUG | 2020-05-15 11:29:04 | [nioEventLoopGroup-4-2] actor.Actor$2 (Actor.java:200) - Channel pipeline [7cbd5995] to Server [Lexa] has been initialized.
+ACTOR_DEBUG | 2020-05-15 11:29:04 | [nioEventLoopGroup-4-3] actor.Actor$2 (Actor.java:200) - Channel pipeline [e554e115] to Server [Lexa] has been initialized.
+ACTOR_INFO | 2020-05-15 11:29:04 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:678) - [Lexa] received a roll-call request from [CallMeKey], who is on port 4002.
+ACTOR_INFO | 2020-05-15 11:29:04 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:678) - [Lexa] received a roll-call request from [Xander], who is on port 4001.
+ACTOR_INFO | 2020-05-15 11:29:04 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:678) - [Lexa] received a roll-call request from [Fate], who is on port 4003.
+ACTOR_ERROR | 2020-05-15 11:29:04 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:686) - [Lexa] already has [Xander] in their contact list.
+ACTOR_ERROR | 2020-05-15 11:29:04 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:686) - [Lexa] already has [CallMeKey] in their contact list.
+ACTOR_ERROR | 2020-05-15 11:29:04 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:686) - [Lexa] already has [Fate] in their contact list.
+ACTOR_INFO | 2020-05-15 11:29:04 | [Thread-4] actor.Actor (Actor.java:263) - [Lexa] spoke "My name is Alexandra Syaani Laskea." to the user.
+ACTOR_INFO | 2020-05-15 11:29:05 | [Thread-4] actor.Actor (Actor.java:263) - [Lexa] spoke "You killed my father." to the user.
+ACTOR_INFO | 2020-05-15 11:29:06 | [Thread-4] actor.Actor (Actor.java:263) - [Lexa] spoke "Prepare to die." to the user.
+ACTOR_INFO | 2020-05-15 11:29:06 | [Thread-4] actor.Actor (Actor.java:303) - [Lexa] sent [Xander] to the next cue.
+ACTOR_INFO | 2020-05-15 11:29:06 | [Thread-4] actor.Actor (Actor.java:303) - [Lexa] sent [Fate] to the next cue.
+ACTOR_INFO | 2020-05-15 11:29:06 | [Thread-4] actor.Actor (Actor.java:303) - [Lexa] sent [CallMeKey] to the next cue.
+ACTOR_INFO | 2020-05-15 11:29:06 | [Thread-4] actor.Actor$ScriptReader (Actor.java:393) - [Lexa] going to cue scene1/cue2.
+ACTOR_INFO | 2020-05-15 11:29:06 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [Xander] onstage.
+ACTOR_INFO | 2020-05-15 11:29:06 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [Fate] onstage.
+ACTOR_INFO | 2020-05-15 11:29:06 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [CallMeKey] onstage.
+ACTOR_INFO | 2020-05-15 11:29:06 | [Thread-4] actor.Actor$ScriptReader (Actor.java:517) - [Lexa] entering conversation.
+ACTOR_INFO | 2020-05-15 11:29:06 | [Thread-4] actor.Actor$ScriptReader (Actor.java:526) - [Lexa] will be conversing with [Xander].
+ACTOR_INFO | 2020-05-15 11:29:06 | [Thread-4] actor.Actor$ScriptReader (Actor.java:526) - [Lexa] will be conversing with [Fate].
+ACTOR_INFO | 2020-05-15 11:29:06 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about nextCue.
+ACTOR_INFO | 2020-05-15 11:29:06 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Fate] about nextCue.
+ACTOR_INFO | 2020-05-15 11:29:06 | [Thread-4] actor.Actor$ScriptReader (Actor.java:526) - [Lexa] will be conversing with [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:29:06 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about nextCue.
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [main] actor.Actor (Actor.java:88) - 
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [main] actor.Actor (Actor.java:89) - Instantiating actor [Lexa] on port [4000]...
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [Thread-1] actor.Actor (Actor.java:147) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [Thread-3] actor.Actor (Actor.java:147) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [Thread-2] actor.Actor (Actor.java:147) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [Thread-2] actor.Actor (Actor.java:164) - Bootstrap 2012334150 configured.
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [Thread-1] actor.Actor (Actor.java:164) - Bootstrap 577587339 configured.
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [Thread-3] actor.Actor (Actor.java:164) - Bootstrap 1745820669 configured.
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [Thread-1] actor.Actor (Actor.java:166) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [Thread-2] actor.Actor (Actor.java:166) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [Thread-3] actor.Actor (Actor.java:166) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:161) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:161) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:161) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 1093481090 has connected to its target.
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 1229249989 has connected to its target.
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 948276052 has connected to its target.
+ACTOR_INFO | 2020-05-15 11:30:17 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [Lexa] to port 4003.
+ACTOR_INFO | 2020-05-15 11:30:17 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-15 11:30:17 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [Lexa] to port 4002.
+ACTOR_INFO | 2020-05-15 11:30:17 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:615) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_INFO | 2020-05-15 11:30:17 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:615) - [Lexa] received a roll-call response from [CallMeKey], who is on port 4002.
+ACTOR_INFO | 2020-05-15 11:30:17 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:615) - [Lexa] received a roll-call response from [Fate], who is on port 4003.
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:620) - [Lexa] added [Xander] to their contact list.
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:620) - [Lexa] added [Fate] to their contact list.
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:620) - [Lexa] added [CallMeKey] to their contact list.
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [Thread-5] actor.Actor (Actor.java:184) - Initializing server for [Lexa]...
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [main] actor.Actor (Actor.java:111) - Successfully instantiated [Lexa].
+ACTOR_DEBUG | 2020-05-15 11:30:17 | [Thread-5] actor.Actor (Actor.java:205) - Server for [Lexa] bound to port 4000.
+ACTOR_INFO | 2020-05-15 11:30:17 | [Thread-4] actor.Actor$ScriptReader (Actor.java:393) - [Lexa] going to cue scene1/cue1.
+ACTOR_INFO | 2020-05-15 11:30:17 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [Xander] onstage.
+ACTOR_INFO | 2020-05-15 11:30:17 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [Fate] onstage.
+ACTOR_INFO | 2020-05-15 11:30:17 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [CallMeKey] onstage.
+ACTOR_DEBUG | 2020-05-15 11:30:18 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:655) - [Lexa]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-15 11:30:18 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:655) - [Lexa]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-15 11:30:18 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:655) - [Lexa]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-15 11:30:18 | [nioEventLoopGroup-4-1] actor.Actor$2 (Actor.java:200) - Channel pipeline [d4b5579f] to Server [Lexa] has been initialized.
+ACTOR_DEBUG | 2020-05-15 11:30:18 | [nioEventLoopGroup-4-2] actor.Actor$2 (Actor.java:200) - Channel pipeline [ff74fe9a] to Server [Lexa] has been initialized.
+ACTOR_DEBUG | 2020-05-15 11:30:18 | [nioEventLoopGroup-4-3] actor.Actor$2 (Actor.java:200) - Channel pipeline [39857dff] to Server [Lexa] has been initialized.
+ACTOR_INFO | 2020-05-15 11:30:18 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:678) - [Lexa] received a roll-call request from [Xander], who is on port 4001.
+ACTOR_INFO | 2020-05-15 11:30:18 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:678) - [Lexa] received a roll-call request from [Fate], who is on port 4003.
+ACTOR_ERROR | 2020-05-15 11:30:18 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:686) - [Lexa] already has [Xander] in their contact list.
+ACTOR_ERROR | 2020-05-15 11:30:18 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:686) - [Lexa] already has [Fate] in their contact list.
+ACTOR_INFO | 2020-05-15 11:30:18 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:678) - [Lexa] received a roll-call request from [CallMeKey], who is on port 4002.
+ACTOR_ERROR | 2020-05-15 11:30:18 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:686) - [Lexa] already has [CallMeKey] in their contact list.
+ACTOR_INFO | 2020-05-15 11:30:18 | [Thread-4] actor.Actor (Actor.java:263) - [Lexa] spoke "My name is Alexandra Syaani Laskea." to the user.
+ACTOR_INFO | 2020-05-15 11:30:19 | [Thread-4] actor.Actor (Actor.java:263) - [Lexa] spoke "You killed my father." to the user.
+ACTOR_INFO | 2020-05-15 11:30:20 | [Thread-4] actor.Actor (Actor.java:263) - [Lexa] spoke "Prepare to die." to the user.
+ACTOR_INFO | 2020-05-15 11:30:20 | [Thread-4] actor.Actor (Actor.java:303) - [Lexa] sent [Xander] to the next cue.
+ACTOR_INFO | 2020-05-15 11:30:20 | [Thread-4] actor.Actor (Actor.java:303) - [Lexa] sent [Fate] to the next cue.
+ACTOR_INFO | 2020-05-15 11:30:20 | [Thread-4] actor.Actor (Actor.java:303) - [Lexa] sent [CallMeKey] to the next cue.
+ACTOR_INFO | 2020-05-15 11:30:20 | [Thread-4] actor.Actor$ScriptReader (Actor.java:393) - [Lexa] going to cue scene1/cue2.
+ACTOR_INFO | 2020-05-15 11:30:20 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [Xander] onstage.
+ACTOR_INFO | 2020-05-15 11:30:20 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [Fate] onstage.
+ACTOR_INFO | 2020-05-15 11:30:20 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [CallMeKey] onstage.
+ACTOR_INFO | 2020-05-15 11:30:20 | [Thread-4] actor.Actor$ScriptReader (Actor.java:517) - [Lexa] entering conversation.
+ACTOR_INFO | 2020-05-15 11:30:20 | [Thread-4] actor.Actor$ScriptReader (Actor.java:526) - [Lexa] will be conversing with [Xander].
+ACTOR_INFO | 2020-05-15 11:30:20 | [Thread-4] actor.Actor$ScriptReader (Actor.java:526) - [Lexa] will be conversing with [Fate].
+ACTOR_INFO | 2020-05-15 11:30:20 | [Thread-4] actor.Actor$ScriptReader (Actor.java:526) - [Lexa] will be conversing with [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:30:20 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about nextCue.
+ACTOR_INFO | 2020-05-15 11:30:20 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about nextCue.
+ACTOR_INFO | 2020-05-15 11:30:20 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Fate] about nextCue.
+ACTOR_INFO | 2020-05-15 11:30:21 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "dude lex" from [Xander].
+ACTOR_INFO | 2020-05-15 11:30:22 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "have you no chill" from [Xander].
+ACTOR_INFO | 2020-05-15 11:30:23 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "What? It's a good movie!" to [Xander].
+ACTOR_INFO | 2020-05-15 11:30:23 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "What? It's a good movie!" to [Fate].
+ACTOR_INFO | 2020-05-15 11:30:23 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "What? It's a good movie!" to [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:30:23 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-15 11:30:23 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-15 11:30:23 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-15 11:30:24 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "what" from [Xander].
+ACTOR_INFO | 2020-05-15 11:30:25 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Wait, you haven't-" to [Xander].
+ACTOR_INFO | 2020-05-15 11:30:25 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Wait, you haven't-" to [Fate].
+ACTOR_INFO | 2020-05-15 11:30:25 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Wait, you haven't-" to [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:30:25 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-15 11:30:25 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-15 11:30:25 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-15 11:30:26 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "..." to [Xander].
+ACTOR_INFO | 2020-05-15 11:30:26 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "..." to [Fate].
+ACTOR_INFO | 2020-05-15 11:30:26 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "..." to [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:30:26 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-15 11:30:26 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-15 11:30:26 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-15 11:30:28 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "You haven't seen the Princess Bride?" to [Xander].
+ACTOR_INFO | 2020-05-15 11:30:28 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "You haven't seen the Princess Bride?" to [Fate].
+ACTOR_INFO | 2020-05-15 11:30:28 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "You haven't seen the Princess Bride?" to [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:30:28 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-15 11:30:28 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-15 11:30:28 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-15 11:30:29 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "(you have got to be kidding me, x)" from [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:30:30 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "Are you honest? Are you for real?" from [Fate].
+ACTOR_INFO | 2020-05-15 11:30:30 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "(please be lying)" from [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:30:31 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Please be lying." to [Xander].
+ACTOR_INFO | 2020-05-15 11:30:31 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Please be lying." to [Fate].
+ACTOR_INFO | 2020-05-15 11:30:31 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Please be lying." to [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:30:31 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-15 11:30:31 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-15 11:30:31 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-15 11:30:32 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "whats a princess" from [Xander].
+ACTOR_INFO | 2020-05-15 11:30:33 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Stoooooop talking." to [Xander].
+ACTOR_INFO | 2020-05-15 11:30:33 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Stoooooop talking." to [Fate].
+ACTOR_INFO | 2020-05-15 11:30:33 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Stoooooop talking." to [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:30:33 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-15 11:30:33 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-15 11:30:33 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-15 11:30:33 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Just. Stop." to [Xander].
+ACTOR_INFO | 2020-05-15 11:30:33 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Just. Stop." to [Fate].
+ACTOR_INFO | 2020-05-15 11:30:33 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Just. Stop." to [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:30:33 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-15 11:30:33 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-15 11:30:33 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-15 11:30:35 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "Sounds like a watch party is in order!" from [Fate].
+ACTOR_INFO | 2020-05-15 11:30:35 | [Thread-4] actor.Actor$ScriptReader (Actor.java:393) - [Lexa] going to cue scene1/cue3.
+ACTOR_DEBUG | 2020-05-15 11:30:35 | [Thread-3] actor.Actor (Actor.java:169) - Client roll-calling port 4003 has closed.
+ACTOR_INFO | 2020-05-15 11:30:35 | [Thread-4] actor.Actor$ScriptReader (Actor.java:422) - [Lexa] has been instructed to exit the stage.
+ACTOR_DEBUG | 2020-05-15 11:30:35 | [Thread-1] actor.Actor (Actor.java:169) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-15 11:30:35 | [Thread-2] actor.Actor (Actor.java:169) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-05-15 11:30:35 | [Thread-4] actor.Actor (Actor.java:217) - Worker group is shutting down for [Lexa]
+ACTOR_DEBUG | 2020-05-15 11:30:35 | [Thread-4] actor.Actor (Actor.java:223) - Boss group is shutting down for Lexa
+ACTOR_DEBUG | 2020-05-15 11:30:35 | [Thread-4] actor.Actor (Actor.java:236) - Client group is shutting down for Lexa
+ACTOR_DEBUG | 2020-05-15 11:30:35 | [Thread-4] actor.Actor (Actor.java:248) - Exit actor [Lexa].
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [main] actor.Actor (Actor.java:88) - 
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [main] actor.Actor (Actor.java:89) - Instantiating actor [Lexa] on port [4000]...
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [Thread-1] actor.Actor (Actor.java:147) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [Thread-2] actor.Actor (Actor.java:147) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [Thread-3] actor.Actor (Actor.java:147) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [Thread-2] actor.Actor (Actor.java:164) - Bootstrap 559354460 configured.
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [Thread-3] actor.Actor (Actor.java:164) - Bootstrap 22001524 configured.
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [Thread-1] actor.Actor (Actor.java:164) - Bootstrap 1127306145 configured.
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [Thread-2] actor.Actor (Actor.java:166) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [Thread-3] actor.Actor (Actor.java:166) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [Thread-1] actor.Actor (Actor.java:166) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:589) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:589) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:589) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:161) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:161) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:161) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:595) - ChannelHandler 1019990830 has connected to its target.
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:595) - ChannelHandler 1908560607 has connected to its target.
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:595) - ChannelHandler 1313036593 has connected to its target.
+ACTOR_INFO | 2020-05-15 11:40:20 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:604) - Roll-call sent from [Lexa] to port 4002.
+ACTOR_INFO | 2020-05-15 11:40:20 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:604) - Roll-call sent from [Lexa] to port 4003.
+ACTOR_INFO | 2020-05-15 11:40:20 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:604) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-15 11:40:20 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:616) - [Lexa] received a roll-call response from [Fate], who is on port 4003.
+ACTOR_INFO | 2020-05-15 11:40:20 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:616) - [Lexa] received a roll-call response from [CallMeKey], who is on port 4002.
+ACTOR_INFO | 2020-05-15 11:40:20 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:616) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:621) - [Lexa] added [CallMeKey] to their contact list.
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:621) - [Lexa] added [Fate] to their contact list.
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:621) - [Lexa] added [Xander] to their contact list.
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [Thread-5] actor.Actor (Actor.java:184) - Initializing server for [Lexa]...
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [Thread-5] actor.Actor (Actor.java:205) - Server for [Lexa] bound to port 4000.
+ACTOR_DEBUG | 2020-05-15 11:40:20 | [main] actor.Actor (Actor.java:111) - Successfully instantiated [Lexa].
+ACTOR_INFO | 2020-05-15 11:40:20 | [Thread-4] actor.Actor$ScriptReader (Actor.java:393) - [Lexa] going to cue scene1/cue1.
+ACTOR_INFO | 2020-05-15 11:40:20 | [Thread-4] actor.Actor$ScriptReader (Actor.java:566) - [Lexa] has found [Xander] onstage.
+ACTOR_INFO | 2020-05-15 11:40:20 | [Thread-4] actor.Actor$ScriptReader (Actor.java:566) - [Lexa] has found [Fate] onstage.
+ACTOR_INFO | 2020-05-15 11:40:20 | [Thread-4] actor.Actor$ScriptReader (Actor.java:566) - [Lexa] has found [CallMeKey] onstage.
+ACTOR_DEBUG | 2020-05-15 11:40:21 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:656) - [Lexa]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-15 11:40:21 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:656) - [Lexa]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-15 11:40:21 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:656) - [Lexa]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-15 11:40:21 | [nioEventLoopGroup-4-2] actor.Actor$2 (Actor.java:200) - Channel pipeline [0327102a] to Server [Lexa] has been initialized.
+ACTOR_DEBUG | 2020-05-15 11:40:21 | [nioEventLoopGroup-4-3] actor.Actor$2 (Actor.java:200) - Channel pipeline [bb1416f6] to Server [Lexa] has been initialized.
+ACTOR_DEBUG | 2020-05-15 11:40:21 | [nioEventLoopGroup-4-1] actor.Actor$2 (Actor.java:200) - Channel pipeline [d605c4de] to Server [Lexa] has been initialized.
+ACTOR_INFO | 2020-05-15 11:40:21 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:679) - [Lexa] received a roll-call request from [Fate], who is on port 4003.
+ACTOR_INFO | 2020-05-15 11:40:21 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:679) - [Lexa] received a roll-call request from [Xander], who is on port 4001.
+ACTOR_ERROR | 2020-05-15 11:40:21 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:687) - [Lexa] already has [Xander] in their contact list.
+ACTOR_ERROR | 2020-05-15 11:40:21 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:687) - [Lexa] already has [Fate] in their contact list.
+ACTOR_INFO | 2020-05-15 11:40:21 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:679) - [Lexa] received a roll-call request from [CallMeKey], who is on port 4002.
+ACTOR_ERROR | 2020-05-15 11:40:21 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:687) - [Lexa] already has [CallMeKey] in their contact list.
+ACTOR_INFO | 2020-05-15 11:40:21 | [Thread-4] actor.Actor (Actor.java:263) - [Lexa] spoke "My name is Alexandra Syaani Laskea." to the user.
+ACTOR_INFO | 2020-05-15 11:40:22 | [Thread-4] actor.Actor (Actor.java:263) - [Lexa] spoke "You killed my father." to the user.
+ACTOR_INFO | 2020-05-15 11:40:23 | [Thread-4] actor.Actor (Actor.java:263) - [Lexa] spoke "Prepare to die." to the user.
+ACTOR_INFO | 2020-05-15 11:40:23 | [Thread-4] actor.Actor (Actor.java:303) - [Lexa] sent [Xander] to the next cue.
+ACTOR_INFO | 2020-05-15 11:40:23 | [Thread-4] actor.Actor (Actor.java:303) - [Lexa] sent [Fate] to the next cue.
+ACTOR_INFO | 2020-05-15 11:40:23 | [Thread-4] actor.Actor (Actor.java:303) - [Lexa] sent [CallMeKey] to the next cue.
+ACTOR_INFO | 2020-05-15 11:40:23 | [Thread-4] actor.Actor$ScriptReader (Actor.java:393) - [Lexa] going to cue scene1/cue2.
+ACTOR_INFO | 2020-05-15 11:40:23 | [Thread-4] actor.Actor$ScriptReader (Actor.java:566) - [Lexa] has found [Xander] onstage.
+ACTOR_INFO | 2020-05-15 11:40:23 | [Thread-4] actor.Actor$ScriptReader (Actor.java:566) - [Lexa] has found [Fate] onstage.
+ACTOR_INFO | 2020-05-15 11:40:23 | [Thread-4] actor.Actor$ScriptReader (Actor.java:566) - [Lexa] has found [CallMeKey] onstage.
+ACTOR_INFO | 2020-05-15 11:40:23 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:634) - [Lexa] received a confirmation from [Fate] about nextCue.
+ACTOR_INFO | 2020-05-15 11:40:23 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:634) - [Lexa] received a confirmation from [Xander] about nextCue.
+ACTOR_INFO | 2020-05-15 11:40:23 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:634) - [Lexa] received a confirmation from [CallMeKey] about nextCue.
+ACTOR_INFO | 2020-05-15 11:40:23 | [Thread-4] actor.Actor$ScriptReader (Actor.java:518) - [Lexa] entering conversation.
+ACTOR_INFO | 2020-05-15 11:40:23 | [Thread-4] actor.Actor$ScriptReader (Actor.java:527) - [Lexa] will be conversing with [Xander].
+ACTOR_INFO | 2020-05-15 11:40:23 | [Thread-4] actor.Actor$ScriptReader (Actor.java:527) - [Lexa] will be conversing with [Fate].
+ACTOR_INFO | 2020-05-15 11:40:23 | [Thread-4] actor.Actor$ScriptReader (Actor.java:527) - [Lexa] will be conversing with [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:40:24 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:669) - [Lexa] received the direct-message "dude lex" from [Xander].
+ACTOR_INFO | 2020-05-15 11:40:25 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:669) - [Lexa] received the direct-message "have you no chill" from [Xander].
+ACTOR_INFO | 2020-05-15 11:40:26 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "What? It's a good movie!" to [Xander].
+ACTOR_INFO | 2020-05-15 11:40:26 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "What? It's a good movie!" to [Fate].
+ACTOR_INFO | 2020-05-15 11:40:26 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "What? It's a good movie!" to [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:40:26 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:634) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-15 11:40:26 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:634) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-15 11:40:26 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:634) - [Lexa] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-15 11:40:27 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:669) - [Lexa] received the direct-message "what" from [Xander].
+ACTOR_INFO | 2020-05-15 11:40:28 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Wait, you haven't-" to [Xander].
+ACTOR_INFO | 2020-05-15 11:40:28 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Wait, you haven't-" to [Fate].
+ACTOR_INFO | 2020-05-15 11:40:28 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Wait, you haven't-" to [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:40:28 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:634) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-15 11:40:28 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:634) - [Lexa] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-15 11:40:28 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:634) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-15 11:40:28 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "..." to [Xander].
+ACTOR_INFO | 2020-05-15 11:40:28 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "..." to [Fate].
+ACTOR_INFO | 2020-05-15 11:40:28 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "..." to [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:40:28 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:634) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-15 11:40:28 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:634) - [Lexa] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-15 11:40:28 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:634) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-15 11:40:31 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "You haven't seen the Princess Bride?" to [Xander].
+ACTOR_INFO | 2020-05-15 11:40:31 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "You haven't seen the Princess Bride?" to [Fate].
+ACTOR_INFO | 2020-05-15 11:40:31 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "You haven't seen the Princess Bride?" to [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:40:31 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:634) - [Lexa] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-15 11:40:31 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:634) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-15 11:40:31 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:634) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-15 11:40:32 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:669) - [Lexa] received the direct-message "(you have got to be kidding me, x)" from [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:40:33 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:669) - [Lexa] received the direct-message "Are you honest? Are you for real?" from [Fate].
+ACTOR_INFO | 2020-05-15 11:40:33 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:669) - [Lexa] received the direct-message "(please be lying)" from [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:40:33 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Please be lying." to [Xander].
+ACTOR_INFO | 2020-05-15 11:40:33 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Please be lying." to [Fate].
+ACTOR_INFO | 2020-05-15 11:40:33 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Please be lying." to [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:40:33 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:634) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-15 11:40:33 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:634) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-15 11:40:33 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:634) - [Lexa] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-15 11:40:34 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:669) - [Lexa] received the direct-message "whats a princess" from [Xander].
+ACTOR_INFO | 2020-05-15 11:40:35 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Stoooooop talking." to [Xander].
+ACTOR_INFO | 2020-05-15 11:40:35 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Stoooooop talking." to [Fate].
+ACTOR_INFO | 2020-05-15 11:40:35 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Stoooooop talking." to [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:40:35 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:634) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-15 11:40:35 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:634) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-15 11:40:35 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:634) - [Lexa] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-15 11:40:36 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Just. Stop." to [Xander].
+ACTOR_INFO | 2020-05-15 11:40:36 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Just. Stop." to [Fate].
+ACTOR_INFO | 2020-05-15 11:40:36 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Just. Stop." to [CallMeKey].
+ACTOR_INFO | 2020-05-15 11:40:36 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:634) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-15 11:40:36 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:634) - [Lexa] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-15 11:40:36 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:634) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-15 11:40:38 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:669) - [Lexa] received the direct-message "Sounds like a watch party is in order!" from [Fate].
+ACTOR_DEBUG | 2020-05-15 11:40:38 | [Thread-3] actor.Actor (Actor.java:169) - Client roll-calling port 4003 has closed.
+ACTOR_INFO | 2020-05-15 11:40:38 | [Thread-4] actor.Actor$ScriptReader (Actor.java:393) - [Lexa] going to cue scene1/cue3.
+ACTOR_INFO | 2020-05-15 11:40:38 | [Thread-4] actor.Actor$ScriptReader (Actor.java:422) - [Lexa] has been instructed to exit the stage.
+ACTOR_DEBUG | 2020-05-15 11:40:38 | [Thread-2] actor.Actor (Actor.java:169) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-05-15 11:40:38 | [Thread-1] actor.Actor (Actor.java:169) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-15 11:40:38 | [Thread-4] actor.Actor (Actor.java:217) - Worker group is shutting down for [Lexa]
+ACTOR_DEBUG | 2020-05-15 11:40:38 | [Thread-4] actor.Actor (Actor.java:223) - Boss group is shutting down for Lexa
+ACTOR_DEBUG | 2020-05-15 11:40:38 | [Thread-4] actor.Actor (Actor.java:236) - Client group is shutting down for Lexa
+ACTOR_DEBUG | 2020-05-15 11:40:38 | [Thread-4] actor.Actor (Actor.java:248) - Exit actor [Lexa].
+ACTOR_DEBUG | 2020-05-16 01:14:08 | [main] actor.Actor (Actor.java:88) - 
+ACTOR_DEBUG | 2020-05-16 01:14:08 | [main] actor.Actor (Actor.java:89) - Instantiating actor [Lexa] on port [4000]...
+ACTOR_DEBUG | 2020-05-16 01:14:08 | [Thread-1] actor.Actor (Actor.java:147) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-16 01:14:08 | [Thread-3] actor.Actor (Actor.java:147) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-16 01:14:08 | [Thread-2] actor.Actor (Actor.java:147) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-16 01:14:08 | [Thread-2] actor.Actor (Actor.java:164) - Bootstrap 585052363 configured.
+ACTOR_DEBUG | 2020-05-16 01:14:08 | [Thread-3] actor.Actor (Actor.java:164) - Bootstrap 22001524 configured.
+ACTOR_DEBUG | 2020-05-16 01:14:08 | [Thread-1] actor.Actor (Actor.java:164) - Bootstrap 986540101 configured.
+ACTOR_DEBUG | 2020-05-16 01:14:08 | [Thread-2] actor.Actor (Actor.java:166) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-16 01:14:08 | [Thread-3] actor.Actor (Actor.java:166) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-16 01:14:08 | [Thread-1] actor.Actor (Actor.java:166) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-16 01:14:08 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-16 01:14:08 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-16 01:14:08 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-16 01:14:08 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:161) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-16 01:14:08 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:161) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-16 01:14:08 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:161) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-16 01:14:08 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 731569808 has connected to its target.
+ACTOR_INFO | 2020-05-16 01:14:08 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-16 01:14:08 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:615) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-16 01:14:08 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:620) - [Lexa] added [Xander] to their contact list.
+ACTOR_DEBUG | 2020-05-16 01:14:10 | [Thread-2] actor.Actor (Actor.java:169) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-05-16 01:14:10 | [Thread-3] actor.Actor (Actor.java:169) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-16 01:14:10 | [Thread-5] actor.Actor (Actor.java:184) - Initializing server for [Lexa]...
+ACTOR_DEBUG | 2020-05-16 01:14:10 | [main] actor.Actor (Actor.java:111) - Successfully instantiated [Lexa].
+ACTOR_DEBUG | 2020-05-16 01:14:10 | [Thread-5] actor.Actor (Actor.java:205) - Server for [Lexa] bound to port 4000.
+ACTOR_INFO | 2020-05-16 01:14:10 | [Thread-4] actor.Actor$ScriptReader (Actor.java:393) - [Lexa] going to cue scene1/cue1.
+ACTOR_INFO | 2020-05-16 01:14:10 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [Xander] onstage.
+ACTOR_ERROR | 2020-05-16 01:14:10 | [Thread-4] actor.Actor$ScriptReader (Actor.java:561) - [Lexa] is expecting [CallMeKey] to be onstage, but they're not.
+ACTOR_ERROR | 2020-05-16 01:14:10 | [Thread-4] actor.Actor$ScriptReader (Actor.java:561) - [Lexa] is expecting [Fate] to be onstage, but they're not.
+ACTOR_DEBUG | 2020-05-16 01:14:10 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:655) - [Lexa]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-16 01:14:10 | [nioEventLoopGroup-4-1] actor.Actor$2 (Actor.java:200) - Channel pipeline [d0db97b8] to Server [Lexa] has been initialized.
+ACTOR_INFO | 2020-05-16 01:14:10 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:678) - [Lexa] received a roll-call request from [Xander], who is on port 4001.
+ACTOR_ERROR | 2020-05-16 01:14:10 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:686) - [Lexa] already has [Xander] in their contact list.
+ACTOR_DEBUG | 2020-05-16 01:14:15 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:655) - [Lexa]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-16 01:14:15 | [nioEventLoopGroup-4-2] actor.Actor$2 (Actor.java:200) - Channel pipeline [803ecf72] to Server [Lexa] has been initialized.
+ACTOR_INFO | 2020-05-16 01:14:15 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:678) - [Lexa] received a roll-call request from [Fate], who is on port 4003.
+ACTOR_DEBUG | 2020-05-16 01:14:15 | [Thread-6] actor.Actor (Actor.java:147) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-16 01:14:15 | [Thread-6] actor.Actor (Actor.java:164) - Bootstrap 1790120702 configured.
+ACTOR_DEBUG | 2020-05-16 01:14:15 | [Thread-6] actor.Actor (Actor.java:166) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-16 01:14:15 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-16 01:14:15 | [nioEventLoopGroup-2-4] actor.Actor$1 (Actor.java:161) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-16 01:14:18 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 2079211702 has connected to its target.
+ACTOR_INFO | 2020-05-16 01:14:18 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [Lexa] to port 4003.
+ACTOR_INFO | 2020-05-16 01:14:18 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:615) - [Lexa] received a roll-call response from [Fate], who is on port 4003.
+ACTOR_DEBUG | 2020-05-16 01:14:18 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:620) - [Lexa] added [Fate] to their contact list.
+ACTOR_INFO | 2020-05-16 01:14:18 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [Xander] onstage.
+ACTOR_ERROR | 2020-05-16 01:14:18 | [Thread-4] actor.Actor$ScriptReader (Actor.java:561) - [Lexa] is expecting [CallMeKey] to be onstage, but they're not.
+ACTOR_INFO | 2020-05-16 01:14:18 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [Fate] onstage.
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:655) - [Lexa]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [nioEventLoopGroup-4-3] actor.Actor$2 (Actor.java:200) - Channel pipeline [177f1ab4] to Server [Lexa] has been initialized.
+ACTOR_INFO | 2020-05-16 01:14:23 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:678) - [Lexa] received a roll-call request from [CallMeKey], who is on port 4002.
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [Thread-7] actor.Actor (Actor.java:147) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [Thread-7] actor.Actor (Actor.java:164) - Bootstrap 180008274 configured.
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [Thread-7] actor.Actor (Actor.java:166) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-16 01:14:23 | [nioEventLoopGroup-2-5] actor.Actor$1 (Actor.java:161) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-16 01:14:24 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 616758267 has connected to its target.
+ACTOR_INFO | 2020-05-16 01:14:24 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [Lexa] to port 4002.
+ACTOR_INFO | 2020-05-16 01:14:24 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:615) - [Lexa] received a roll-call response from [CallMeKey], who is on port 4002.
+ACTOR_DEBUG | 2020-05-16 01:14:24 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:620) - [Lexa] added [CallMeKey] to their contact list.
+ACTOR_INFO | 2020-05-16 01:14:24 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [Xander] onstage.
+ACTOR_INFO | 2020-05-16 01:14:24 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [CallMeKey] onstage.
+ACTOR_INFO | 2020-05-16 01:14:24 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [Fate] onstage.
+ACTOR_INFO | 2020-05-16 01:14:25 | [Thread-4] actor.Actor (Actor.java:263) - [Lexa] spoke "My name is Alexandra Syaani Laskea." to the user.
+ACTOR_INFO | 2020-05-16 01:14:26 | [Thread-4] actor.Actor (Actor.java:263) - [Lexa] spoke "You killed my father." to the user.
+ACTOR_INFO | 2020-05-16 01:14:27 | [Thread-4] actor.Actor (Actor.java:263) - [Lexa] spoke "Prepare to die." to the user.
+ACTOR_INFO | 2020-05-16 01:14:27 | [Thread-4] actor.Actor (Actor.java:303) - [Lexa] sent [Xander] to the next cue.
+ACTOR_INFO | 2020-05-16 01:14:27 | [Thread-4] actor.Actor (Actor.java:303) - [Lexa] sent [CallMeKey] to the next cue.
+ACTOR_INFO | 2020-05-16 01:14:27 | [Thread-4] actor.Actor (Actor.java:303) - [Lexa] sent [Fate] to the next cue.
+ACTOR_INFO | 2020-05-16 01:14:27 | [Thread-4] actor.Actor$ScriptReader (Actor.java:393) - [Lexa] going to cue scene1/cue2.
+ACTOR_INFO | 2020-05-16 01:14:27 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [Xander] onstage.
+ACTOR_INFO | 2020-05-16 01:14:27 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [CallMeKey] onstage.
+ACTOR_INFO | 2020-05-16 01:14:27 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [Fate] onstage.
+ACTOR_INFO | 2020-05-16 01:14:27 | [Thread-4] actor.Actor$ScriptReader (Actor.java:517) - [Lexa] entering conversation.
+ACTOR_INFO | 2020-05-16 01:14:27 | [Thread-4] actor.Actor$ScriptReader (Actor.java:526) - [Lexa] will be conversing with [Xander].
+ACTOR_INFO | 2020-05-16 01:14:27 | [Thread-4] actor.Actor$ScriptReader (Actor.java:526) - [Lexa] will be conversing with [CallMeKey].
+ACTOR_INFO | 2020-05-16 01:14:27 | [Thread-4] actor.Actor$ScriptReader (Actor.java:526) - [Lexa] will be conversing with [Fate].
+ACTOR_INFO | 2020-05-16 01:14:27 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about nextCue.
+ACTOR_INFO | 2020-05-16 01:14:27 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about nextCue.
+ACTOR_INFO | 2020-05-16 01:14:27 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Fate] about nextCue.
+ACTOR_INFO | 2020-05-16 01:14:28 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "dude lex" from [Xander].
+ACTOR_INFO | 2020-05-16 01:14:28 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "have you no chill" from [Xander].
+ACTOR_INFO | 2020-05-16 01:14:29 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "What? It's a good movie!" to [Xander].
+ACTOR_INFO | 2020-05-16 01:14:29 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "What? It's a good movie!" to [CallMeKey].
+ACTOR_INFO | 2020-05-16 01:14:29 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "What? It's a good movie!" to [Fate].
+ACTOR_INFO | 2020-05-16 01:14:29 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-16 01:14:29 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-16 01:14:29 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-16 01:14:30 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "what" from [Xander].
+ACTOR_INFO | 2020-05-16 01:14:32 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Wait, you haven't-" to [Xander].
+ACTOR_INFO | 2020-05-16 01:14:32 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Wait, you haven't-" to [CallMeKey].
+ACTOR_INFO | 2020-05-16 01:14:32 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Wait, you haven't-" to [Fate].
+ACTOR_INFO | 2020-05-16 01:14:32 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-16 01:14:32 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-16 01:14:32 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-16 01:14:32 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "..." to [Xander].
+ACTOR_INFO | 2020-05-16 01:14:32 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "..." to [CallMeKey].
+ACTOR_INFO | 2020-05-16 01:14:32 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "..." to [Fate].
+ACTOR_INFO | 2020-05-16 01:14:32 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-16 01:14:32 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-16 01:14:32 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-16 01:14:34 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "You haven't seen the Princess Bride?" to [Xander].
+ACTOR_INFO | 2020-05-16 01:14:34 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "You haven't seen the Princess Bride?" to [CallMeKey].
+ACTOR_INFO | 2020-05-16 01:14:34 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "You haven't seen the Princess Bride?" to [Fate].
+ACTOR_INFO | 2020-05-16 01:14:34 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-16 01:14:34 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-16 01:14:34 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-16 01:14:35 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "(you have got to be kidding me, x)" from [CallMeKey].
+ACTOR_INFO | 2020-05-16 01:14:37 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "Are you honest? Are you for real?" from [Fate].
+ACTOR_INFO | 2020-05-16 01:14:37 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "(please be lying)" from [CallMeKey].
+ACTOR_INFO | 2020-05-16 01:14:37 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Please be lying." to [Xander].
+ACTOR_INFO | 2020-05-16 01:14:37 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Please be lying." to [CallMeKey].
+ACTOR_INFO | 2020-05-16 01:14:37 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Please be lying." to [Fate].
+ACTOR_INFO | 2020-05-16 01:14:37 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-16 01:14:37 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-16 01:14:37 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-16 01:14:38 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "whats a princess" from [Xander].
+ACTOR_INFO | 2020-05-16 01:14:39 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Stoooooop talking." to [Xander].
+ACTOR_INFO | 2020-05-16 01:14:39 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Stoooooop talking." to [CallMeKey].
+ACTOR_INFO | 2020-05-16 01:14:39 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Stoooooop talking." to [Fate].
+ACTOR_INFO | 2020-05-16 01:14:39 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-16 01:14:39 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-16 01:14:39 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-16 01:14:39 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Just. Stop." to [Xander].
+ACTOR_INFO | 2020-05-16 01:14:39 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Just. Stop." to [CallMeKey].
+ACTOR_INFO | 2020-05-16 01:14:39 | [Thread-4] actor.Actor (Actor.java:277) - [Lexa] direct-messaged "Just. Stop." to [Fate].
+ACTOR_INFO | 2020-05-16 01:14:39 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-16 01:14:39 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-16 01:14:39 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-16 01:14:41 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "Sounds like a watch party is in order!" from [Fate].
+ACTOR_INFO | 2020-05-16 01:14:41 | [Thread-4] actor.Actor$ScriptReader (Actor.java:393) - [Lexa] going to cue scene1/cue3.
+ACTOR_INFO | 2020-05-16 01:14:41 | [Thread-4] actor.Actor$ScriptReader (Actor.java:422) - [Lexa] has been instructed to exit the stage.
+ACTOR_DEBUG | 2020-05-16 01:14:41 | [Thread-6] actor.Actor (Actor.java:169) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-16 01:14:41 | [Thread-7] actor.Actor (Actor.java:169) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-05-16 01:14:41 | [Thread-1] actor.Actor (Actor.java:169) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-16 01:14:41 | [Thread-4] actor.Actor (Actor.java:217) - Worker group is shutting down for [Lexa]
+ACTOR_DEBUG | 2020-05-16 01:14:41 | [Thread-4] actor.Actor (Actor.java:223) - Boss group is shutting down for Lexa
+ACTOR_DEBUG | 2020-05-16 01:14:41 | [Thread-4] actor.Actor (Actor.java:236) - Client group is shutting down for Lexa
+ACTOR_DEBUG | 2020-05-16 01:14:41 | [Thread-4] actor.Actor (Actor.java:248) - Exit actor [Lexa].
+ACTOR_DEBUG | 2020-05-16 01:19:04 | [main] actor.Actor (Actor.java:87) - 
+ACTOR_DEBUG | 2020-05-16 01:19:04 | [main] actor.Actor (Actor.java:88) - Instantiating actor [Lexa] on port [4000]...
+ACTOR_DEBUG | 2020-05-16 01:19:04 | [Thread-1] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-16 01:19:04 | [Thread-3] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-16 01:19:04 | [Thread-2] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-16 01:19:04 | [Thread-3] actor.Actor (Actor.java:163) - Bootstrap 753277403 configured.
+ACTOR_DEBUG | 2020-05-16 01:19:04 | [Thread-2] actor.Actor (Actor.java:163) - Bootstrap 1494340297 configured.
+ACTOR_DEBUG | 2020-05-16 01:19:04 | [Thread-1] actor.Actor (Actor.java:163) - Bootstrap 1484022997 configured.
+ACTOR_DEBUG | 2020-05-16 01:19:04 | [Thread-2] actor.Actor (Actor.java:165) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-16 01:19:04 | [Thread-3] actor.Actor (Actor.java:165) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-16 01:19:04 | [Thread-1] actor.Actor (Actor.java:165) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-16 01:19:04 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-16 01:19:04 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-16 01:19:04 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-16 01:19:04 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-16 01:19:04 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-16 01:19:04 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-16 01:19:04 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 1203939145 has connected to its target.
+ACTOR_INFO | 2020-05-16 01:19:04 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-16 01:19:04 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:615) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-16 01:19:04 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:620) - [Lexa] added [Xander] to their contact list.
+ACTOR_DEBUG | 2020-05-16 01:19:06 | [Thread-2] actor.Actor (Actor.java:168) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-05-16 01:19:06 | [Thread-3] actor.Actor (Actor.java:168) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-16 01:19:06 | [Thread-5] actor.Actor (Actor.java:183) - Initializing server for [Lexa]...
+ACTOR_DEBUG | 2020-05-16 01:19:06 | [Thread-5] actor.Actor (Actor.java:204) - Server for [Lexa] bound to port 4000.
+ACTOR_DEBUG | 2020-05-16 01:19:06 | [main] actor.Actor (Actor.java:110) - Successfully instantiated [Lexa].
+ACTOR_INFO | 2020-05-16 01:19:06 | [Thread-4] actor.Actor$ScriptReader (Actor.java:392) - [Lexa] going to cue scene1/cue1.
+ACTOR_INFO | 2020-05-16 01:19:06 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [Xander] onstage.
+ACTOR_ERROR | 2020-05-16 01:19:06 | [Thread-4] actor.Actor$ScriptReader (Actor.java:561) - [Lexa] is expecting [CallMeKey] to be onstage, but they're not.
+ACTOR_ERROR | 2020-05-16 01:19:06 | [Thread-4] actor.Actor$ScriptReader (Actor.java:561) - [Lexa] is expecting [Fate] to be onstage, but they're not.
+ACTOR_INFO | 2020-05-16 01:19:06 | [Thread-4] actor.Actor (Actor.java:262) - [Lexa] spoke "i am waiting" to the user.
+ACTOR_DEBUG | 2020-05-16 01:19:06 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:655) - [Lexa]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-16 01:19:06 | [nioEventLoopGroup-4-1] actor.Actor$2 (Actor.java:199) - Channel pipeline [53bbbf24] to Server [Lexa] has been initialized.
+ACTOR_INFO | 2020-05-16 01:19:06 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:678) - [Lexa] received a roll-call request from [Xander], who is on port 4001.
+ACTOR_ERROR | 2020-05-16 01:19:06 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:686) - [Lexa] already has [Xander] in their contact list.
+ACTOR_DEBUG | 2020-05-16 01:19:09 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:655) - [Lexa]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-16 01:19:09 | [nioEventLoopGroup-4-2] actor.Actor$2 (Actor.java:199) - Channel pipeline [20d56524] to Server [Lexa] has been initialized.
+ACTOR_INFO | 2020-05-16 01:19:09 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:678) - [Lexa] received a roll-call request from [Fate], who is on port 4003.
+ACTOR_DEBUG | 2020-05-16 01:19:09 | [Thread-6] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-16 01:19:09 | [Thread-6] actor.Actor (Actor.java:163) - Bootstrap 1199302791 configured.
+ACTOR_DEBUG | 2020-05-16 01:19:09 | [Thread-6] actor.Actor (Actor.java:165) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-16 01:19:09 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-16 01:19:09 | [nioEventLoopGroup-2-4] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-16 01:19:11 | [Thread-6] actor.Actor (Actor.java:168) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:655) - [Lexa]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [nioEventLoopGroup-4-3] actor.Actor$2 (Actor.java:199) - Channel pipeline [09ef3dac] to Server [Lexa] has been initialized.
+ACTOR_INFO | 2020-05-16 01:19:13 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:678) - [Lexa] received a roll-call request from [CallMeKey], who is on port 4002.
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [Thread-7] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [Thread-7] actor.Actor (Actor.java:163) - Bootstrap 1897278406 configured.
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [Thread-7] actor.Actor (Actor.java:165) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-16 01:19:13 | [nioEventLoopGroup-2-5] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-16 01:19:14 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 1804924252 has connected to its target.
+ACTOR_INFO | 2020-05-16 01:19:14 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [Lexa] to port 4002.
+ACTOR_INFO | 2020-05-16 01:19:14 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:615) - [Lexa] received a roll-call response from [CallMeKey], who is on port 4002.
+ACTOR_DEBUG | 2020-05-16 01:19:14 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:620) - [Lexa] added [CallMeKey] to their contact list.
+ACTOR_INFO | 2020-05-16 01:19:14 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [Xander] onstage.
+ACTOR_INFO | 2020-05-16 01:19:14 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [CallMeKey] onstage.
+ACTOR_ERROR | 2020-05-16 01:19:14 | [Thread-4] actor.Actor$ScriptReader (Actor.java:561) - [Lexa] is expecting [Fate] to be onstage, but they're not.
+ACTOR_INFO | 2020-05-16 01:19:14 | [Thread-4] actor.Actor (Actor.java:262) - [Lexa] spoke "i am waiting" to the user.
+ACTOR_DEBUG | 2020-05-16 01:20:23 | [main] actor.Actor (Actor.java:87) - 
+ACTOR_DEBUG | 2020-05-16 01:20:23 | [main] actor.Actor (Actor.java:88) - Instantiating actor [Lexa] on port [4000]...
+ACTOR_DEBUG | 2020-05-16 01:20:23 | [Thread-3] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-16 01:20:23 | [Thread-2] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-16 01:20:23 | [Thread-1] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4001...
+ACTOR_DEBUG | 2020-05-16 01:20:23 | [Thread-3] actor.Actor (Actor.java:163) - Bootstrap 1074116232 configured.
+ACTOR_DEBUG | 2020-05-16 01:20:23 | [Thread-1] actor.Actor (Actor.java:163) - Bootstrap 994105862 configured.
+ACTOR_DEBUG | 2020-05-16 01:20:23 | [Thread-2] actor.Actor (Actor.java:163) - Bootstrap 1777196356 configured.
+ACTOR_DEBUG | 2020-05-16 01:20:23 | [Thread-3] actor.Actor (Actor.java:165) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-16 01:20:23 | [Thread-2] actor.Actor (Actor.java:165) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-16 01:20:23 | [Thread-1] actor.Actor (Actor.java:165) - Roll-calling port 4001...
+ACTOR_DEBUG | 2020-05-16 01:20:23 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-16 01:20:23 | [nioEventLoopGroup-2-1] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-16 01:20:23 | [nioEventLoopGroup-2-3] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-16 01:20:23 | [nioEventLoopGroup-2-1] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-16 01:20:23 | [nioEventLoopGroup-2-2] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4001 initialized.
+ACTOR_DEBUG | 2020-05-16 01:20:23 | [nioEventLoopGroup-2-3] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-16 01:20:23 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 824011761 has connected to its target.
+ACTOR_INFO | 2020-05-16 01:20:23 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [Lexa] to port 4001.
+ACTOR_INFO | 2020-05-16 01:20:23 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:615) - [Lexa] received a roll-call response from [Xander], who is on port 4001.
+ACTOR_DEBUG | 2020-05-16 01:20:23 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:620) - [Lexa] added [Xander] to their contact list.
+ACTOR_DEBUG | 2020-05-16 01:20:25 | [Thread-2] actor.Actor (Actor.java:168) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-05-16 01:20:25 | [Thread-3] actor.Actor (Actor.java:168) - Client roll-calling port 4003 has closed.
+ACTOR_DEBUG | 2020-05-16 01:20:25 | [Thread-5] actor.Actor (Actor.java:183) - Initializing server for [Lexa]...
+ACTOR_DEBUG | 2020-05-16 01:20:25 | [Thread-5] actor.Actor (Actor.java:204) - Server for [Lexa] bound to port 4000.
+ACTOR_DEBUG | 2020-05-16 01:20:25 | [main] actor.Actor (Actor.java:110) - Successfully instantiated [Lexa].
+ACTOR_INFO | 2020-05-16 01:20:25 | [Thread-4] actor.Actor$ScriptReader (Actor.java:392) - [Lexa] going to cue scene1/cue1.
+ACTOR_INFO | 2020-05-16 01:20:25 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [Xander] onstage.
+ACTOR_ERROR | 2020-05-16 01:20:25 | [Thread-4] actor.Actor$ScriptReader (Actor.java:561) - [Lexa] is expecting [CallMeKey] to be onstage, but they're not.
+ACTOR_ERROR | 2020-05-16 01:20:25 | [Thread-4] actor.Actor$ScriptReader (Actor.java:561) - [Lexa] is expecting [Fate] to be onstage, but they're not.
+ACTOR_INFO | 2020-05-16 01:20:25 | [Thread-4] actor.Actor (Actor.java:262) - [Lexa] spoke "i am waiting" to the user.
+ACTOR_DEBUG | 2020-05-16 01:20:25 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:655) - [Lexa]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-16 01:20:25 | [nioEventLoopGroup-4-1] actor.Actor$2 (Actor.java:199) - Channel pipeline [aafc034f] to Server [Lexa] has been initialized.
+ACTOR_INFO | 2020-05-16 01:20:25 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:678) - [Lexa] received a roll-call request from [Xander], who is on port 4001.
+ACTOR_ERROR | 2020-05-16 01:20:25 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:686) - [Lexa] already has [Xander] in their contact list.
+ACTOR_DEBUG | 2020-05-16 01:20:30 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:655) - [Lexa]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-16 01:20:30 | [nioEventLoopGroup-4-2] actor.Actor$2 (Actor.java:199) - Channel pipeline [7a666912] to Server [Lexa] has been initialized.
+ACTOR_INFO | 2020-05-16 01:20:30 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:678) - [Lexa] received a roll-call request from [Fate], who is on port 4003.
+ACTOR_DEBUG | 2020-05-16 01:20:30 | [Thread-6] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4003...
+ACTOR_DEBUG | 2020-05-16 01:20:30 | [Thread-6] actor.Actor (Actor.java:163) - Bootstrap 1244619879 configured.
+ACTOR_DEBUG | 2020-05-16 01:20:30 | [Thread-6] actor.Actor (Actor.java:165) - Roll-calling port 4003...
+ACTOR_DEBUG | 2020-05-16 01:20:30 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-16 01:20:30 | [nioEventLoopGroup-2-4] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4003 initialized.
+ACTOR_DEBUG | 2020-05-16 01:20:32 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 1300464631 has connected to its target.
+ACTOR_INFO | 2020-05-16 01:20:32 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [Lexa] to port 4003.
+ACTOR_INFO | 2020-05-16 01:20:32 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:615) - [Lexa] received a roll-call response from [Fate], who is on port 4003.
+ACTOR_DEBUG | 2020-05-16 01:20:32 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:620) - [Lexa] added [Fate] to their contact list.
+ACTOR_INFO | 2020-05-16 01:20:32 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [Xander] onstage.
+ACTOR_ERROR | 2020-05-16 01:20:32 | [Thread-4] actor.Actor$ScriptReader (Actor.java:561) - [Lexa] is expecting [CallMeKey] to be onstage, but they're not.
+ACTOR_INFO | 2020-05-16 01:20:32 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [Fate] onstage.
+ACTOR_INFO | 2020-05-16 01:20:32 | [Thread-4] actor.Actor (Actor.java:262) - [Lexa] spoke "i am waiting" to the user.
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:655) - [Lexa]'s server handler has been instantiated.
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [nioEventLoopGroup-4-3] actor.Actor$2 (Actor.java:199) - Channel pipeline [f3f0cf18] to Server [Lexa] has been initialized.
+ACTOR_INFO | 2020-05-16 01:20:37 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:678) - [Lexa] received a roll-call request from [CallMeKey], who is on port 4002.
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [Thread-7] actor.Actor (Actor.java:146) - Initializing a client for [Lexa] to roll-call port 4002...
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [Thread-7] actor.Actor (Actor.java:163) - Bootstrap 180008274 configured.
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [Thread-7] actor.Actor (Actor.java:165) - Roll-calling port 4002...
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:588) - A new client handler has been instantiated by [Lexa].
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [nioEventLoopGroup-2-5] actor.Actor$1 (Actor.java:160) - Pipeline from [Lexa] to port 4002 initialized.
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:594) - ChannelHandler 616758267 has connected to its target.
+ACTOR_INFO | 2020-05-16 01:20:37 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:603) - Roll-call sent from [Lexa] to port 4002.
+ACTOR_INFO | 2020-05-16 01:20:37 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:615) - [Lexa] received a roll-call response from [CallMeKey], who is on port 4002.
+ACTOR_DEBUG | 2020-05-16 01:20:37 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:620) - [Lexa] added [CallMeKey] to their contact list.
+ACTOR_INFO | 2020-05-16 01:20:37 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [Xander] onstage.
+ACTOR_INFO | 2020-05-16 01:20:37 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [CallMeKey] onstage.
+ACTOR_INFO | 2020-05-16 01:20:37 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [Fate] onstage.
+ACTOR_INFO | 2020-05-16 01:20:38 | [Thread-4] actor.Actor (Actor.java:262) - [Lexa] spoke "My name is Alexandra Syaani Laskea." to the user.
+ACTOR_INFO | 2020-05-16 01:20:39 | [Thread-4] actor.Actor (Actor.java:262) - [Lexa] spoke "You killed my father." to the user.
+ACTOR_INFO | 2020-05-16 01:20:40 | [Thread-4] actor.Actor (Actor.java:262) - [Lexa] spoke "Prepare to die." to the user.
+ACTOR_INFO | 2020-05-16 01:20:40 | [Thread-4] actor.Actor (Actor.java:302) - [Lexa] sent [Xander] to the next cue.
+ACTOR_INFO | 2020-05-16 01:20:40 | [Thread-4] actor.Actor (Actor.java:302) - [Lexa] sent [CallMeKey] to the next cue.
+ACTOR_INFO | 2020-05-16 01:20:40 | [Thread-4] actor.Actor (Actor.java:302) - [Lexa] sent [Fate] to the next cue.
+ACTOR_INFO | 2020-05-16 01:20:40 | [Thread-4] actor.Actor$ScriptReader (Actor.java:392) - [Lexa] going to cue scene1/cue2.
+ACTOR_INFO | 2020-05-16 01:20:40 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [Xander] onstage.
+ACTOR_INFO | 2020-05-16 01:20:40 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [CallMeKey] onstage.
+ACTOR_INFO | 2020-05-16 01:20:40 | [Thread-4] actor.Actor$ScriptReader (Actor.java:565) - [Lexa] has found [Fate] onstage.
+ACTOR_INFO | 2020-05-16 01:20:40 | [Thread-4] actor.Actor$ScriptReader (Actor.java:517) - [Lexa] entering conversation.
+ACTOR_INFO | 2020-05-16 01:20:40 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Fate] about nextCue.
+ACTOR_INFO | 2020-05-16 01:20:40 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about nextCue.
+ACTOR_INFO | 2020-05-16 01:20:40 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about nextCue.
+ACTOR_INFO | 2020-05-16 01:20:40 | [Thread-4] actor.Actor$ScriptReader (Actor.java:526) - [Lexa] will be conversing with [Xander].
+ACTOR_INFO | 2020-05-16 01:20:40 | [Thread-4] actor.Actor$ScriptReader (Actor.java:526) - [Lexa] will be conversing with [CallMeKey].
+ACTOR_INFO | 2020-05-16 01:20:40 | [Thread-4] actor.Actor$ScriptReader (Actor.java:526) - [Lexa] will be conversing with [Fate].
+ACTOR_INFO | 2020-05-16 01:20:41 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "dude lex" from [Xander].
+ACTOR_INFO | 2020-05-16 01:20:42 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "have you no chill" from [Xander].
+ACTOR_INFO | 2020-05-16 01:20:43 | [Thread-4] actor.Actor (Actor.java:276) - [Lexa] direct-messaged "What? It's a good movie!" to [Xander].
+ACTOR_INFO | 2020-05-16 01:20:43 | [Thread-4] actor.Actor (Actor.java:276) - [Lexa] direct-messaged "What? It's a good movie!" to [CallMeKey].
+ACTOR_INFO | 2020-05-16 01:20:43 | [Thread-4] actor.Actor (Actor.java:276) - [Lexa] direct-messaged "What? It's a good movie!" to [Fate].
+ACTOR_INFO | 2020-05-16 01:20:43 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-16 01:20:43 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-16 01:20:43 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-16 01:20:44 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "what" from [Xander].
+ACTOR_INFO | 2020-05-16 01:20:45 | [Thread-4] actor.Actor (Actor.java:276) - [Lexa] direct-messaged "Wait, you haven't-" to [Xander].
+ACTOR_INFO | 2020-05-16 01:20:45 | [Thread-4] actor.Actor (Actor.java:276) - [Lexa] direct-messaged "Wait, you haven't-" to [CallMeKey].
+ACTOR_INFO | 2020-05-16 01:20:45 | [Thread-4] actor.Actor (Actor.java:276) - [Lexa] direct-messaged "Wait, you haven't-" to [Fate].
+ACTOR_INFO | 2020-05-16 01:20:45 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-16 01:20:45 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-16 01:20:45 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-16 01:20:45 | [Thread-4] actor.Actor (Actor.java:276) - [Lexa] direct-messaged "..." to [Xander].
+ACTOR_INFO | 2020-05-16 01:20:45 | [Thread-4] actor.Actor (Actor.java:276) - [Lexa] direct-messaged "..." to [CallMeKey].
+ACTOR_INFO | 2020-05-16 01:20:45 | [Thread-4] actor.Actor (Actor.java:276) - [Lexa] direct-messaged "..." to [Fate].
+ACTOR_INFO | 2020-05-16 01:20:45 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-16 01:20:45 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-16 01:20:45 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-16 01:20:48 | [Thread-4] actor.Actor (Actor.java:276) - [Lexa] direct-messaged "You haven't seen the Princess Bride?" to [Xander].
+ACTOR_INFO | 2020-05-16 01:20:48 | [Thread-4] actor.Actor (Actor.java:276) - [Lexa] direct-messaged "You haven't seen the Princess Bride?" to [CallMeKey].
+ACTOR_INFO | 2020-05-16 01:20:48 | [Thread-4] actor.Actor (Actor.java:276) - [Lexa] direct-messaged "You haven't seen the Princess Bride?" to [Fate].
+ACTOR_INFO | 2020-05-16 01:20:48 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-16 01:20:48 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-16 01:20:48 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-16 01:20:49 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "(you have got to be kidding me, x)" from [CallMeKey].
+ACTOR_INFO | 2020-05-16 01:20:50 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "Are you honest? Are you for real?" from [Fate].
+ACTOR_INFO | 2020-05-16 01:20:50 | [nioEventLoopGroup-4-3] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "(please be lying)" from [CallMeKey].
+ACTOR_INFO | 2020-05-16 01:20:50 | [Thread-4] actor.Actor (Actor.java:276) - [Lexa] direct-messaged "Please be lying." to [Xander].
+ACTOR_INFO | 2020-05-16 01:20:50 | [Thread-4] actor.Actor (Actor.java:276) - [Lexa] direct-messaged "Please be lying." to [CallMeKey].
+ACTOR_INFO | 2020-05-16 01:20:50 | [Thread-4] actor.Actor (Actor.java:276) - [Lexa] direct-messaged "Please be lying." to [Fate].
+ACTOR_INFO | 2020-05-16 01:20:50 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-16 01:20:50 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-16 01:20:50 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-16 01:20:51 | [nioEventLoopGroup-4-1] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "whats a princess" from [Xander].
+ACTOR_INFO | 2020-05-16 01:20:52 | [Thread-4] actor.Actor (Actor.java:276) - [Lexa] direct-messaged "Stoooooop talking." to [Xander].
+ACTOR_INFO | 2020-05-16 01:20:52 | [Thread-4] actor.Actor (Actor.java:276) - [Lexa] direct-messaged "Stoooooop talking." to [CallMeKey].
+ACTOR_INFO | 2020-05-16 01:20:52 | [Thread-4] actor.Actor (Actor.java:276) - [Lexa] direct-messaged "Stoooooop talking." to [Fate].
+ACTOR_INFO | 2020-05-16 01:20:52 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-16 01:20:52 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-16 01:20:52 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-16 01:20:53 | [Thread-4] actor.Actor (Actor.java:276) - [Lexa] direct-messaged "Just. Stop." to [Xander].
+ACTOR_INFO | 2020-05-16 01:20:53 | [Thread-4] actor.Actor (Actor.java:276) - [Lexa] direct-messaged "Just. Stop." to [CallMeKey].
+ACTOR_INFO | 2020-05-16 01:20:53 | [Thread-4] actor.Actor (Actor.java:276) - [Lexa] direct-messaged "Just. Stop." to [Fate].
+ACTOR_INFO | 2020-05-16 01:20:53 | [nioEventLoopGroup-2-2] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Xander] about message.
+ACTOR_INFO | 2020-05-16 01:20:53 | [nioEventLoopGroup-2-5] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [CallMeKey] about message.
+ACTOR_INFO | 2020-05-16 01:20:53 | [nioEventLoopGroup-2-4] actor.Actor$ClientHandler (Actor.java:633) - [Lexa] received a confirmation from [Fate] about message.
+ACTOR_INFO | 2020-05-16 01:20:55 | [nioEventLoopGroup-4-2] actor.Actor$ServerHandler (Actor.java:668) - [Lexa] received the direct-message "Sounds like a watch party is in order!" from [Fate].
+ACTOR_DEBUG | 2020-05-16 01:20:55 | [Thread-6] actor.Actor (Actor.java:168) - Client roll-calling port 4003 has closed.
+ACTOR_INFO | 2020-05-16 01:20:55 | [Thread-4] actor.Actor$ScriptReader (Actor.java:392) - [Lexa] going to cue scene1/cue3.
+ACTOR_INFO | 2020-05-16 01:20:55 | [Thread-4] actor.Actor$ScriptReader (Actor.java:421) - [Lexa] has been instructed to exit the stage.
+ACTOR_DEBUG | 2020-05-16 01:20:55 | [Thread-7] actor.Actor (Actor.java:168) - Client roll-calling port 4002 has closed.
+ACTOR_DEBUG | 2020-05-16 01:20:55 | [Thread-1] actor.Actor (Actor.java:168) - Client roll-calling port 4001 has closed.
+ACTOR_DEBUG | 2020-05-16 01:20:55 | [Thread-4] actor.Actor (Actor.java:216) - Worker group is shutting down for [Lexa]
+ACTOR_DEBUG | 2020-05-16 01:20:55 | [Thread-4] actor.Actor (Actor.java:222) - Boss group is shutting down for Lexa
+ACTOR_DEBUG | 2020-05-16 01:20:55 | [Thread-4] actor.Actor (Actor.java:235) - Client group is shutting down for Lexa
+ACTOR_DEBUG | 2020-05-16 01:20:55 | [Thread-4] actor.Actor (Actor.java:247) - Exit actor [Lexa].

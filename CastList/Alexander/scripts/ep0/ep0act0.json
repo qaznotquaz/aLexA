@@ -14,8 +14,8 @@
       "actors": {
         "Lexa": "leading",
         "Xander": "idle",
-        "Fate": "offstage",
-        "CallMeKey": "offstage"
+        "Fate": "idle",
+        "CallMeKey": "idle"
       },
       "text": {
         "1": {
@@ -41,8 +41,8 @@
       "actors": {
         "Lexa": "responding",
         "Xander": "leading",
-        "Fate": "offstage",
-        "CallMeKey": "offstage"
+        "Fate": "responding",
+        "CallMeKey": "responding"
       },
       "cuesTo": {
         "scene": "scene1",
@@ -52,12 +52,12 @@
         "1": {
           "delay": 1000,
           "from": "Xander",
-          "text": "dude, lex."
+          "text": "dude lex"
         },
         "2": {
           "delay": 500,
           "from": "Xander",
-          "text": "have you no chill?"
+          "text": "have you no chill"
         },
         "3": {
           "delay": 1000,
@@ -67,7 +67,7 @@
         "4": {
           "delay": 1000,
           "from": "Xander",
-          "text": "what?"
+          "text": "what"
         },
         "5": {
           "delay": 1500,
@@ -83,6 +83,46 @@
           "delay": 2300,
           "from": "Lexa",
           "text": "You haven't seen the Princess Bride?"
+        },
+        "8": {
+          "delay": 1000,
+          "from": "CallMeKey",
+          "text": "(you have got to be kidding me, x)"
+        },
+        "9": {
+          "delay": 1400,
+          "from": "Fate",
+          "text": "Are you honest? Are you for real?"
+        },
+        "10": {
+          "delay": 200,
+          "from": "CallMeKey",
+          "text": "(please be lying)"
+        },
+        "11": {
+          "delay": 200,
+          "from": "Lexa",
+          "text": "Please be lying."
+        },
+        "12": {
+          "delay": 1000,
+          "from": "Xander",
+          "text": "whats a princess"
+        },
+        "13": {
+          "delay": 1000,
+          "from": "Lexa",
+          "text": "Stoooooop talking."
+        },
+        "14": {
+          "delay": 400,
+          "from": "Lexa",
+          "text": "Just. Stop."
+        },
+        "15": {
+          "delay": 2000,
+          "from": "Fate",
+          "text": "Sounds like a watch party is in order!"
         }
       }
     },

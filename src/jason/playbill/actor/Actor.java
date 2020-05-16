@@ -38,7 +38,6 @@ public class Actor {
      * The group of ports that <u>all</u> actors will use and check for other actors.
      */
     final public int[] ports = {4000, 4001, 4002, 4003};
-    final public String[] names = {"Lexa", "Xander", "Fate", "CallMeKey"};
     /**
      * A latch to keep the program from progressing too far before finishing connecting to other actors.
      */
@@ -399,20 +398,20 @@ public class Actor {
             Playscript.Presence myPresence = null;
             ArrayList<String> onstage = new ArrayList<>();
 
-            for(String name:names){
-                tempPre = presencesJson.getEnum(Playscript.Presence.class, name);
-                if(name.equals(owner.getName())){
+            for(String key:presencesJson.keySet()){
+                tempPre = presencesJson.getEnum(Playscript.Presence.class, key);
+
+                if(key.equals(name)){
                     myPresence = tempPre;
                 } else {
-                    /*if(tempPre.equals(Playscript.Presence.responding) || tempPre.equals(Playscript.Presence.leading)){
-                        reqOnstage.add(name);
-                    } else if (tempPre.equals(Playscript.Presence.listening)){
-                        optOnstage.add(name);
-                    }*/
                     if (tempPre != Playscript.Presence.offstage){
-                        onstage.add(name);
+                        onstage.add(key);
                     }
                 }
+            }
+
+            if(myPresence == null){
+                myPresence = Playscript.Presence.offstage;
             }
 
             Playscript.DirectionType type = cue.getEnum(Playscript.DirectionType.class, "type");
@@ -439,6 +438,7 @@ public class Actor {
 
             synchronized (waitingForFriendsSync){
                 while (!waitForFriends(onstage)){
+                    speaks("i am waiting");
                     waitingForFriendsSync.wait();
                 }
             }
