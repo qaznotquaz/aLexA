@@ -21,11 +21,16 @@ import java.util.stream.Stream;
  *      this class may or may not be obsolete? we'll see.
  */
 public class Playscript {
+    //todo: label
     final String relativePath = "C:\\Users\\JasonEaton\\IdeaProjects\\alex\\src\\jason\\playbill\\playscript";
+    //todo: label
     JSONObject header;
+    //todo: label
     JSONObject json;
 
+    //todo: label
     public Playscript(int episode, int act) throws IOException {
+        //fixme: should use script local to module
         String path = "scripts\\ep" + episode + "\\" + "ep" + episode + "act" + act + ".json";
         Stream<String> linesStream = Files.lines(Paths.get(relativePath, path));
         StringBuilder contentBuilder = new StringBuilder();
@@ -39,14 +44,17 @@ public class Playscript {
         }
     }
 
+    //todo: label
     public JSONObject getInitialCue() {
         return header.getJSONObject("initial");
     }
 
+    //todo: label
     public JSONObject getDirection(String scene, String cue){
         return json.getJSONObject(scene).getJSONObject(cue);
     }
 
+    //todo: label
     public enum DirectionType {
         monologue,      // Actor speaking directly to the user.
         conversation,   // Actor speaking to one or more other Actors.
@@ -58,6 +66,7 @@ public class Playscript {
         writeFile       // self explanatory
     }
 
+    //todo: label
     public enum Presence {
         idle,           // Actor is inactive and allowed to be onstage, but is not required.
         leading,        // Actor is active and the first one to act on this cue.

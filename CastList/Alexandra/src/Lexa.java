@@ -1,23 +1,10 @@
-import jason.playbill.ConsoleColors;
 import jason.playbill.actor.Actor;
-
-import java.util.Scanner;
 
 import static jason.playbill.ConsoleColors.*;
 
 public class Lexa {
-
     public static void main(String[] args) throws InterruptedException {
-        //ProcessBuilder builder = new ProcessBuilder("notepad.exe");
-        //Process process = builder.start();
-
-        //Stream<ProcessHandle> nya = ProcessHandle.allProcesses();
-
-        //nya.forEach(thing -> System.out.println(thing.info()));
-
-        //System.out.println(isProcessRunning("Alexander"));
-
-        /*try {
+        /*try {todo: get registry access working. move it to actor or playscript, not sure which yet
             ImplExample obj = new ImplExample();
 
             Hello stub = (Hello)UnicastRemoteObject.exportObject(obj, 0);
@@ -30,16 +17,11 @@ public class Lexa {
             e.printStackTrace();
         }*/
 
-        /*Alexa me = new Alexa();
-        me.says("Where's my brother?");
-
-        Map<String, String> env = System.getenv();
+        /*Map<String, String> env = System.getenv();
 
         for (String key:env.keySet()){
             System.out.println(key + " " + env.get(key));
         }*/
-
-        //int port = args.length > 0 ? Integer.parseInt(args[0]) : 8080;
 
         Object sync = new Object();
         Actor Lexa = new Actor("Lexa", ANSI_CYAN, 4000, sync);
@@ -48,6 +30,7 @@ public class Lexa {
             sync.wait();
         }
 
+        //todo: move startup animation to actor
         /*System.out.print('/');
         Thread.sleep(250);
         System.out.print('\b');
@@ -59,6 +42,7 @@ public class Lexa {
         System.out.print('\b');*/
     }
 
+    //todo: move environment access to either actor or playscript, not sure which yet
     /*private static String getComputerName() {
         Map<String, String> env = System.getenv();
         if (env.containsKey("COMPUTERNAME"))
@@ -66,6 +50,7 @@ public class Lexa {
         else return env.getOrDefault("HOSTNAME", "Unknown Computer");
     }
 
+    todo: move process access to either actor or playscript, not sure which yet
     private static boolean isProcessRunning(String processName) throws IOException, InterruptedException {
         ProcessBuilder processBuilder = new ProcessBuilder("tasklist.exe");
         Process process = processBuilder.start();
@@ -74,6 +59,7 @@ public class Lexa {
         return tasksList.contains(processName);
     }
 
+    todo: why do i have this?
     private static String toString(InputStream inputStream) {
         Scanner scanner = new Scanner(inputStream, StandardCharsets.UTF_8).useDelimiter("\\A");
         String string = scanner.hasNext() ? scanner.next() : "";

@@ -9,12 +9,14 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.stream.Stream;
 
+//todo: label
 public class TemplateCopier {
     final public static String[][] names = {{"Alexandra", "AlexandraSyaaniLaskea"},
             {"Alexander", "AlexanderPurppuranpunainenLaskea"},
-            {"Key", "CallMeKey"},
+            {"CallMeKey", "CallMeKey"},
             {"Fate", "Fate"}};
 
+    //todo: label
     public static void main(String[] args) throws IOException {
         String templatePath = "C:\\Users\\JasonEaton\\IdeaProjects\\alex\\src\\jason\\playbill\\actor\\logger\\template.xml";
         //File template = new File();
